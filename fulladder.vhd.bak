@@ -1,0 +1,16 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity fulladder4bits is
+   port(a, b          : in std_logic;
+        sum,carry_out : out std_logic);
+end entity fulladder4bits;
+ 
+architecture synth of fulladder4bits is
+   signal temp : unsigned(4 downto 0); 
+begin 
+   temp      <= ("0" & a) + b;
+   sum       <= temp(3 downto 0); 
+   carry_out <= temp(4);
+end architecture synth;
