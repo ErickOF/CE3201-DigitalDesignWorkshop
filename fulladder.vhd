@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity fulladder is
-   port(a, b, c_in     : in  std_logic;
+   port(a, b, c_in : in  std_logic;
         sum, c_out : out std_logic);
 end entity fulladder;
  

@@ -2,8 +2,8 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity fulladder4bits is
-   port(A, B  : in  STD_LOGIC_VECTOR(3 downto 0);
-        Y     : out STD_LOGIC_VECTOR(3 downto 0); 
+   port(A, B      : in  STD_LOGIC_VECTOR(3 downto 0);
+        Y         : out STD_LOGIC_VECTOR(3 downto 0); 
         c_out : out STD_LOGIC);
 end entity fulladder4bits;
  
