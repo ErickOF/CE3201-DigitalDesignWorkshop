@@ -1,5 +1,5 @@
 Assembler report for La2-Intro_HDL
-Tue Aug 13 09:36:19 2019
+Thu Aug 15 20:31:28 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -37,9 +37,9 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Aug 13 09:36:19 2019 ;
+; Assembler Status      ; Successful - Thu Aug 15 20:31:28 2019 ;
 ; Revision Name         ; La2-Intro_HDL                         ;
-; Top-level Entity Name ; fulladder4bits                        ;
+; Top-level Entity Name ; fulladder4bits_w_display              ;
 ; Family                ; Cyclone V                             ;
 ; Device                ; 5CSEMA5F31C6                          ;
 +-----------------------+---------------------------------------+
@@ -66,8 +66,8 @@ refer to the applicable agreement for further details.
 +----------------+-------------------------------------------------------------------------------------------------+
 ; Option         ; Setting                                                                                         ;
 +----------------+-------------------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x00AF6B9C                                                                                      ;
-; Checksum       ; 0x00AF6B9C                                                                                      ;
+; JTAG usercode  ; 0x00AF9082                                                                                      ;
+; Checksum       ; 0x00AF9082                                                                                      ;
 +----------------+-------------------------------------------------------------------------------------------------+
 
 
@@ -77,14 +77,14 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Aug 13 09:35:52 2019
+    Info: Processing started: Thu Aug 15 20:30:54 2019
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off La2-Intro_HDL -c La2-Intro_HDL
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4836 megabytes
-    Info: Processing ended: Tue Aug 13 09:36:19 2019
-    Info: Elapsed time: 00:00:27
-    Info: Total CPU time (on all processors): 00:00:12
+    Info: Peak virtual memory: 4838 megabytes
+    Info: Processing ended: Thu Aug 15 20:31:29 2019
+    Info: Elapsed time: 00:00:35
+    Info: Total CPU time (on all processors): 00:00:13
 
 

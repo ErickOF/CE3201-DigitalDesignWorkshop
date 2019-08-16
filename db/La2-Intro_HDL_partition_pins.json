@@ -4,55 +4,63 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "sum[0]",
+					"name" : "Y[0]",
 					"strict" : false
 				},
 				{
-					"name" : "sum[1]",
+					"name" : "Y[1]",
 					"strict" : false
 				},
 				{
-					"name" : "sum[2]",
+					"name" : "Y[2]",
 					"strict" : false
 				},
 				{
-					"name" : "sum[3]",
+					"name" : "Y[3]",
 					"strict" : false
 				},
 				{
-					"name" : "carry_out",
+					"name" : "Y[4]",
 					"strict" : false
 				},
 				{
-					"name" : "b[0]",
+					"name" : "Y[5]",
 					"strict" : false
 				},
 				{
-					"name" : "a[0]",
+					"name" : "Y[6]",
 					"strict" : false
 				},
 				{
-					"name" : "b[1]",
+					"name" : "A[2]",
 					"strict" : false
 				},
 				{
-					"name" : "a[1]",
+					"name" : "B[2]",
 					"strict" : false
 				},
 				{
-					"name" : "b[2]",
+					"name" : "A[1]",
 					"strict" : false
 				},
 				{
-					"name" : "a[2]",
+					"name" : "B[1]",
 					"strict" : false
 				},
 				{
-					"name" : "b[3]",
+					"name" : "A[0]",
 					"strict" : false
 				},
 				{
-					"name" : "a[3]",
+					"name" : "B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "B[3]",
 					"strict" : false
 				}
 			]

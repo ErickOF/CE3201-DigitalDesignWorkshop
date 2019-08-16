@@ -1,5 +1,5 @@
 Analysis & Elaboration report for La2-Intro_HDL
-Tue Aug 13 10:36:07 2019
+Thu Aug 15 20:40:26 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -10,8 +10,9 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
   4. Analysis & Elaboration Settings
-  5. Port Connectivity Checks: "fulladder:bit1"
-  6. Analysis & Elaboration Messages
+  5. Port Connectivity Checks: "fulladder4bits:fulladder4bit|fulladder:bit0"
+  6. Port Connectivity Checks: "fulladder4bits:fulladder4bit"
+  7. Analysis & Elaboration Messages
 
 
 
@@ -37,10 +38,10 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Tue Aug 13 10:36:07 2019       ;
+; Analysis & Elaboration Status ; Successful - Thu Aug 15 20:40:26 2019       ;
 ; Quartus Prime Version         ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                 ; La2-Intro_HDL                               ;
-; Top-level Entity Name         ; fulladder4bits                              ;
+; Top-level Entity Name         ; fulladder4bits_w_display                    ;
 ; Family                        ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
 ; Total registers               ; N/A until Partition Merge                   ;
@@ -68,100 +69,109 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                                           ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
-; Option                                                                          ; Setting            ; Default Value      ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; fulladder4bits     ; La2-Intro_HDL      ;
-; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
-; Use smart compilation                                                           ; Off                ; Off                ;
-; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
-; Enable compact report table                                                     ; Off                ; Off                ;
-; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
-; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
-; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
-; Preserve fewer node names                                                       ; On                 ; On                 ;
-; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
-; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
-; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
-; State Machine Processing                                                        ; Auto               ; Auto               ;
-; Safe State Machine                                                              ; Off                ; Off                ;
-; Extract Verilog State Machines                                                  ; On                 ; On                 ;
-; Extract VHDL State Machines                                                     ; On                 ; On                 ;
-; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
-; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
-; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
-; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
-; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
-; Parallel Synthesis                                                              ; On                 ; On                 ;
-; DSP Block Balancing                                                             ; Auto               ; Auto               ;
-; NOT Gate Push-Back                                                              ; On                 ; On                 ;
-; Power-Up Don't Care                                                             ; On                 ; On                 ;
-; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
-; Remove Duplicate Registers                                                      ; On                 ; On                 ;
-; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
-; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
-; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
-; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
-; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
-; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
-; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
-; Optimization Technique                                                          ; Balanced           ; Balanced           ;
-; Carry Chain Length                                                              ; 70                 ; 70                 ;
-; Auto Carry Chains                                                               ; On                 ; On                 ;
-; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
-; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
-; Auto ROM Replacement                                                            ; On                 ; On                 ;
-; Auto RAM Replacement                                                            ; On                 ; On                 ;
-; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
-; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
-; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
-; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
-; Strict RAM Replacement                                                          ; Off                ; Off                ;
-; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
-; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
-; Auto Resource Sharing                                                           ; Off                ; Off                ;
-; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
-; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
-; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
-; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
-; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
-; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
-; Report Parameter Settings                                                       ; On                 ; On                 ;
-; Report Source Assignments                                                       ; On                 ; On                 ;
-; Report Connectivity Checks                                                      ; On                 ; On                 ;
-; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
-; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
-; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
-; HDL message level                                                               ; Level2             ; Level2             ;
-; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
-; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
-; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
-; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
-; Clock MUX Protection                                                            ; On                 ; On                 ;
-; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
-; Block Design Naming                                                             ; Auto               ; Auto               ;
-; SDC constraint protection                                                       ; Off                ; Off                ;
-; Synthesis Effort                                                                ; Auto               ; Auto               ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
-; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
-; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
-; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
-; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
-; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
-; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration Settings                                                                                                 ;
++---------------------------------------------------------------------------------+--------------------------+--------------------+
+; Option                                                                          ; Setting                  ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------------+--------------------+
+; Device                                                                          ; 5CSEMA5F31C6             ;                    ;
+; Top-level entity name                                                           ; fulladder4bits_w_display ; La2-Intro_HDL      ;
+; Family name                                                                     ; Cyclone V                ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                      ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                       ; On                 ;
+; Enable compact report table                                                     ; Off                      ; Off                ;
+; Restructure Multiplexers                                                        ; Auto                     ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                      ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                      ; Off                ;
+; Preserve fewer node names                                                       ; On                       ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable                   ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001             ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993                ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto                     ; Auto               ;
+; Safe State Machine                                                              ; Off                      ; Off                ;
+; Extract Verilog State Machines                                                  ; On                       ; On                 ;
+; Extract VHDL State Machines                                                     ; On                       ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                      ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000                     ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                      ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                       ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                       ; On                 ;
+; Parallel Synthesis                                                              ; On                       ; On                 ;
+; DSP Block Balancing                                                             ; Auto                     ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                       ; On                 ;
+; Power-Up Don't Care                                                             ; On                       ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                      ; Off                ;
+; Remove Duplicate Registers                                                      ; On                       ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                      ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                      ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                      ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                      ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                      ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                       ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                      ; Off                ;
+; Optimization Technique                                                          ; Balanced                 ; Balanced           ;
+; Carry Chain Length                                                              ; 70                       ; 70                 ;
+; Auto Carry Chains                                                               ; On                       ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                       ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                      ; Off                ;
+; Auto ROM Replacement                                                            ; On                       ; On                 ;
+; Auto RAM Replacement                                                            ; On                       ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                       ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto                     ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto                     ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                       ; On                 ;
+; Strict RAM Replacement                                                          ; Off                      ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                       ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                      ; Off                ;
+; Auto Resource Sharing                                                           ; Off                      ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                      ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                      ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                      ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                       ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                      ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                       ; On                 ;
+; Report Parameter Settings                                                       ; On                       ; On                 ;
+; Report Source Assignments                                                       ; On                       ; On                 ;
+; Report Connectivity Checks                                                      ; On                       ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                      ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                        ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation       ; Normal compilation ;
+; HDL message level                                                               ; Level2                   ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                      ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000                     ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000                     ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                      ; 100                ;
+; Clock MUX Protection                                                            ; On                       ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                      ; Off                ;
+; Block Design Naming                                                             ; Auto                     ; Auto               ;
+; SDC constraint protection                                                       ; Off                      ; Off                ;
+; Synthesis Effort                                                                ; Auto                     ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                       ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                      ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium                   ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto                     ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                       ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                       ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                      ; Off                ;
++---------------------------------------------------------------------------------+--------------------------+--------------------+
 
 
-+--------------------------------------------+
-; Port Connectivity Checks: "fulladder:bit1" ;
-+------+-------+----------+------------------+
-; Port ; Type  ; Severity ; Details          ;
-+------+-------+----------+------------------+
-; c_in ; Input ; Info     ; Stuck at GND     ;
-+------+-------+----------+------------------+
++-------------------------------------------------------------------------+
+; Port Connectivity Checks: "fulladder4bits:fulladder4bit|fulladder:bit0" ;
++------+-------+----------+-----------------------------------------------+
+; Port ; Type  ; Severity ; Details                                       ;
++------+-------+----------+-----------------------------------------------+
+; c_in ; Input ; Info     ; Stuck at GND                                  ;
++------+-------+----------+-----------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fulladder4bits:fulladder4bit"                                                        ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; c_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +---------------------------------+
@@ -170,25 +180,38 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Aug 13 10:35:50 2019
+    Info: Processing started: Thu Aug 15 20:39:59 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off La2-Intro_HDL -c La2-Intro_HDL --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file fulladder4bits.vhd
-    Info (12022): Found design unit 1: fulladder4bits-synth File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/fulladder4bits.vhd Line: 10
-    Info (12023): Found entity 1: fulladder4bits File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/fulladder4bits.vhd Line: 4
+    Info (12022): Found design unit 1: fulladder4bits-synth File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/fulladder4bits.vhd Line: 11
+    Info (12023): Found entity 1: fulladder4bits File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/fulladder4bits.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file fulladder4bits_test.vhd
-    Info (12022): Found design unit 1: fulladder4bits_test-tb File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/fulladder4bits_test.vhd Line: 9
+    Info (12022): Found design unit 1: fulladder4bits_test-testbench File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/fulladder4bits_test.vhd Line: 9
     Info (12023): Found entity 1: fulladder4bits_test File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/fulladder4bits_test.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file fulladder.vhd
-    Info (12022): Found design unit 1: fulladder-synth File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/fulladder.vhd Line: 9
-    Info (12023): Found entity 1: fulladder File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/fulladder.vhd Line: 4
-Info (12127): Elaborating entity "fulladder4bits" for the top level hierarchy
-Info (12128): Elaborating entity "fulladder" for hierarchy "fulladder:bit1" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/fulladder4bits.vhd Line: 14
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4845 megabytes
-    Info: Processing ended: Tue Aug 13 10:36:07 2019
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:39
+    Info (12022): Found design unit 1: fulladder-synth File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/fulladder.vhd Line: 10
+    Info (12023): Found entity 1: fulladder File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/fulladder.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file fulladder4bits_w_display.vhd
+    Info (12022): Found design unit 1: fulladder4bits_w_display-synth File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/fulladder4bits_w_display.vhd Line: 10
+    Info (12023): Found entity 1: fulladder4bits_w_display File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/fulladder4bits_w_display.vhd Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file disp_deco.sv
+    Info (12023): Found entity 1: disp_deco File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/disp_deco.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file deco_test.sv
+    Info (12023): Found entity 1: deco_test File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/deco_test.sv Line: 1
+Info (12021): Found 2 design units, including 1 entities, in source file fulladder4bits_w_display_test.vhd
+    Info (12022): Found design unit 1: fulladder4bits_w_display_test-testbench File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/fulladder4bits_w_display_test.vhd Line: 9
+    Info (12023): Found entity 1: fulladder4bits_w_display_test File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/fulladder4bits_w_display_test.vhd Line: 6
+Info (12127): Elaborating entity "fulladder4bits_w_display" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at fulladder4bits_w_display.vhd(16): object "c_out" assigned a value but never read File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/fulladder4bits_w_display.vhd Line: 16
+Info (12128): Elaborating entity "fulladder4bits" for hierarchy "fulladder4bits:fulladder4bit" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/fulladder4bits_w_display.vhd Line: 19
+Info (12128): Elaborating entity "fulladder" for hierarchy "fulladder4bits:fulladder4bit|fulladder:bit0" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/fulladder4bits.vhd Line: 15
+Info (12128): Elaborating entity "disp_deco" for hierarchy "disp_deco:display" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/fulladder4bits_w_display.vhd Line: 20
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4849 megabytes
+    Info: Processing ended: Thu Aug 15 20:40:26 2019
+    Info: Elapsed time: 00:00:27
+    Info: Total CPU time (on all processors): 00:00:40
 
 

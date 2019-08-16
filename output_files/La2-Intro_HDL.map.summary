@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Successful - Tue Aug 13 10:36:07 2019
+Analysis & Elaboration Status : Successful - Thu Aug 15 20:40:26 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : La2-Intro_HDL
-Top-level Entity Name : fulladder4bits
+Top-level Entity Name : fulladder4bits_w_display
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge
