@@ -1,0 +1,21 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+
+entity fulladder is
+    port(x, y, z, w          : in  std_logic;
+         a, b, c, d, e, f, g : out std_logic);
+end entity fulladder;
+ 
+architecture synth of fulladder is
+begin
+    sum   <= a xor b xor c_in; 
+    c_out <= (a and b) or (c_in and (a or b));
+	 a = ~((x & ~w) | (~x & z) | (y & z) | (~x & y & w) | (x & ~y & ~z));
+    b = ~((~x & ~y & w) | (~y & z & ~w) | (~x & z & w) | (x & ~y & ~z) | (x & ~z & w) | (~x & y & ~z & ~w));
+    c = ~((~x & w) | (~z & w) | (~x & y) | (x & ~y));
+    d = ~((~x & ~y & z) | (~y & z & w) | (y & ~z & w) | (y & z & ~w) | (x & ~z & ~w));
+    e = ~((z & ~w) | (x & ~w) | (x & z) | (x & y));
+    f = ~((y & ~w) | (x & ~y) | (x & z) | (~x & y & ~z));
+    g = ~((~y & z) | (z & ~w) | (x & ~y) | (x & w) | (~x & y & ~z));
+end architecture synth;

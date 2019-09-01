@@ -1,0 +1,203 @@
+|fulladder4bits_w_display
+A[0] => fulladder4bits:fulladder4bit.A[0]
+A[1] => fulladder4bits:fulladder4bit.A[1]
+A[2] => fulladder4bits:fulladder4bit.A[2]
+A[3] => fulladder4bits:fulladder4bit.A[3]
+B[0] => fulladder4bits:fulladder4bit.B[0]
+B[1] => fulladder4bits:fulladder4bit.B[1]
+B[2] => fulladder4bits:fulladder4bit.B[2]
+B[3] => fulladder4bits:fulladder4bit.B[3]
+Y1[0] << decoder:display1.g
+Y1[1] << decoder:display1.f
+Y1[2] << decoder:display1.e
+Y1[3] << decoder:display1.d
+Y1[4] << decoder:display1.c
+Y1[5] << decoder:display1.b
+Y1[6] << decoder:display1.a
+Y2[0] << decoder:display2.g
+Y2[1] << decoder:display2.f
+Y2[2] << decoder:display2.e
+Y2[3] << decoder:display2.d
+Y2[4] << decoder:display2.c
+Y2[5] << decoder:display2.b
+Y2[6] << decoder:display2.a
+
+
+|fulladder4bits_w_display|fulladder4bits:fulladder4bit
+A[0] => fulladder:bit0.a
+A[1] => fulladder:bit1.a
+A[2] => fulladder:bit2.a
+A[3] => fulladder:bit3.a
+B[0] => fulladder:bit0.b
+B[1] => fulladder:bit1.b
+B[2] => fulladder:bit2.b
+B[3] => fulladder:bit3.b
+Y[0] <= fulladder:bit0.sum
+Y[1] <= fulladder:bit1.sum
+Y[2] <= fulladder:bit2.sum
+Y[3] <= fulladder:bit3.sum
+c_out <= fulladder:bit3.c_out
+
+
+|fulladder4bits_w_display|fulladder4bits:fulladder4bit|fulladder:bit0
+a => sum.IN0
+a => c_out.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fulladder4bits_w_display|fulladder4bits:fulladder4bit|fulladder:bit1
+a => sum.IN0
+a => c_out.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fulladder4bits_w_display|fulladder4bits:fulladder4bit|fulladder:bit2
+a => sum.IN0
+a => c_out.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fulladder4bits_w_display|fulladder4bits:fulladder4bit|fulladder:bit3
+a => sum.IN0
+a => c_out.IN0
+a => c_out.IN0
+b => sum.IN1
+b => c_out.IN1
+b => c_out.IN1
+c_in => sum.IN1
+c_in => c_out.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fulladder4bits_w_display|decoder:display1
+x => a.IN0
+x => a.IN0
+x => b.IN0
+x => e.IN0
+x => e.IN0
+x => g.IN0
+x => a.IN0
+x => a.IN0
+x => b.IN0
+x => c.IN0
+y => a.IN0
+y => a.IN1
+y => d.IN0
+y => e.IN1
+y => f.IN0
+y => a.IN1
+y => b.IN1
+y => b.IN0
+z => a.IN1
+z => a.IN1
+z => b.IN1
+z => d.IN1
+z => e.IN0
+z => e.IN1
+z => a.IN1
+z => b.IN1
+z => b.IN1
+z => c.IN0
+z => d.IN1
+w => a.IN1
+w => b.IN1
+w => b.IN1
+w => b.IN1
+w => c.IN1
+w => c.IN1
+w => d.IN1
+w => d.IN1
+w => g.IN1
+w => a.IN1
+w => b.IN1
+w => b.IN1
+w => d.IN1
+w => d.IN1
+w => e.IN1
+w => f.IN1
+a <= a.DB_MAX_OUTPUT_PORT_TYPE
+b <= b.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+d <= d.DB_MAX_OUTPUT_PORT_TYPE
+e <= e.DB_MAX_OUTPUT_PORT_TYPE
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fulladder4bits_w_display|decoder:display2
+x => a.IN0
+x => a.IN0
+x => b.IN0
+x => e.IN0
+x => e.IN0
+x => g.IN0
+x => a.IN0
+x => a.IN0
+x => b.IN0
+x => c.IN0
+y => a.IN0
+y => a.IN1
+y => d.IN0
+y => e.IN1
+y => f.IN0
+y => a.IN1
+y => b.IN1
+y => b.IN0
+z => a.IN1
+z => a.IN1
+z => b.IN1
+z => d.IN1
+z => e.IN0
+z => e.IN1
+z => a.IN1
+z => b.IN1
+z => b.IN1
+z => c.IN0
+z => d.IN1
+w => a.IN1
+w => b.IN1
+w => b.IN1
+w => b.IN1
+w => c.IN1
+w => c.IN1
+w => d.IN1
+w => d.IN1
+w => g.IN1
+w => a.IN1
+w => b.IN1
+w => b.IN1
+w => d.IN1
+w => d.IN1
+w => e.IN1
+w => f.IN1
+a <= a.DB_MAX_OUTPUT_PORT_TYPE
+b <= b.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+d <= d.DB_MAX_OUTPUT_PORT_TYPE
+e <= e.DB_MAX_OUTPUT_PORT_TYPE
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+
+
