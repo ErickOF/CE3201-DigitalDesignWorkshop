@@ -1,0 +1,5 @@
+module AND_GATE #(parameter N = 3)
+			(input  logic [N-1:0] A, B,
+			 output logic [N-1:0] result);
+	assign result = A & B;
+endmodule
