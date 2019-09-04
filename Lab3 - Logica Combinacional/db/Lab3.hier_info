@@ -1,64 +1,114 @@
-|AND_GATE
-A[0] => result.IN0
-A[0] => result.IN0
-A[0] => result.IN0
-A[0] => Add0.IN3
-A[0] => Add1.IN6
-A[1] => result.IN0
-A[1] => result.IN0
-A[1] => result.IN0
-A[1] => Add0.IN2
-A[1] => Add1.IN5
-A[2] => result.IN0
-A[2] => result.IN0
-A[2] => result.IN0
-A[2] => Add0.IN1
-A[2] => Add1.IN4
-A[2] => V.IN1
-B[0] => result.IN1
-B[0] => result.IN1
-B[0] => result.IN1
-B[0] => Add0.IN6
-B[0] => Add1.IN3
-B[1] => result.IN1
-B[1] => result.IN1
-B[1] => result.IN1
-B[1] => Add0.IN5
-B[1] => Add1.IN2
-B[2] => result.IN1
-B[2] => result.IN1
-B[2] => result.IN1
-B[2] => Add0.IN4
-B[2] => Add1.IN1
-control[0] => V.IN1
-control[0] => Equal0.IN31
-control[0] => Equal1.IN0
-control[0] => Equal2.IN31
-control[0] => Equal3.IN31
-control[0] => Equal4.IN1
-control[1] => Equal0.IN30
-control[1] => Equal1.IN31
-control[1] => Equal2.IN0
-control[1] => Equal3.IN30
-control[1] => Equal4.IN31
-control[2] => C.IN0
-control[2] => Equal0.IN29
-control[2] => Equal1.IN30
-control[2] => Equal2.IN30
-control[2] => Equal3.IN0
-control[2] => Equal4.IN0
-control[3] => C.IN1
-control[3] => Equal0.IN28
-control[3] => Equal1.IN29
-control[3] => Equal2.IN29
-control[3] => Equal3.IN29
-control[3] => Equal4.IN30
-result[0] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[1] <= result.DB_MAX_OUTPUT_PORT_TYPE
-result[2] <= result.DB_MAX_OUTPUT_PORT_TYPE
-N <= result.DB_MAX_OUTPUT_PORT_TYPE
+|ALU
+a[0] => a[0].IN6
+a[1] => a[1].IN6
+a[2] => a[2].IN6
+b[0] => b[0].IN6
+b[1] => b[1].IN6
+b[2] => b[2].IN6
+control[0] => control[0].IN1
+control[1] => ~NO_FANOUT~
+control[2] => ~NO_FANOUT~
+control[3] => ~NO_FANOUT~
+result[0] <= <GND>
+result[1] <= <GND>
+result[2] <= <GND>
 Z <= <GND>
-C <= C.DB_MAX_OUTPUT_PORT_TYPE
-V <= V.DB_MAX_OUTPUT_PORT_TYPE
+N <= <GND>
+V <= <GND>
+C <= <GND>
+
+
+|ALU|and_gate:and_module
+a[0] => result_and.IN0
+a[1] => result_and.IN0
+a[2] => result_and.IN0
+b[0] => result_and.IN1
+b[1] => result_and.IN1
+b[2] => result_and.IN1
+result[0] <= result_and.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= result_and.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= result_and.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|or_gate:or_module
+a[0] => result_or.IN0
+a[1] => result_or.IN0
+a[2] => result_or.IN0
+b[0] => result_or.IN1
+b[1] => result_or.IN1
+b[2] => result_or.IN1
+result[0] <= result_or.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= result_or.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= result_or.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|xor_gate:xor_module
+a[0] => result_xor.IN0
+a[1] => result_xor.IN0
+a[2] => result_xor.IN0
+b[0] => result_xor.IN1
+b[1] => result_xor.IN1
+b[2] => result_xor.IN1
+result[0] <= result_xor.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= result_xor.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= result_xor.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|mux_not:mux_not_module
+b[0] => result.DATAA
+b[0] => Add0.IN6
+b[1] => result.DATAA
+b[1] => Add0.IN5
+b[2] => result.DATAA
+b[2] => Add0.IN4
+control => result.OUTPUTSELECT
+control => result.OUTPUTSELECT
+control => result.OUTPUTSELECT
+y[0] <= result.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= result.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= result.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|fulladder:fulladder_module
+a[0] => s.IN0
+a[1] => s.IN0
+a[2] => s.IN0
+a[2] => c1.IN0
+a[2] => c1.IN0
+b[0] => s.IN1
+b[1] => s.IN1
+b[2] => s.IN1
+b[2] => c1.IN1
+b[2] => c1.IN1
+cin => s.IN1
+cin => c1.IN1
+sum[0] <= s.DB_MAX_OUTPUT_PORT_TYPE
+sum[1] <= s.DB_MAX_OUTPUT_PORT_TYPE
+sum[2] <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= c1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|slr:slr_module
+a[0] => ShiftRight0.IN3
+a[1] => ShiftRight0.IN2
+a[2] => ShiftRight0.IN1
+b[0] => ShiftRight0.IN6
+b[1] => ShiftRight0.IN5
+b[2] => ShiftRight0.IN4
+r_slr[0] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+r_slr[1] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+r_slr[2] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|sll:sll_module
+a[0] => ShiftLeft0.IN3
+a[1] => ShiftLeft0.IN2
+a[2] => ShiftLeft0.IN1
+b[0] => ShiftLeft0.IN6
+b[1] => ShiftLeft0.IN5
+b[2] => ShiftLeft0.IN4
+r_sll[0] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+r_sll[1] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+r_sll[2] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
 
 

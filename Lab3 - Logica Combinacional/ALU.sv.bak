@@ -1,0 +1,10 @@
+module ALU #(parameter n = 3)
+				(input  logic [n - 1: 0] a, b,
+				 output logic [n - 1: 0] result,
+				 output logic            Z, N, V, C);
+
+always
+	begin
+	end
+
+endmodule

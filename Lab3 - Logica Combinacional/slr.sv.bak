@@ -1,0 +1,13 @@
+module srl #(parameter n=3)
+				(input  logic [n-1:0] a, b,
+				 output logic [n-1:0] r_srl);
+
+logic [n-1:0] r;
+
+always_comb begin
+	r = a >> b;
+end
+
+assign r_srl = r;
+	
+endmodule

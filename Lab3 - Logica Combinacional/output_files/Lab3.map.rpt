@@ -1,33 +1,38 @@
-Analysis & Synthesis report for Lab3
-Sat Aug 31 22:09:16 2019
-Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Analysis & Elaboration report for Lab3
+Tue Sep 03 12:00:16 2019
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
 ---------------------
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. User-Specified and Inferred Latches
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for User Entity Instance: Top-level Entity: |AND_GATE
- 12. Post-Synthesis Netlist Statistics for Top Partition
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
- 15. Analysis & Synthesis Suppressed Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Parameter Settings for User Entity Instance: Top-level Entity: |ALU
+  5. Parameter Settings for User Entity Instance: and_gate:and_module
+  6. Parameter Settings for User Entity Instance: or_gate:or_module
+  7. Parameter Settings for User Entity Instance: xor_gate:xor_module
+  8. Parameter Settings for User Entity Instance: mux_not:mux_not_module
+  9. Parameter Settings for User Entity Instance: fulladder:fulladder_module
+ 10. Parameter Settings for User Entity Instance: slr:slr_module
+ 11. Parameter Settings for User Entity Instance: sll:sll_module
+ 12. Analysis & Elaboration Settings
+ 13. Port Connectivity Checks: "sll:sll_module"
+ 14. Port Connectivity Checks: "slr:slr_module"
+ 15. Port Connectivity Checks: "fulladder:fulladder_module"
+ 16. Port Connectivity Checks: "xor_gate:xor_module"
+ 17. Port Connectivity Checks: "or_gate:or_module"
+ 18. Port Connectivity Checks: "and_gate:and_module"
+ 19. Analysis & Elaboration Messages
+ 20. Analysis & Elaboration Suppressed Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2018  Intel Corporation. All rights reserved.
+Copyright (C) 2017  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -43,39 +48,130 @@ refer to the applicable agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                  ;
-+---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Aug 31 22:09:16 2019       ;
-; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
-; Revision Name                   ; Lab3                                        ;
-; Top-level Entity Name           ; AND_GATE                                    ;
-; Family                          ; Cyclone V                                   ;
-; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 0                                           ;
-; Total pins                      ; 17                                          ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 0                                           ;
-; Total HSSI RX PCSs              ; 0                                           ;
-; Total HSSI PMA RX Deserializers ; 0                                           ;
-; Total HSSI TX PCSs              ; 0                                           ;
-; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 0                                           ;
-; Total DLLs                      ; 0                                           ;
-+---------------------------------+---------------------------------------------+
++-----------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                              ;
++-------------------------------+---------------------------------------------+
+; Analysis & Elaboration Status ; Successful - Tue Sep 03 12:00:16 2019       ;
+; Quartus Prime Version         ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
+; Revision Name                 ; Lab3                                        ;
+; Top-level Entity Name         ; ALU                                         ;
+; Family                        ; Cyclone V                                   ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
+; Total registers               ; N/A until Partition Merge                   ;
+; Total pins                    ; N/A until Partition Merge                   ;
+; Total virtual pins            ; N/A until Partition Merge                   ;
+; Total block memory bits       ; N/A until Partition Merge                   ;
+; Total PLLs                    ; N/A until Partition Merge                   ;
+; Total DLLs                    ; N/A until Partition Merge                   ;
++-------------------------------+---------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |ALU ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; n              ; 3     ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: and_gate:and_module ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; N              ; 3     ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: or_gate:or_module ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; N              ; 3     ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: xor_gate:xor_module ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; N              ; 3     ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux_not:mux_not_module ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; N              ; 3     ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fulladder:fulladder_module ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; N              ; 3     ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: slr:slr_module ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; N              ; 3     ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sll:sll_module ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; N              ; 3     ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                             ;
+; Analysis & Elaboration Settings                                                                                           ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; AND_GATE           ; Lab3               ;
+; Top-level entity name                                                           ; ALU                ; Lab3               ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
-; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
 ; Enable compact report table                                                     ; Off                ; Off                ;
 ; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
 ; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
@@ -153,180 +249,116 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
-+----------------------------+-------------+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sll:sll_module"                                                                      ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; r_sll ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                        ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                    ; Library ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------+---------+
-; AND_GATE.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/AND_GATE.sv ;         ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "slr:slr_module"                                                                      ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; r_slr ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                    ;
-+---------------------------------------------+------------------+
-; Resource                                    ; Usage            ;
-+---------------------------------------------+------------------+
-; Estimate of Logic utilization (ALMs needed) ; 12               ;
-;                                             ;                  ;
-; Combinational ALUT usage for logic          ; 21               ;
-;     -- 7 input functions                    ; 0                ;
-;     -- 6 input functions                    ; 3                ;
-;     -- 5 input functions                    ; 6                ;
-;     -- 4 input functions                    ; 8                ;
-;     -- <=3 input functions                  ; 4                ;
-;                                             ;                  ;
-; Dedicated logic registers                   ; 0                ;
-;                                             ;                  ;
-; I/O pins                                    ; 17               ;
-;                                             ;                  ;
-; Total DSP Blocks                            ; 0                ;
-;                                             ;                  ;
-; Maximum fan-out node                        ; control[3]~input ;
-; Maximum fan-out                             ; 10               ;
-; Total fan-out                               ; 115              ;
-; Average fan-out                             ; 2.09             ;
-+---------------------------------------------+------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fulladder:fulladder_module"                                                                                                                                                           ;
++---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                                                                                                                            ;
++---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; cin     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; cin[-1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; sum     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
+; cout    ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                           ;
++---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |AND_GATE                  ; 21 (21)             ; 0 (0)                     ; 0                 ; 0          ; 17   ; 0            ; |AND_GATE           ; AND_GATE    ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "xor_gate:xor_module"                                                                  ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; result ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                               ;
-+----------------------------------------------------+---------------------+------------------------+
-; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
-+----------------------------------------------------+---------------------+------------------------+
-; cout                                               ; cout                ; yes                    ;
-; Number of user-specified and inferred latches = 1  ;                     ;                        ;
-+----------------------------------------------------+---------------------+------------------------+
-Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "or_gate:or_module"                                                                    ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; result ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "and_gate:and_module"                                                                  ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; result ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 6:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |AND_GATE|result           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-
-
-+--------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |AND_GATE ;
-+----------------+-------+-------------------------------------------------+
-; Parameter Name ; Value ; Type                                            ;
-+----------------+-------+-------------------------------------------------+
-; n              ; 3     ; Signed Integer                                  ;
-+----------------+-------+-------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 22                          ;
-;     normal            ; 22                          ;
-;         0 data inputs ; 1                           ;
-;         3 data inputs ; 4                           ;
-;         4 data inputs ; 8                           ;
-;         5 data inputs ; 6                           ;
-;         6 data inputs ; 3                           ;
-; boundary_port         ; 17                          ;
-;                       ;                             ;
-; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 2.52                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
-
-
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat Aug 31 22:09:04 2019
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab3 -c Lab3
+Info: Running Quartus Prime Analysis & Elaboration
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+    Info: Processing started: Tue Sep 03 12:00:07 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab3 -c Lab3 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file and_gate.sv
-    Info (12023): Found entity 1: AND_GATE File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/AND_GATE.sv Line: 1
-Info (12127): Elaborating entity "AND_GATE" for the top level hierarchy
-Warning (10240): Verilog HDL Always Construct warning at AND_GATE.sv(9): inferring latch(es) for variable "cout", which holds its previous value in one or more paths through the always construct File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/AND_GATE.sv Line: 9
-Warning (10034): Output port "Z" at AND_GATE.sv(5) has no driver File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/AND_GATE.sv Line: 5
-Info (10041): Inferred latch for "cout" at AND_GATE.sv(9) File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/AND_GATE.sv Line: 9
-Warning (13012): Latch cout has unsafe behavior File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/AND_GATE.sv Line: 7
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal control[1] File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/AND_GATE.sv Line: 3
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "Z" is stuck at GND File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/AND_GATE.sv Line: 5
-Info (286030): Timing-Driven Synthesis is running
-Info (144001): Generated suppressed messages file C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/output_files/Lab3.map.smsg
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 38 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 10 input pins
-    Info (21059): Implemented 7 output pins
-    Info (21061): Implemented 21 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4834 megabytes
-    Info: Processing ended: Sat Aug 31 22:09:16 2019
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:26
+    Info (12023): Found entity 1: and_gate File: C:/Users/user/Documents/Lab3/and_gate.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file or_gate.sv
+    Info (12023): Found entity 1: or_gate File: C:/Users/user/Documents/Lab3/or_gate.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file xor_gate.sv
+    Info (12023): Found entity 1: xor_gate File: C:/Users/user/Documents/Lab3/xor_gate.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
+    Info (12023): Found entity 1: ALU File: C:/Users/user/Documents/Lab3/ALU.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file fulladder.sv
+    Info (12023): Found entity 1: fulladder File: C:/Users/user/Documents/Lab3/fulladder.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux_not.sv
+    Info (12023): Found entity 1: mux_not File: C:/Users/user/Documents/Lab3/mux_not.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux_not_test.sv
+    Info (12023): Found entity 1: mux_not_test File: C:/Users/user/Documents/Lab3/mux_not_test.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sll.sv
+    Info (12023): Found entity 1: sll File: C:/Users/user/Documents/Lab3/sll.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file slr.sv
+    Info (12023): Found entity 1: slr File: C:/Users/user/Documents/Lab3/slr.sv Line: 1
+Info (12127): Elaborating entity "ALU" for the top level hierarchy
+Warning (10034): Output port "result" at ALU.sv(4) has no driver File: C:/Users/user/Documents/Lab3/ALU.sv Line: 4
+Warning (10034): Output port "Z" at ALU.sv(5) has no driver File: C:/Users/user/Documents/Lab3/ALU.sv Line: 5
+Warning (10034): Output port "N" at ALU.sv(5) has no driver File: C:/Users/user/Documents/Lab3/ALU.sv Line: 5
+Warning (10034): Output port "V" at ALU.sv(5) has no driver File: C:/Users/user/Documents/Lab3/ALU.sv Line: 5
+Warning (10034): Output port "C" at ALU.sv(5) has no driver File: C:/Users/user/Documents/Lab3/ALU.sv Line: 5
+Info (12128): Elaborating entity "and_gate" for hierarchy "and_gate:and_module" File: C:/Users/user/Documents/Lab3/ALU.sv Line: 16
+Info (12128): Elaborating entity "or_gate" for hierarchy "or_gate:or_module" File: C:/Users/user/Documents/Lab3/ALU.sv Line: 17
+Info (12128): Elaborating entity "xor_gate" for hierarchy "xor_gate:xor_module" File: C:/Users/user/Documents/Lab3/ALU.sv Line: 18
+Info (12128): Elaborating entity "mux_not" for hierarchy "mux_not:mux_not_module" File: C:/Users/user/Documents/Lab3/ALU.sv Line: 19
+Info (12128): Elaborating entity "fulladder" for hierarchy "fulladder:fulladder_module" File: C:/Users/user/Documents/Lab3/ALU.sv Line: 20
+Info (12128): Elaborating entity "slr" for hierarchy "slr:slr_module" File: C:/Users/user/Documents/Lab3/ALU.sv Line: 21
+Info (12128): Elaborating entity "sll" for hierarchy "sll:sll_module" File: C:/Users/user/Documents/Lab3/ALU.sv Line: 22
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (144001): Generated suppressed messages file C:/Users/user/Documents/Lab3/output_files/Lab3.map.smsg
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 4792 megabytes
+    Info: Processing ended: Tue Sep 03 12:00:16 2019
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:19
 
 
-+------------------------------------------+
-; Analysis & Synthesis Suppressed Messages ;
-+------------------------------------------+
-The suppressed messages can be found in C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/output_files/Lab3.map.smsg.
++--------------------------------------------+
+; Analysis & Elaboration Suppressed Messages ;
++--------------------------------------------+
+The suppressed messages can be found in C:/Users/user/Documents/Lab3/output_files/Lab3.map.smsg.
 
 

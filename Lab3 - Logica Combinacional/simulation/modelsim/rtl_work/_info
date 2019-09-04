@@ -1,0 +1,60 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/user/Documents/Lab3/simulation/modelsim
+vmux_not
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1567532403
+!i10b 1
+!s100 TZV7YLBLDhZDn^Rh6AQFb2
+IO7RL_BRkeDg^6@JHzlSz43
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 mux_not_sv_unit
+S1
+R0
+w1567532381
+8C:/Users/user/Documents/Lab3/mux_not.sv
+FC:/Users/user/Documents/Lab3/mux_not.sv
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1567532403.000000
+!s107 C:/Users/user/Documents/Lab3/mux_not.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Documents/Lab3|C:/Users/user/Documents/Lab3/mux_not.sv|
+!i113 1
+Z5 o-sv -work work
+Z6 !s92 -sv -work work +incdir+C:/Users/user/Documents/Lab3
+Z7 tCvgOpt 0
+vmux_not_test
+R1
+!s110 1567532404
+!i10b 1
+!s100 JPDI:J:dM?P4gIiGmDP1=1
+IXMUMS=j8fI:O]SD;KM^V91
+R2
+!s105 mux_not_test_sv_unit
+S1
+R0
+w1567532306
+8C:/Users/user/Documents/Lab3/mux_not_test.sv
+FC:/Users/user/Documents/Lab3/mux_not_test.sv
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/user/Documents/Lab3/mux_not_test.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Documents/Lab3|C:/Users/user/Documents/Lab3/mux_not_test.sv|
+!i113 1
+R5
+R6
+R7

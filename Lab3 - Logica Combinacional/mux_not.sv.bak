@@ -1,0 +1,15 @@
+module mux_neg #(parameter n = 3)
+						(input  logic [n-1:0] b,
+						 input  logic [3:0]   control,
+						 output logic [n-1:0] y);
+						
+logic result;
+
+always_comb begin
+	result = control > 1 ? b : ~b);
+end
+
+assign y = result;
+
+
+endmodule

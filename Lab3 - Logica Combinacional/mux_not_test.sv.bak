@@ -1,0 +1,35 @@
+module mux_not_test();
+logic clk, reset;
+logic [1:0] num;
+
+//DUT initialization
+contador DUT(clk,reset,num);
+
+initial begin
+ #10 clk = 0; reset = 1;
+ #1 $display("clk = %b, reset = %b, num= %b\n", clk, reset, num);
+ #10 clk = 0; reset = 0;
+ #1 $display("clk = %b, reset = %b, num= %b\n", clk, reset, num);
+ #10 clk = 1; reset = 0;
+ #1 $display("clk = %b, reset = %b, num= %b\n", clk, reset, num);
+ #10 clk = 0; reset = 0;
+ #1 $display("clk = %b, reset = %b, num= %b\n", clk, reset, num);
+ #10 clk = 1; reset = 0;
+ #1 $display("clk = %b, reset = %b, num= %b\n", clk, reset, num);
+ #10 clk = 0; reset = 0;
+ #1 $display("clk = %b, reset = %b, num= %b\n", clk, reset, num);
+ #10 clk = 1; reset = 0;
+ #1 $display("clk = %b, reset = %b, num= %b\n", clk, reset, num);
+ #10 clk = 0; reset = 0;
+ #1 $display("clk = %b, reset = %b, num= %b\n", clk, reset, num);
+ #10 clk = 1; reset = 0;
+ #1 $display("clk = %b, reset = %b, num= %b\n", clk, reset, num);
+ #10 clk = 0; reset = 0;
+ #1 $display("clk = %b, reset = %b, num= %b\n", clk, reset, num);
+ #10 clk = 1; reset = 0;
+ #1 $display("clk = %b, reset = %b, num= %b\n", clk, reset, num);
+ 
+
+ end
+
+endmodule // and_test
