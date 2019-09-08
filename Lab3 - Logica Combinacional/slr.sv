@@ -1,4 +1,4 @@
-module slr #(parameter N=3)
+module slr #(parameter N=128)
 				(input  logic [N-1:0] a, b,
 				 output logic [N-1:0] r_slr);
 

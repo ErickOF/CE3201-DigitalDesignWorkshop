@@ -1,4 +1,4 @@
-module mux_not #(parameter N=3)
+module mux_not #(parameter N=128)
 					 (input  logic [N-1:0] b,
 					  input  logic         control,
 					  output logic [N-1:0] y);

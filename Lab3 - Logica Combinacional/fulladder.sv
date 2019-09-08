@@ -1,4 +1,4 @@
-module fulladder #(parameter N=3)
+module fulladder #(parameter N=128)
 						(input  logic [N-1:0] a, b,
 						 input  logic         cin,
 						 output logic [N-1:0] sum, 
@@ -8,8 +8,7 @@ logic [N-1:0] s;
 logic c1;
 
 always_comb begin
-	s = a ^ b ^ cin;
-	c1 = (a[N-1] & b[N-1]) | ((a[N-1] | b[N-1]) & cin);
+	{c1, s} = a + b + cin;
 end
 
 assign sum = s;

@@ -1,4 +1,4 @@
-module flag_generator #(parameter n=3)
+module flag_generator #(parameter n=128)
 					        (input  logic [n-1:0] result,
 					         input  logic [3:0]   ALUControl,
 								input  logic         cout,
