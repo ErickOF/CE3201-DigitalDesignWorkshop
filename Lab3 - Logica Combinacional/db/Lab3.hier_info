@@ -1,10 +1,10 @@
 |ALU
-a[0] => a[0].IN6
-a[1] => a[1].IN6
-a[2] => a[2].IN6
-b[0] => b[0].IN6
-b[1] => b[1].IN6
-b[2] => b[2].IN6
+a[0] => a[0].IN8
+a[1] => a[1].IN8
+a[2] => a[2].IN8
+b[0] => b[0].IN7
+b[1] => b[1].IN7
+b[2] => b[2].IN7
 ALUControl[0] => ALUControl[0].IN4
 ALUControl[1] => ALUControl[1].IN2
 ALUControl[2] => ALUControl[2].IN2
@@ -70,22 +70,17 @@ y[2] <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ALU|fulladder:fulladder_module
-a[0] => s.IN0
-a[1] => s.IN0
-a[2] => s.IN0
-a[2] => c1.IN0
-a[2] => c1.IN0
-b[0] => s.IN1
-b[1] => s.IN1
-b[2] => s.IN1
-b[2] => c1.IN1
-b[2] => c1.IN1
-cin => s.IN1
-cin => c1.IN1
-sum[0] <= s.DB_MAX_OUTPUT_PORT_TYPE
-sum[1] <= s.DB_MAX_OUTPUT_PORT_TYPE
-sum[2] <= s.DB_MAX_OUTPUT_PORT_TYPE
-cout <= c1.DB_MAX_OUTPUT_PORT_TYPE
+a[0] => _.DATAD
+a[1] => _.DATAD
+a[2] => _.DATAD
+b[0] => _.DATAC
+b[1] => _.DATAC
+b[2] => _.DATAC
+cin => _.DATAB
+sum[0] <= _.SUM_OUT
+sum[1] <= _.SUM_OUT
+sum[2] <= _.SUM_OUT
+cout <= _.SUM_OUT
 
 
 |ALU|slr:slr_module
@@ -122,12 +117,12 @@ result_or[2] => Mux0.IN1
 result_xor[0] => Mux2.IN2
 result_xor[1] => Mux1.IN2
 result_xor[2] => Mux0.IN2
-result_add[0] => Mux2.IN3
-result_add[0] => Mux2.IN4
-result_add[1] => Mux1.IN3
-result_add[1] => Mux1.IN4
-result_add[2] => Mux0.IN3
-result_add[2] => Mux0.IN4
+result_sum[0] => Mux2.IN3
+result_sum[0] => Mux2.IN4
+result_sum[1] => Mux1.IN3
+result_sum[1] => Mux1.IN4
+result_sum[2] => Mux0.IN3
+result_sum[2] => Mux0.IN4
 result_slr[0] => Mux2.IN5
 result_slr[1] => Mux1.IN5
 result_slr[2] => Mux0.IN5
@@ -194,5 +189,26 @@ Z <= WideNand0.DB_MAX_OUTPUT_PORT_TYPE
 N <= result[2].DB_MAX_OUTPUT_PORT_TYPE
 V <= <GND>
 C <= result_c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|sar:sar_module
+a[0] => Div0.IN3
+a[1] => Div0.IN2
+a[2] => Div0.IN1
+b[0] => Div0.IN6
+b[1] => Div0.IN5
+b[2] => Div0.IN4
+r_sar[0] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+r_sar[1] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+r_sar[2] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|sc:sc_module
+a[0] => resul[1].DATAIN
+a[1] => resul[2].DATAIN
+a[2] => resul[0].DATAIN
+resul[0] <= a[2].DB_MAX_OUTPUT_PORT_TYPE
+resul[1] <= a[0].DB_MAX_OUTPUT_PORT_TYPE
+resul[2] <= a[1].DB_MAX_OUTPUT_PORT_TYPE
 
 

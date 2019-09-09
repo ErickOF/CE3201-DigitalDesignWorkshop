@@ -1,4 +1,4 @@
-module ALU #(parameter n=128)
+module ALU #(parameter n=3)
 				(input  logic [n-1:0] a, b,
 				 input  logic [3:0]   ALUControl,
 				 output logic [n-1:0] result,
@@ -24,5 +24,7 @@ slr            slr_module            (a, b, result_slr);
 sll            sll_module            (a, b, result_sll);
 mux_result     mux_result_module     (result_and, result_or, result_xor, result_sum, result_slr, result_sll, result_sar, result_sc, ALUControl, result);
 flag_generator flag_generator_module (result, ALUControl, cout, Z, N, V, C);
+sar            sar_module            (a, b, result_sar);
+sc             sc_module             (a, result_sc);
 
 endmodule

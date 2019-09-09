@@ -1,0 +1,8 @@
+module sc #(param)
+			(input logic [2:0] a,
+			 output logic [2:0] resul);
+	logic [2:0] b;
+	assign b=a>>2;
+	assign resul = {a[1:0],b[0]};
+	
+endmodule

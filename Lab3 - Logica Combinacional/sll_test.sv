@@ -1,5 +1,5 @@
 module sll_test();
-parameter N = 4;
+parameter N = 3;
 logic [N-1:0] a, b, c;
 
 //DUT initialization

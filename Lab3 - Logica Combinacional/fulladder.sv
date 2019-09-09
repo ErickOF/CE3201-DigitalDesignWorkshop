@@ -1,4 +1,4 @@
-module fulladder #(parameter N=128)
+module fulladder #(parameter N=3)
 						(input  logic [N-1:0] a, b,
 						 input  logic         cin,
 						 output logic [N-1:0] sum, 

@@ -36,11 +36,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "b[1]",
+					"name" : "b[0]",
 					"strict" : false
 				},
 				{
-					"name" : "b[0]",
+					"name" : "b[1]",
 					"strict" : false
 				},
 				{
@@ -48,7 +48,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "ALUControl[2]",
+					"name" : "a[2]",
+					"strict" : false
+				},
+				{
+					"name" : "a[1]",
 					"strict" : false
 				},
 				{
@@ -60,11 +64,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "a[1]",
-					"strict" : false
-				},
-				{
-					"name" : "a[2]",
+					"name" : "ALUControl[2]",
 					"strict" : false
 				}
 			]

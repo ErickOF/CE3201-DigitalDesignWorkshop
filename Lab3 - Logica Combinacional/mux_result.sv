@@ -1,4 +1,4 @@
-module mux_result #(parameter N=128)
+module mux_result #(parameter N=3)
 					    (input  logic [N-1:0] result_and, result_or, result_xor, result_sum, result_slr, result_sll, result_sar, result_sc,
 					     input  logic [3:0]   ALUControl,
 					     output logic [N-1:0] y);

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab3
-Wed Sep 04 00:08:24 2019
+Sun Sep 08 21:02:48 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -24,10 +24,13 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
  16. Parameter Settings for User Entity Instance: sll:sll_module
  17. Parameter Settings for User Entity Instance: mux_result:mux_result_module
  18. Parameter Settings for User Entity Instance: flag_generator:flag_generator_module
- 19. Post-Synthesis Netlist Statistics for Top Partition
- 20. Elapsed Time Per Partition
- 21. Analysis & Synthesis Messages
- 22. Analysis & Synthesis Suppressed Messages
+ 19. Parameter Settings for User Entity Instance: sar:sar_module
+ 20. Parameter Settings for User Entity Instance: sc:sc_module
+ 21. Parameter Settings for Inferred Entity Instance: sar:sar_module|lpm_divide:Div0
+ 22. Post-Synthesis Netlist Statistics for Top Partition
+ 23. Elapsed Time Per Partition
+ 24. Analysis & Synthesis Messages
+ 25. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -53,7 +56,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Sep 04 00:08:24 2019       ;
+; Analysis & Synthesis Status     ; Successful - Sun Sep 08 21:02:48 2019       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; Lab3                                        ;
 ; Top-level Entity Name           ; ALU                                         ;
@@ -176,60 +179,77 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                              ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                          ; Library ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------+---------+
-; and_gate.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/and_gate.sv       ;         ;
-; or_gate.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/or_gate.sv        ;         ;
-; xor_gate.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/xor_gate.sv       ;         ;
-; ALU.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/ALU.sv            ;         ;
-; fulladder.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/fulladder.sv      ;         ;
-; mux_not.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/mux_not.sv        ;         ;
-; sll.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/sll.sv            ;         ;
-; slr.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/slr.sv            ;         ;
-; mux_result.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/mux_result.sv     ;         ;
-; flag_generator.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/flag_generator.sv ;         ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                       ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                   ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------+---------+
+; xor_gate.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/xor_gate.sv                ;         ;
+; slr.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/slr.sv                     ;         ;
+; sll.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/sll.sv                     ;         ;
+; or_gate.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/or_gate.sv                 ;         ;
+; mux_result.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/mux_result.sv              ;         ;
+; mux_not.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/mux_not.sv                 ;         ;
+; fulladder.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/fulladder.sv               ;         ;
+; flag_generator.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/flag_generator.sv          ;         ;
+; and_gate.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/and_gate.sv                ;         ;
+; ALU.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/ALU.sv                     ;         ;
+; sar.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/sar.sv                     ;         ;
+; sc.sv                            ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/sc.sv                      ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_divide.tdf                                          ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/abs_divider.inc                                         ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sign_div_unsign.inc                                     ;         ;
+; aglobal181.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                                          ;         ;
+; db/lpm_divide_0am.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/db/lpm_divide_0am.tdf      ;         ;
+; db/sign_div_unsign_7kh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/db/sign_div_unsign_7kh.tdf ;         ;
+; db/alt_u_div_kse.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/db/alt_u_div_kse.tdf       ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                       ;
-+---------------------------------------------+---------------------+
-; Resource                                    ; Usage               ;
-+---------------------------------------------+---------------------+
-; Estimate of Logic utilization (ALMs needed) ; 10                  ;
-;                                             ;                     ;
-; Combinational ALUT usage for logic          ; 16                  ;
-;     -- 7 input functions                    ; 0                   ;
-;     -- 6 input functions                    ; 3                   ;
-;     -- 5 input functions                    ; 7                   ;
-;     -- 4 input functions                    ; 2                   ;
-;     -- <=3 input functions                  ; 4                   ;
-;                                             ;                     ;
-; Dedicated logic registers                   ; 0                   ;
-;                                             ;                     ;
-; I/O pins                                    ; 17                  ;
-;                                             ;                     ;
-; Total DSP Blocks                            ; 0                   ;
-;                                             ;                     ;
-; Maximum fan-out node                        ; ALUControl[0]~input ;
-; Maximum fan-out                             ; 8                   ;
-; Total fan-out                               ; 95                  ;
-; Average fan-out                             ; 1.90                ;
-+---------------------------------------------+---------------------+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Estimate of Logic utilization (ALMs needed) ; 23         ;
+;                                             ;            ;
+; Combinational ALUT usage for logic          ; 39         ;
+;     -- 7 input functions                    ; 3          ;
+;     -- 6 input functions                    ; 4          ;
+;     -- 5 input functions                    ; 10         ;
+;     -- 4 input functions                    ; 8          ;
+;     -- <=3 input functions                  ; 14         ;
+;                                             ;            ;
+; Dedicated logic registers                   ; 0          ;
+;                                             ;            ;
+; I/O pins                                    ; 17         ;
+;                                             ;            ;
+; Total DSP Blocks                            ; 0          ;
+;                                             ;            ;
+; Maximum fan-out node                        ; b[2]~input ;
+; Maximum fan-out                             ; 16         ;
+; Total fan-out                               ; 181        ;
+; Average fan-out                             ; 2.48       ;
++---------------------------------------------+------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                            ;
-+-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------+----------------+--------------+
-; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                       ; Entity Name    ; Library Name ;
-+-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------+----------------+--------------+
-; |ALU                                      ; 16 (0)              ; 0 (0)                     ; 0                 ; 0          ; 17   ; 0            ; |ALU                                      ; ALU            ; work         ;
-;    |flag_generator:flag_generator_module| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|flag_generator:flag_generator_module ; flag_generator ; work         ;
-;    |mux_result:mux_result_module|         ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|mux_result:mux_result_module         ; mux_result     ; work         ;
-+-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------+----------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                           ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                 ; Entity Name         ; Library Name ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; |ALU                                      ; 39 (0)              ; 0 (0)                     ; 0                 ; 0          ; 17   ; 0            ; |ALU                                                                                                                ; ALU                 ; work         ;
+;    |flag_generator:flag_generator_module| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|flag_generator:flag_generator_module                                                                           ; flag_generator      ; work         ;
+;    |fulladder:fulladder_module|           ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|fulladder:fulladder_module                                                                                     ; fulladder           ; work         ;
+;    |mux_result:mux_result_module|         ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|mux_result:mux_result_module                                                                                   ; mux_result          ; work         ;
+;    |sar:sar_module|                       ; 16 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|sar:sar_module                                                                                                 ; sar                 ; work         ;
+;       |lpm_divide:Div0|                   ; 16 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|sar:sar_module|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_0am:auto_generated|  ; 16 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|sar:sar_module|lpm_divide:Div0|lpm_divide_0am:auto_generated                                                   ; lpm_divide_0am      ; work         ;
+;             |sign_div_unsign_7kh:divider| ; 16 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|sar:sar_module|lpm_divide:Div0|lpm_divide_0am:auto_generated|sign_div_unsign_7kh:divider                       ; sign_div_unsign_7kh ; work         ;
+;                |alt_u_div_kse:divider|    ; 16 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|sar:sar_module|lpm_divide:Div0|lpm_divide_0am:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider ; alt_u_div_kse       ; work         ;
+;    |sll:sll_module|                       ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|sll:sll_module                                                                                                 ; sll                 ; work         ;
+;    |slr:slr_module|                       ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|slr:slr_module                                                                                                 ; slr                 ; work         ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -348,24 +368,78 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sar:sar_module ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; N              ; 3     ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sc:sc_module ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; N              ; 3     ; Signed Integer                   ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: sar:sar_module|lpm_divide:Div0 ;
++------------------------+----------------+---------------------------------------+
+; Parameter Name         ; Value          ; Type                                  ;
++------------------------+----------------+---------------------------------------+
+; LPM_WIDTHN             ; 3              ; Untyped                               ;
+; LPM_WIDTHD             ; 4              ; Untyped                               ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                               ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                               ;
+; LPM_PIPELINE           ; 0              ; Untyped                               ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                               ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                               ;
+; CBXI_PARAMETER         ; lpm_divide_0am ; Untyped                               ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                               ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                               ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                            ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                          ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                          ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                        ;
++------------------------+----------------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 18                          ;
-;     normal            ; 18                          ;
+; arriav_lcell_comb     ; 41                          ;
+;     arith             ; 6                           ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 1                           ;
+;         5 data inputs ; 3                           ;
+;     extend            ; 3                           ;
+;         7 data inputs ; 3                           ;
+;     normal            ; 21                          ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 1                           ;
 ;         2 data inputs ; 1                           ;
+;         3 data inputs ; 1                           ;
+;         4 data inputs ; 6                           ;
+;         5 data inputs ; 7                           ;
+;         6 data inputs ; 4                           ;
+;     shared            ; 11                          ;
+;         0 data inputs ; 3                           ;
+;         1 data inputs ; 3                           ;
 ;         3 data inputs ; 3                           ;
 ;         4 data inputs ; 2                           ;
-;         5 data inputs ; 7                           ;
-;         6 data inputs ; 3                           ;
 ; boundary_port         ; 17                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 3.79                        ;
+; Max LUT depth         ; 8.50                        ;
+; Average LUT depth     ; 6.38                        ;
 +-----------------------+-----------------------------+
 
 
@@ -384,32 +458,54 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Sep 04 00:08:12 2019
+    Info: Processing started: Sun Sep 08 21:02:35 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab3 -c Lab3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file and_gate.sv
-    Info (12023): Found entity 1: and_gate File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/and_gate.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file or_gate.sv
-    Info (12023): Found entity 1: or_gate File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/or_gate.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file xor_gate_test.sv
+    Info (12023): Found entity 1: xor_gate_test File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/xor_gate_test.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file xor_gate.sv
     Info (12023): Found entity 1: xor_gate File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/xor_gate.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
-    Info (12023): Found entity 1: ALU File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/ALU.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file fulladder.sv
-    Info (12023): Found entity 1: fulladder File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/fulladder.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file mux_not.sv
-    Info (12023): Found entity 1: mux_not File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/mux_not.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file mux_not_test.sv
-    Info (12023): Found entity 1: mux_not_test File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/mux_not_test.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file sll.sv
-    Info (12023): Found entity 1: sll File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/sll.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file srl_test.sv
+    Info (12023): Found entity 1: srl_test File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/srl_test.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file slr.sv
     Info (12023): Found entity 1: slr File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/slr.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sll_test.sv
+    Info (12023): Found entity 1: sll_test File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/sll_test.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sll.sv
+    Info (12023): Found entity 1: sll File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/sll.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file or_gate_test.sv
+    Info (12023): Found entity 1: or_gate_test File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/or_gate_test.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file or_gate.sv
+    Info (12023): Found entity 1: or_gate File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/or_gate.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux_result_test.sv
+    Info (12023): Found entity 1: mux_result_test File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/mux_result_test.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux_result.sv
     Info (12023): Found entity 1: mux_result File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/mux_result.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux_not_test.sv
+    Info (12023): Found entity 1: mux_not_test File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/mux_not_test.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux_not.sv
+    Info (12023): Found entity 1: mux_not File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/mux_not.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file fulladder.sv
+    Info (12023): Found entity 1: fulladder File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/fulladder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file flag_generator.sv
     Info (12023): Found entity 1: flag_generator File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/flag_generator.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file and_gate_test.sv
+    Info (12023): Found entity 1: and_gate_test File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/and_gate_test.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file and_gate.sv
+    Info (12023): Found entity 1: and_gate File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/and_gate.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
+    Info (12023): Found entity 1: ALU File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/ALU.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file add_sub_test.sv
+    Info (12023): Found entity 1: add_sub_test File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/add_sub_test.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sar.sv
+    Info (12023): Found entity 1: sar File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/sar.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sar_test.sv
+    Info (12023): Found entity 1: sar_test File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/sar_test.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sc.sv
+    Info (12023): Found entity 1: sc File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/sc.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sc_test.sv
+    Info (12023): Found entity 1: sc_test File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/sc_test.sv Line: 1
 Info (12127): Elaborating entity "ALU" for the top level hierarchy
 Info (12128): Elaborating entity "and_gate" for hierarchy "and_gate:and_module" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/ALU.sv Line: 18
 Info (12128): Elaborating entity "or_gate" for hierarchy "or_gate:or_module" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/ALU.sv Line: 19
@@ -422,21 +518,38 @@ Info (12128): Elaborating entity "mux_result" for hierarchy "mux_result:mux_resu
 Info (12128): Elaborating entity "flag_generator" for hierarchy "flag_generator:flag_generator_module" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/ALU.sv Line: 26
 Warning (10858): Verilog HDL warning at flag_generator.sv(7): object result_v used but never assigned File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/flag_generator.sv Line: 7
 Warning (10030): Net "result_v" at flag_generator.sv(7) has no driver or initial value, using a default initial value '0' File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/flag_generator.sv Line: 7
+Info (12128): Elaborating entity "sar" for hierarchy "sar:sar_module" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/ALU.sv Line: 27
+Warning (10230): Verilog HDL assignment warning at sar.sv(8): truncated value with size 32 to match size of target (3) File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/sar.sv Line: 8
+Info (12128): Elaborating entity "sc" for hierarchy "sc:sc_module" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/ALU.sv Line: 28
+Info (278001): Inferred 1 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "sar:sar_module|Div0" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/sar.sv Line: 8
+Info (12130): Elaborated megafunction instantiation "sar:sar_module|lpm_divide:Div0" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/sar.sv Line: 8
+Info (12133): Instantiated megafunction "sar:sar_module|lpm_divide:Div0" with the following parameter: File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/sar.sv Line: 8
+    Info (12134): Parameter "LPM_WIDTHN" = "3"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_0am.tdf
+    Info (12023): Found entity 1: lpm_divide_0am File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/db/lpm_divide_0am.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_7kh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_7kh File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/db/sign_div_unsign_7kh.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_kse.tdf
+    Info (12023): Found entity 1: alt_u_div_kse File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/db/alt_u_div_kse.tdf Line: 22
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "V" is stuck at GND File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/ALU.sv Line: 5
 Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/output_files/Lab3.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 33 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 56 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 10 input pins
     Info (21059): Implemented 7 output pins
-    Info (21061): Implemented 16 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4820 megabytes
-    Info: Processing ended: Wed Sep 04 00:08:24 2019
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:25
+    Info (21061): Implemented 39 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4827 megabytes
+    Info: Processing ended: Sun Sep 08 21:02:48 2019
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:28
 
 
 +------------------------------------------+
