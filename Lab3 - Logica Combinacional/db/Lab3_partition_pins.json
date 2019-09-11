@@ -16,6 +16,22 @@
 					"strict" : false
 				},
 				{
+					"name" : "result[3]",
+					"strict" : false
+				},
+				{
+					"name" : "result[4]",
+					"strict" : false
+				},
+				{
+					"name" : "result[5]",
+					"strict" : false
+				},
+				{
+					"name" : "result[6]",
+					"strict" : false
+				},
+				{
 					"name" : "Z",
 					"strict" : false
 				},
@@ -32,7 +48,23 @@
 					"strict" : false
 				},
 				{
-					"name" : "a[0]",
+					"name" : "a[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUControl[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUControl[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUControl[1]",
+					"strict" : false
+				},
+				{
+					"name" : "b[2]",
 					"strict" : false
 				},
 				{
@@ -44,14 +76,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "b[2]",
-					"strict" : false
-				},
-				{
-					"name" : "a[2]",
-					"strict" : false
-				},
-				{
 					"name" : "a[1]",
 					"strict" : false
 				},
@@ -60,15 +84,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "ALUControl[1]",
-					"strict" : false
-				},
-				{
-					"name" : "ALUControl[3]",
-					"strict" : false
-				},
-				{
-					"name" : "ALUControl[2]",
+					"name" : "a[0]",
 					"strict" : false
 				}
 			]
