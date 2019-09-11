@@ -1,4 +1,4 @@
-module ALU #(parameter n=3)
+module ALU_displayed #(parameter n=3)
 				(input  logic [n-1:0] a, b,
 				 input  logic [3:0]   ALUControl,
 				 output logic [n-1:0] result,

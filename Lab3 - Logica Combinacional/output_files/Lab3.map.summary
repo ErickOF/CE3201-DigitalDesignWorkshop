@@ -1,17 +1,12 @@
-Analysis & Synthesis Status : Successful - Sun Sep 08 21:02:48 2019
+Analysis & Elaboration Status : Successful - Tue Sep 10 08:50:22 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : Lab3
-Top-level Entity Name : ALU
+Top-level Entity Name : flag_generator_test
 Family : Cyclone V
-Logic utilization (in ALMs) : N/A
-Total registers : 0
-Total pins : 17
-Total virtual pins : 0
-Total block memory bits : 0
-Total DSP Blocks : 0
-Total HSSI RX PCSs : 0
-Total HSSI PMA RX Deserializers : 0
-Total HSSI TX PCSs : 0
-Total HSSI PMA TX Serializers : 0
-Total PLLs : 0
-Total DLLs : 0
+Logic utilization (in ALMs) : N/A until Partition Merge
+Total registers : N/A until Partition Merge
+Total pins : N/A until Partition Merge
+Total virtual pins : N/A until Partition Merge
+Total block memory bits : N/A until Partition Merge
+Total PLLs : N/A until Partition Merge
+Total DLLs : N/A until Partition Merge

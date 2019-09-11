@@ -24,11 +24,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "C",
+					"name" : "V",
 					"strict" : false
 				},
 				{
-					"name" : "ALUControl[3]",
+					"name" : "C",
 					"strict" : false
 				},
 				{
@@ -61,6 +61,10 @@
 				},
 				{
 					"name" : "ALUControl[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUControl[3]",
 					"strict" : false
 				},
 				{

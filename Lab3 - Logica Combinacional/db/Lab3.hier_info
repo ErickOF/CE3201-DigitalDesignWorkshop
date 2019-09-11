@@ -1,214 +1,29 @@
-|ALU
-a[0] => a[0].IN8
-a[1] => a[1].IN8
-a[2] => a[2].IN8
-b[0] => b[0].IN7
-b[1] => b[1].IN7
-b[2] => b[2].IN7
-ALUControl[0] => ALUControl[0].IN4
-ALUControl[1] => ALUControl[1].IN2
-ALUControl[2] => ALUControl[2].IN2
-ALUControl[3] => ALUControl[3].IN2
-result[0] << result[0].DB_MAX_OUTPUT_PORT_TYPE
-result[1] << result[1].DB_MAX_OUTPUT_PORT_TYPE
-result[2] << result[2].DB_MAX_OUTPUT_PORT_TYPE
-Z << flag_generator:flag_generator_module.port3
-N << flag_generator:flag_generator_module.port4
-V << flag_generator:flag_generator_module.port5
-C << flag_generator:flag_generator_module.port6
+|flag_generator_test
 
 
-|ALU|and_gate:and_module
-a[0] => result_and.IN0
-a[1] => result_and.IN0
-a[2] => result_and.IN0
-b[0] => result_and.IN1
-b[1] => result_and.IN1
-b[2] => result_and.IN1
-result[0] <= result_and.DB_MAX_OUTPUT_PORT_TYPE
-result[1] <= result_and.DB_MAX_OUTPUT_PORT_TYPE
-result[2] <= result_and.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|or_gate:or_module
-a[0] => result_or.IN0
-a[1] => result_or.IN0
-a[2] => result_or.IN0
-b[0] => result_or.IN1
-b[1] => result_or.IN1
-b[2] => result_or.IN1
-result[0] <= result_or.DB_MAX_OUTPUT_PORT_TYPE
-result[1] <= result_or.DB_MAX_OUTPUT_PORT_TYPE
-result[2] <= result_or.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|xor_gate:xor_module
-a[0] => result_xor.IN0
-a[1] => result_xor.IN0
-a[2] => result_xor.IN0
-b[0] => result_xor.IN1
-b[1] => result_xor.IN1
-b[2] => result_xor.IN1
-result[0] <= result_xor.DB_MAX_OUTPUT_PORT_TYPE
-result[1] <= result_xor.DB_MAX_OUTPUT_PORT_TYPE
-result[2] <= result_xor.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|mux_not:mux_not_module
-b[0] => result.DATAA
-b[0] => result.DATAB
-b[1] => result.DATAA
-b[1] => result.DATAB
-b[2] => result.DATAA
-b[2] => result.DATAB
-control => result.OUTPUTSELECT
-control => result.OUTPUTSELECT
-control => result.OUTPUTSELECT
-y[0] <= result.DB_MAX_OUTPUT_PORT_TYPE
-y[1] <= result.DB_MAX_OUTPUT_PORT_TYPE
-y[2] <= result.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|fulladder:fulladder_module
-a[0] => _.DATAD
-a[1] => _.DATAD
-a[2] => _.DATAD
-b[0] => _.DATAC
-b[1] => _.DATAC
-b[2] => _.DATAC
-cin => _.DATAB
-sum[0] <= _.SUM_OUT
-sum[1] <= _.SUM_OUT
-sum[2] <= _.SUM_OUT
-cout <= _.SUM_OUT
-
-
-|ALU|slr:slr_module
-a[0] => ShiftRight0.IN3
-a[1] => ShiftRight0.IN2
-a[2] => ShiftRight0.IN1
-b[0] => ShiftRight0.IN6
-b[1] => ShiftRight0.IN5
-b[2] => ShiftRight0.IN4
-r_slr[0] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
-r_slr[1] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
-r_slr[2] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|sll:sll_module
-a[0] => ShiftLeft0.IN3
-a[1] => ShiftLeft0.IN2
-a[2] => ShiftLeft0.IN1
-b[0] => ShiftLeft0.IN6
-b[1] => ShiftLeft0.IN5
-b[2] => ShiftLeft0.IN4
-r_sll[0] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-r_sll[1] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-r_sll[2] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|mux_result:mux_result_module
-result_and[0] => Mux2.IN0
-result_and[1] => Mux1.IN0
-result_and[2] => Mux0.IN0
-result_or[0] => Mux2.IN1
-result_or[1] => Mux1.IN1
-result_or[2] => Mux0.IN1
-result_xor[0] => Mux2.IN2
-result_xor[1] => Mux1.IN2
-result_xor[2] => Mux0.IN2
-result_sum[0] => Mux2.IN3
-result_sum[0] => Mux2.IN4
-result_sum[1] => Mux1.IN3
-result_sum[1] => Mux1.IN4
-result_sum[2] => Mux0.IN3
-result_sum[2] => Mux0.IN4
-result_slr[0] => Mux2.IN5
-result_slr[1] => Mux1.IN5
-result_slr[2] => Mux0.IN5
-result_sll[0] => Mux2.IN6
-result_sll[1] => Mux1.IN6
-result_sll[2] => Mux0.IN6
-result_sar[0] => Mux2.IN7
-result_sar[1] => Mux1.IN7
-result_sar[2] => Mux0.IN7
-result_sc[0] => Mux2.IN8
-result_sc[0] => Mux2.IN9
-result_sc[0] => Mux2.IN10
-result_sc[0] => Mux2.IN11
-result_sc[0] => Mux2.IN12
-result_sc[0] => Mux2.IN13
-result_sc[0] => Mux2.IN14
-result_sc[0] => Mux2.IN15
-result_sc[1] => Mux1.IN8
-result_sc[1] => Mux1.IN9
-result_sc[1] => Mux1.IN10
-result_sc[1] => Mux1.IN11
-result_sc[1] => Mux1.IN12
-result_sc[1] => Mux1.IN13
-result_sc[1] => Mux1.IN14
-result_sc[1] => Mux1.IN15
-result_sc[2] => Mux0.IN8
-result_sc[2] => Mux0.IN9
-result_sc[2] => Mux0.IN10
-result_sc[2] => Mux0.IN11
-result_sc[2] => Mux0.IN12
-result_sc[2] => Mux0.IN13
-result_sc[2] => Mux0.IN14
-result_sc[2] => Mux0.IN15
-ALUControl[0] => Mux0.IN19
-ALUControl[0] => Mux1.IN19
-ALUControl[0] => Mux2.IN19
-ALUControl[1] => Mux0.IN18
-ALUControl[1] => Mux1.IN18
-ALUControl[1] => Mux2.IN18
-ALUControl[2] => Mux0.IN17
-ALUControl[2] => Mux1.IN17
-ALUControl[2] => Mux2.IN17
-ALUControl[3] => Mux0.IN16
-ALUControl[3] => Mux1.IN16
-ALUControl[3] => Mux2.IN16
-y[0] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
-y[1] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
-y[2] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|flag_generator:flag_generator_module
-result[0] => WideNand0.IN0
-result[1] => WideNand0.IN1
-result[1] => WideAnd0.IN0
-result[2] => WideNand0.IN2
-result[2] => WideAnd0.IN1
-result[2] => N.DATAIN
-ALUControl[0] => ~NO_FANOUT~
+|flag_generator_test|flag_generator:DUT
+a[0] => ~NO_FANOUT~
+a[1] => ~NO_FANOUT~
+a[2] => result_v.IN0
+a[2] => result_v.IN0
+b[0] => ~NO_FANOUT~
+b[1] => ~NO_FANOUT~
+b[2] => result_v.IN1
+sum[0] => WideNand1.IN0
+sum[1] => WideNand0.IN0
+sum[1] => WideNand1.IN1
+sum[2] => WideNand0.IN1
+sum[2] => WideNand1.IN2
+sum[2] => result_v.IN1
+sum[2] => N.DATAIN
+ALUControl[0] => result_v.IN1
 ALUControl[1] => ~NO_FANOUT~
 ALUControl[2] => ~NO_FANOUT~
 ALUControl[3] => ~NO_FANOUT~
 cout => result_c.IN1
-Z <= WideNand0.DB_MAX_OUTPUT_PORT_TYPE
-N <= result[2].DB_MAX_OUTPUT_PORT_TYPE
-V <= <GND>
+Z <= WideNand1.DB_MAX_OUTPUT_PORT_TYPE
+N <= sum[2].DB_MAX_OUTPUT_PORT_TYPE
+V <= result_v.DB_MAX_OUTPUT_PORT_TYPE
 C <= result_c.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|sar:sar_module
-a[0] => Div0.IN3
-a[1] => Div0.IN2
-a[2] => Div0.IN1
-b[0] => Div0.IN6
-b[1] => Div0.IN5
-b[2] => Div0.IN4
-r_sar[0] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-r_sar[1] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-r_sar[2] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|sc:sc_module
-a[0] => resul[1].DATAIN
-a[1] => resul[2].DATAIN
-a[2] => resul[0].DATAIN
-resul[0] <= a[2].DB_MAX_OUTPUT_PORT_TYPE
-resul[1] <= a[0].DB_MAX_OUTPUT_PORT_TYPE
-resul[2] <= a[1].DB_MAX_OUTPUT_PORT_TYPE
 
 
