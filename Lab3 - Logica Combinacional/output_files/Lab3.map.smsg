@@ -1,3 +1,2 @@
 Info (10281): Verilog HDL Declaration information at flag_generator.sv(1): object "n" differs only in case from object "N" in the same scope File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/flag_generator.sv Line: 1
 Info (10281): Verilog HDL Declaration information at ALU.sv(1): object "n" differs only in case from object "N" in the same scope File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/ALU.sv Line: 1
-Info (10281): Verilog HDL Declaration information at ALU_displayed.sv(1): object "n" differs only in case from object "N" in the same scope File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/ALU_displayed.sv Line: 1

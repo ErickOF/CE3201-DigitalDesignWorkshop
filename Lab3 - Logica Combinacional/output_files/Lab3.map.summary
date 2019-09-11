@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Tue Sep 10 19:19:42 2019
+Analysis & Synthesis Status : Successful - Tue Sep 10 22:00:57 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : Lab3
-Top-level Entity Name : ALU_displayed
+Top-level Entity Name : sc
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
 Total registers : 0
-Total pins : 21
+Total pins : 6
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab3
-Tue Sep 10 19:19:42 2019
+Tue Sep 10 22:00:58 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -14,24 +14,11 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: Top-level Entity: |ALU_displayed
- 10. Parameter Settings for User Entity Instance: ALU:alu_module
- 11. Parameter Settings for User Entity Instance: ALU:alu_module|and_gate:and_module
- 12. Parameter Settings for User Entity Instance: ALU:alu_module|or_gate:or_module
- 13. Parameter Settings for User Entity Instance: ALU:alu_module|xor_gate:xor_module
- 14. Parameter Settings for User Entity Instance: ALU:alu_module|mux_not:mux_not_module
- 15. Parameter Settings for User Entity Instance: ALU:alu_module|fulladder:fulladder_module
- 16. Parameter Settings for User Entity Instance: ALU:alu_module|slr:slr_module
- 17. Parameter Settings for User Entity Instance: ALU:alu_module|sll:sll_module
- 18. Parameter Settings for User Entity Instance: ALU:alu_module|mux_result:mux_result_module
- 19. Parameter Settings for User Entity Instance: ALU:alu_module|flag_generator:flag_generator_module
- 20. Parameter Settings for User Entity Instance: ALU:alu_module|sar:sar_module
- 21. Parameter Settings for User Entity Instance: ALU:alu_module|sc:sc_module
- 22. Port Connectivity Checks: "deco:deco_module"
- 23. Post-Synthesis Netlist Statistics for Top Partition
- 24. Elapsed Time Per Partition
- 25. Analysis & Synthesis Messages
- 26. Analysis & Synthesis Suppressed Messages
+  9. Parameter Settings for User Entity Instance: Top-level Entity: |sc
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
+ 13. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -57,14 +44,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Sep 10 19:19:42 2019       ;
+; Analysis & Synthesis Status     ; Successful - Tue Sep 10 22:00:57 2019       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; Lab3                                        ;
-; Top-level Entity Name           ; ALU_displayed                               ;
+; Top-level Entity Name           ; sc                                          ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 0                                           ;
-; Total pins                      ; 21                                          ;
+; Total pins                      ; 6                                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -83,7 +70,7 @@ refer to the applicable agreement for further details.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; ALU_displayed      ; Lab3               ;
+; Top-level entity name                                                           ; sc                 ; Lab3               ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -180,67 +167,49 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                              ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                          ; Library ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------+---------+
-; xor_gate.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/xor_gate.sv       ;         ;
-; slr.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/slr.sv            ;         ;
-; sll.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/sll.sv            ;         ;
-; or_gate.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/or_gate.sv        ;         ;
-; mux_result.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/mux_result.sv     ;         ;
-; mux_not.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/mux_not.sv        ;         ;
-; fulladder.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/fulladder.sv      ;         ;
-; flag_generator.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/flag_generator.sv ;         ;
-; and_gate.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/and_gate.sv       ;         ;
-; ALU.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/ALU.sv            ;         ;
-; sar.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/sar.sv            ;         ;
-; sc.sv                            ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/sc.sv             ;         ;
-; deco.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/deco.sv           ;         ;
-; ALU_displayed.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/ALU_displayed.sv  ;         ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                  ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                              ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------+---------+
+; sc.sv                            ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/sc.sv ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                       ;
-+---------------------------------------------+---------------------+
-; Resource                                    ; Usage               ;
-+---------------------------------------------+---------------------+
-; Estimate of Logic utilization (ALMs needed) ; 23                  ;
-;                                             ;                     ;
-; Combinational ALUT usage for logic          ; 35                  ;
-;     -- 7 input functions                    ; 1                   ;
-;     -- 6 input functions                    ; 9                   ;
-;     -- 5 input functions                    ; 5                   ;
-;     -- 4 input functions                    ; 3                   ;
-;     -- <=3 input functions                  ; 17                  ;
-;                                             ;                     ;
-; Dedicated logic registers                   ; 0                   ;
-;                                             ;                     ;
-; I/O pins                                    ; 21                  ;
-;                                             ;                     ;
-; Total DSP Blocks                            ; 0                   ;
-;                                             ;                     ;
-; Maximum fan-out node                        ; ALUControl[0]~input ;
-; Maximum fan-out                             ; 13                  ;
-; Total fan-out                               ; 180                 ;
-; Average fan-out                             ; 2.34                ;
-+---------------------------------------------+---------------------+
++---------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                   ;
++---------------------------------------------+-----------------+
+; Resource                                    ; Usage           ;
++---------------------------------------------+-----------------+
+; Estimate of Logic utilization (ALMs needed) ; 0               ;
+;                                             ;                 ;
+; Combinational ALUT usage for logic          ; 0               ;
+;     -- 7 input functions                    ; 0               ;
+;     -- 6 input functions                    ; 0               ;
+;     -- 5 input functions                    ; 0               ;
+;     -- 4 input functions                    ; 0               ;
+;     -- <=3 input functions                  ; 0               ;
+;                                             ;                 ;
+; Dedicated logic registers                   ; 0               ;
+;                                             ;                 ;
+; I/O pins                                    ; 6               ;
+;                                             ;                 ;
+; Total DSP Blocks                            ; 0               ;
+;                                             ;                 ;
+; Maximum fan-out node                        ; resul[0]~output ;
+; Maximum fan-out                             ; 1               ;
+; Total fan-out                               ; 9               ;
+; Average fan-out                             ; 0.75            ;
++---------------------------------------------+-----------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                        ;
-+----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------+----------------+--------------+
-; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                ; Entity Name    ; Library Name ;
-+----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------+----------------+--------------+
-; |ALU_displayed                               ; 35 (0)              ; 0 (0)                     ; 0                 ; 0          ; 21   ; 0            ; |ALU_displayed                                                     ; ALU_displayed  ; work         ;
-;    |ALU:alu_module|                          ; 28 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU_displayed|ALU:alu_module                                      ; ALU            ; work         ;
-;       |flag_generator:flag_generator_module| ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU_displayed|ALU:alu_module|flag_generator:flag_generator_module ; flag_generator ; work         ;
-;       |fulladder:fulladder_module|           ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU_displayed|ALU:alu_module|fulladder:fulladder_module           ; fulladder      ; work         ;
-;       |mux_result:mux_result_module|         ; 19 (19)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU_displayed|ALU:alu_module|mux_result:mux_result_module         ; mux_result     ; work         ;
-;    |deco:deco_module|                        ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU_displayed|deco:deco_module                                    ; deco           ; work         ;
-+----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------+----------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; |sc                        ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 6    ; 0            ; |sc                 ; sc          ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -259,169 +228,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |ALU_displayed ;
-+----------------+-------+------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                 ;
-+----------------+-------+------------------------------------------------------+
-; n              ; 3     ; Signed Integer                                       ;
-+----------------+-------+------------------------------------------------------+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |sc ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; N              ; 3     ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALU:alu_module ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; n              ; 3     ; Signed Integer                     ;
-+----------------+-------+------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALU:alu_module|and_gate:and_module ;
-+----------------+-------+--------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                   ;
-+----------------+-------+--------------------------------------------------------+
-; N              ; 3     ; Signed Integer                                         ;
-+----------------+-------+--------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALU:alu_module|or_gate:or_module ;
-+----------------+-------+------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                 ;
-+----------------+-------+------------------------------------------------------+
-; N              ; 3     ; Signed Integer                                       ;
-+----------------+-------+------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALU:alu_module|xor_gate:xor_module ;
-+----------------+-------+--------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                   ;
-+----------------+-------+--------------------------------------------------------+
-; N              ; 3     ; Signed Integer                                         ;
-+----------------+-------+--------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALU:alu_module|mux_not:mux_not_module ;
-+----------------+-------+-----------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                      ;
-+----------------+-------+-----------------------------------------------------------+
-; N              ; 3     ; Signed Integer                                            ;
-+----------------+-------+-----------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALU:alu_module|fulladder:fulladder_module ;
-+----------------+-------+---------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                          ;
-+----------------+-------+---------------------------------------------------------------+
-; N              ; 3     ; Signed Integer                                                ;
-+----------------+-------+---------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALU:alu_module|slr:slr_module ;
-+----------------+-------+---------------------------------------------------+
-; Parameter Name ; Value ; Type                                              ;
-+----------------+-------+---------------------------------------------------+
-; N              ; 3     ; Signed Integer                                    ;
-+----------------+-------+---------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALU:alu_module|sll:sll_module ;
-+----------------+-------+---------------------------------------------------+
-; Parameter Name ; Value ; Type                                              ;
-+----------------+-------+---------------------------------------------------+
-; N              ; 3     ; Signed Integer                                    ;
-+----------------+-------+---------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALU:alu_module|mux_result:mux_result_module ;
-+----------------+-------+-----------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                            ;
-+----------------+-------+-----------------------------------------------------------------+
-; N              ; 3     ; Signed Integer                                                  ;
-+----------------+-------+-----------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALU:alu_module|flag_generator:flag_generator_module ;
-+----------------+-------+-------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                    ;
-+----------------+-------+-------------------------------------------------------------------------+
-; n              ; 3     ; Signed Integer                                                          ;
-+----------------+-------+-------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALU:alu_module|sar:sar_module ;
-+----------------+-------+---------------------------------------------------+
-; Parameter Name ; Value ; Type                                              ;
-+----------------+-------+---------------------------------------------------+
-; N              ; 3     ; Signed Integer                                    ;
-+----------------+-------+---------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALU:alu_module|sc:sc_module ;
-+----------------+-------+-------------------------------------------------+
-; Parameter Name ; Value ; Type                                            ;
-+----------------+-------+-------------------------------------------------+
-; N              ; 3     ; Signed Integer                                  ;
-+----------------+-------+-------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "deco:deco_module"                                                                                                                                                                  ;
-+-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
-+-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; x     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; x[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
-+-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 42                          ;
-;     extend            ; 1                           ;
-;         7 data inputs ; 1                           ;
-;     normal            ; 37                          ;
-;         1 data inputs ; 7                           ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 12                          ;
-;         4 data inputs ; 3                           ;
-;         5 data inputs ; 5                           ;
-;         6 data inputs ; 9                           ;
-;     shared            ; 4                           ;
-;         0 data inputs ; 1                           ;
-;         3 data inputs ; 3                           ;
-; boundary_port         ; 21                          ;
-;                       ;                             ;
-; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 4.47                        ;
-+-----------------------+-----------------------------+
++-------------------+---------------------------------+
+; Type              ; Count                           ;
++-------------------+---------------------------------+
+; boundary_port     ; 6                               ;
+;                   ;                                 ;
+; Max LUT depth     ; 0.00                            ;
+; Average LUT depth ; 0.00                            ;
++-------------------+---------------------------------+
 
 
 +-------------------------------+
@@ -429,7 +255,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:04     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -439,7 +265,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Sep 10 19:19:13 2019
+    Info: Processing started: Tue Sep 10 22:00:46 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab3 -c Lab3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -495,34 +321,18 @@ Info (12021): Found 1 design units, including 1 entities, in source file deco.sv
     Info (12023): Found entity 1: deco File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/deco.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu_displayed.sv
     Info (12023): Found entity 1: ALU_displayed File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/ALU_displayed.sv Line: 1
-Info (12127): Elaborating entity "ALU_displayed" for the top level hierarchy
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:alu_module" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/ALU_displayed.sv Line: 10
-Info (12128): Elaborating entity "and_gate" for hierarchy "ALU:alu_module|and_gate:and_module" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/ALU.sv Line: 18
-Info (12128): Elaborating entity "or_gate" for hierarchy "ALU:alu_module|or_gate:or_module" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/ALU.sv Line: 19
-Info (12128): Elaborating entity "xor_gate" for hierarchy "ALU:alu_module|xor_gate:xor_module" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/ALU.sv Line: 20
-Info (12128): Elaborating entity "mux_not" for hierarchy "ALU:alu_module|mux_not:mux_not_module" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/ALU.sv Line: 21
-Info (12128): Elaborating entity "fulladder" for hierarchy "ALU:alu_module|fulladder:fulladder_module" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/ALU.sv Line: 22
-Info (12128): Elaborating entity "slr" for hierarchy "ALU:alu_module|slr:slr_module" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/ALU.sv Line: 23
-Info (12128): Elaborating entity "sll" for hierarchy "ALU:alu_module|sll:sll_module" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/ALU.sv Line: 24
-Info (12128): Elaborating entity "mux_result" for hierarchy "ALU:alu_module|mux_result:mux_result_module" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/ALU.sv Line: 25
-Info (12128): Elaborating entity "flag_generator" for hierarchy "ALU:alu_module|flag_generator:flag_generator_module" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/ALU.sv Line: 26
-Info (12128): Elaborating entity "sar" for hierarchy "ALU:alu_module|sar:sar_module" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/ALU.sv Line: 27
-Info (12128): Elaborating entity "sc" for hierarchy "ALU:alu_module|sc:sc_module" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/ALU.sv Line: 28
-Info (12128): Elaborating entity "deco" for hierarchy "deco:deco_module" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/ALU_displayed.sv Line: 11
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (286030): Timing-Driven Synthesis is running
+Info (12127): Elaborating entity "sc" for the top level hierarchy
 Info (144001): Generated suppressed messages file C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab3 - Logica Combinacional/output_files/Lab3.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 56 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 10 input pins
-    Info (21059): Implemented 11 output pins
-    Info (21061): Implemented 35 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4821 megabytes
-    Info: Processing ended: Tue Sep 10 19:19:42 2019
-    Info: Elapsed time: 00:00:29
-    Info: Total CPU time (on all processors): 00:00:24
+Info (21057): Implemented 6 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 3 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4806 megabytes
+    Info: Processing ended: Tue Sep 10 22:00:58 2019
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:23
 
 
 +------------------------------------------+
