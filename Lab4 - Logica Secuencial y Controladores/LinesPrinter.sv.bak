@@ -1,0 +1,25 @@
+/*
+Lines Printer Module
+
+
+x: Pixel x
+y: Pixel y
+
+R, G, B: RGB colors
+
+print: signal to indicate if the lines will be drawn
+*/
+module LinesPrinter(input  [10:0] x, y,
+						  output [7:0]  R, G, B,
+						  output        print)
+
+// Verifiy (x, y) position to draw
+logic print_x = (216 > x > 210) || (429 > x > 423);
+logic print_y = (163 > y > 157) || (323 > y > 317);
+
+// Output signal
+assign print = print_x || print_y;
+// Pixel color
+assign {R, G, B} = 24'b0;
+
+endmodule // LinesPrinter

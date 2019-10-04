@@ -1,0 +1,11 @@
+module AddressGenerator(input [9:0] pixelx, pixely,
+                                    posx, posy,
+                        output xm64, ym64,
+                        output logic [11:0] address);
+
+// Index X, index Y
+logic [9:0] ixd, idy;
+assign idx = pixelx - posx;
+assign idy = pixely - posy;
+
+endmodule // ColorDecoder

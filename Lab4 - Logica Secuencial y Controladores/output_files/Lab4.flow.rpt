@@ -1,5 +1,5 @@
 Flow report for Lab4
-Tue Oct 01 11:24:27 2019
+Fri Oct 04 08:41:28 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,10 +40,10 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Flow Summary                                                              ;
 +-----------------------------+---------------------------------------------+
-; Flow Status                 ; Flow Failed - Tue Oct 01 11:24:27 2019      ;
+; Flow Status                 ; Flow Failed - Fri Oct 04 08:41:27 2019      ;
 ; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name               ; Lab4                                        ;
-; Top-level Entity Name       ; GameControler                               ;
+; Top-level Entity Name       ; SpritePrinter                               ;
 ; Family                      ; Cyclone V                                   ;
 ; Device                      ; 5CSEMA5F31C6                                ;
 ; Timing Models               ; Final                                       ;
@@ -62,7 +62,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/01/2019 11:24:09 ;
+; Start date & time ; 10/04/2019 08:37:45 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Lab4                ;
 +-------------------+---------------------+
@@ -73,12 +73,13 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+---------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name   ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+---------------+------------+
-; COMPILER_SIGNATURE_ID               ; 97351243532289.156995064832496         ; --            ; --            ; --         ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; GameControler ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; GameControler ; Top        ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; GameControler ; Top        ;
+; COMPILER_SIGNATURE_ID               ; 97351243532289.157019986133800         ; --            ; --            ; --         ;
+; MISC_FILE                           ; ROMSprite1_bb.v                        ; --            ; --            ; --         ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; SpritePrinter ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; SpritePrinter ; Top        ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; SpritePrinter ; Top        ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --            ; --         ;
-; TOP_LEVEL_ENTITY                    ; GameControler                          ; Lab4          ; --            ; --         ;
+; TOP_LEVEL_ENTITY                    ; SpritePrinter                          ; Lab4          ; --            ; --         ;
 +-------------------------------------+----------------------------------------+---------------+---------------+------------+
 
 
@@ -87,8 +88,8 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:20     ; 1.0                     ; 4777 MB             ; 00:00:36                           ;
-; Total                ; 00:00:20     ; --                      ; --                  ; 00:00:36                           ;
+; Analysis & Synthesis ; 00:03:56     ; 1.0                     ; 4800 MB             ; 00:00:28                           ;
+; Total                ; 00:03:56     ; --                      ; --                  ; 00:00:28                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

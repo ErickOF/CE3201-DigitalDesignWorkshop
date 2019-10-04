@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab4
-Tue Oct 01 11:24:27 2019
+Fri Oct 04 08:41:28 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -10,7 +10,9 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis IP Cores Summary
+  6. Analysis & Synthesis Messages
+  7. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -36,10 +38,10 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Tue Oct 01 11:24:27 2019           ;
+; Analysis & Synthesis Status ; Failed - Fri Oct 04 08:41:27 2019           ;
 ; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name               ; Lab4                                        ;
-; Top-level Entity Name       ; GameControler                               ;
+; Top-level Entity Name       ; SpritePrinter                               ;
 ; Family                      ; Cyclone V                                   ;
 ; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
 ; Total registers             ; N/A until Partition Merge                   ;
@@ -57,7 +59,7 @@ refer to the applicable agreement for further details.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; GameControler      ; Lab4               ;
+; Top-level entity name                                                           ; SpritePrinter      ; Lab4               ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -154,23 +156,74 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
++-----------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                           ;
++--------+--------------+---------+--------------+--------------+-------------------------------+-----------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance               ; IP Include File ;
++--------+--------------+---------+--------------+--------------+-------------------------------+-----------------+
+; Altera ; ROM: 1-PORT  ; 17.1    ; N/A          ; N/A          ; |SpritePrinter|ROMSprite1:ROM ; ROMSprite1.v    ;
++--------+--------------+---------+--------------+--------------+-------------------------------+-----------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Oct 01 11:24:07 2019
+    Info: Processing started: Fri Oct 04 08:37:30 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab4 -c Lab4
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Warning (12019): Can't analyze file -- file CheckTimeOut.sv is missing
-Warning (12019): Can't analyze file -- file GameControler.sv is missing
-Error (12007): Top-level design entity "GameControler" is undefined
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 3 warnings
-    Error: Peak virtual memory: 4777 megabytes
-    Error: Processing ended: Tue Oct 01 11:24:27 2019
-    Error: Elapsed time: 00:00:20
-    Error: Total CPU time (on all processors): 00:00:36
+Info (12021): Found 1 design units, including 1 entities, in source file linesprinter.sv
+    Info (12023): Found entity 1: LinesPrinter File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/LinesPrinter.sv Line: 13
+Info (12021): Found 1 design units, including 1 entities, in source file spriteprinter.sv
+    Info (12023): Found entity 1: SpritePrinter File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/SpritePrinter.sv Line: 15
+Info (12021): Found 1 design units, including 1 entities, in source file comparator.sv
+    Info (12023): Found entity 1: Comparator File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/Comparator.sv Line: 11
+Info (12021): Found 1 design units, including 1 entities, in source file romsprite1.v
+    Info (12023): Found entity 1: ROMSprite1 File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/ROMSprite1.v Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file colordecoder.sv
+    Info (12023): Found entity 1: ColorDecoder File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/ColorDecoder.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file addressgenerator.sv
+    Info (12023): Found entity 1: AddressGenerator File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/AddressGenerator.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file visiblelogic.sv
+    Info (12023): Found entity 1: VisibleLogic File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VisibleLogic.sv Line: 1
+Info (12127): Elaborating entity "SpritePrinter" for the top level hierarchy
+Info (12128): Elaborating entity "ROMSprite1" for hierarchy "ROMSprite1:ROM" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/SpritePrinter.sv Line: 23
+Info (12128): Elaborating entity "altsyncram" for hierarchy "ROMSprite1:ROM|altsyncram:altsyncram_component" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/ROMSprite1.v Line: 81
+Info (12130): Elaborated megafunction instantiation "ROMSprite1:ROM|altsyncram:altsyncram_component" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/ROMSprite1.v Line: 81
+Info (12133): Instantiated megafunction "ROMSprite1:ROM|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/ROMSprite1.v Line: 81
+    Info (12134): Parameter "address_aclr_a" = "NONE"
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "init_file" = "../../Downloads/sprite.mif"
+    Info (12134): Parameter "intended_device_family" = "Cyclone V"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "4096"
+    Info (12134): Parameter "operation_mode" = "ROM"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
+    Info (12134): Parameter "widthad_a" = "12"
+    Info (12134): Parameter "width_a" = "3"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_8hh1.tdf
+    Info (12023): Found entity 1: altsyncram_8hh1 File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/db/altsyncram_8hh1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_8hh1" for hierarchy "ROMSprite1:ROM|altsyncram:altsyncram_component|altsyncram_8hh1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Error (127001): Can't find Memory Initialization File or Hexadecimal (Intel-Format) File ../../Downloads/sprite.mif for ROM instance ALTSYNCRAM File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/ROMSprite1.v Line: 81
+Error (12152): Can't elaborate user hierarchy "ROMSprite1:ROM|altsyncram:altsyncram_component|altsyncram_8hh1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Info (144001): Generated suppressed messages file C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/output_files/Lab4.map.smsg
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 1 warning
+    Error: Peak virtual memory: 4800 megabytes
+    Error: Processing ended: Fri Oct 04 08:41:29 2019
+    Error: Elapsed time: 00:03:59
+    Error: Total CPU time (on all processors): 00:00:28
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/output_files/Lab4.map.smsg.
 
 

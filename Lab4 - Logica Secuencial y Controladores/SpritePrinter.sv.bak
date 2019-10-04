@@ -1,0 +1,8 @@
+module SpritePrinter #(parameter HEIGHT = 64;
+                       parameter WIDTH  = 64;)
+							 (input  logic posx_current, posy_current, posx_sprite, posy_sprite,
+							  output logic print,
+							  output logic [ R, G, B);
+
+
+endmodule

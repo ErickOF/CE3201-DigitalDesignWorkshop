@@ -1,7 +1,7 @@
-Analysis & Synthesis Status : Failed - Tue Oct 01 11:24:27 2019
+Analysis & Synthesis Status : Failed - Fri Oct 04 08:41:27 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : Lab4
-Top-level Entity Name : GameControler
+Top-level Entity Name : SpritePrinter
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge

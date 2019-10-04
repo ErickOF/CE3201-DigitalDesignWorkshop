@@ -1,0 +1,10 @@
+module VisibleLogic(input xm63, ym63,
+                    input [2:0] color,
+                    output logic [11:0] address);
+
+logic background;
+
+assign background = (color == 3'd0):
+assign visible = ~background
+
+endmodule // VisibleLogic
