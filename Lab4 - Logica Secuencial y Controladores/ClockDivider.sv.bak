@@ -1,0 +1,19 @@
+module ClockDivider(input  clk,
+                    output clk_div);
+
+logic [27:0] counter = 28'd0;
+
+parameter DIVISOR = 28'd2;
+
+always @(posedge clk)
+begin
+    counter <= counter + 28'd1;
+    if (counter >= (DIVISOR - 1))
+	 begin
+        counter <= 28'd0;
+    end
+end
+
+assign clock_out = (counter < DIVISOR / 2 ) ? 0 : 1;
+
+endmodule // ClockDivider

@@ -12,7 +12,7 @@ assign idy = pixely - posy;
 // But only LSBs are needed 2^5
 assign address = {idy[5:0], idx[5:0]};
 
-assign xm63 = (idx > 10'd63 ? 1 : 0);
-assign ym63 = (idy > 10'd63 ? 1 : 0);
+assign xm63 = (idx > 10'd63 ? 1'b1 : 1'b0);
+assign ym63 = (idy > 10'd63 ? 1'b1 : 1'b0);
 
 endmodule // AddressGenerator

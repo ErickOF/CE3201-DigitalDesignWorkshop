@@ -1,4 +1,4 @@
-module ColorDecoder (input [2:0] color,
+module ColorDecoder(input [2:0] color,
 						  output [23:0] RGB);
 
 always_comb

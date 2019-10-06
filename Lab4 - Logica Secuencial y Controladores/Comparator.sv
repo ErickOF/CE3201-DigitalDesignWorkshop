@@ -11,6 +11,6 @@ Outputs:
 module Comparator(input  [9:0] signal1, signal2,
 						output logic equal);
 
-assign equal = signal1 == signal2? 1 : 0;
+assign equal = signal1 == signal2 ? 1'b1 : 1'b0;
 
 endmodule // Comparator
