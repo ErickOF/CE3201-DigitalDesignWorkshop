@@ -1,6 +1,6 @@
-module VGAController(input  logic clk,
-                     output logic h_sync, v_sync, print,
-                     output logic [9:0] x, y);
+module VGAController(input clk,
+					      output logic h_sync, v_sync, blank_n,
+						   output logic [9:0] posx, posy);
 
 // VGA constants
 localparam H_SYNC_A = 96;
@@ -19,5 +19,20 @@ localparam V_TOTAL = V_UP + V_DISPLAY + V_DOWN + V_SYNC_A - 1;
 localparam V_START = V_DISPLAY + V_DOWN;
 localparam V_END = V_DISPLAY + V_DOWN + V_SYNC_A - 1;
 
+// Vars
+logic clk_div;
+logic rsth, rstv;
+
+ClockDivider clock_divider(clk, clk_div);
+
+Counter h_counter(clk_div, rsth, posx);
+Comparator hmax_comparator(posx, H_END, rsth);
+Comparator hmin_comparator(posx, H_START, h_sync);
+
+Counter v_counter(rsth, rstv, posy);
+Comparator vmax_comparator(posy, V_END, rstv);
+Comparator vmin_comparator(posy, V_START, v_sync);
+
+assign blank_n = h_sync & v_sync;
 
 endmodule // VGAController

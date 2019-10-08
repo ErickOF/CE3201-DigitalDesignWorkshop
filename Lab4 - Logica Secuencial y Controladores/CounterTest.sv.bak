@@ -1,0 +1,20 @@
+module CounterTest();
+logic clk, reset;
+logic [9:0] num;
+
+//DUT initialization
+Counter DUT(clk,reset,num);
+
+initial begin
+	clk = 0;
+	reset = 0;
+	num = 10'b0;
+end
+
+always
+begin
+	#10 clk = ~clk;
+	#1	$display("clk = %b, reset = %b, num= %b\n", clk, reset, num);
+end
+
+endmodule // CounterTest
