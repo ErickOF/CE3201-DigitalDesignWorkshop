@@ -1,0 +1,205 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "tmp1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "tmp1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "tmp2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "tmp2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "tmp3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "tmp3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "tmp4[0]",
+					"strict" : false
+				},
+				{
+					"name" : "tmp4[1]",
+					"strict" : false
+				},
+				{
+					"name" : "tmp5[0]",
+					"strict" : false
+				},
+				{
+					"name" : "tmp5[1]",
+					"strict" : false
+				},
+				{
+					"name" : "tmp6[0]",
+					"strict" : false
+				},
+				{
+					"name" : "tmp6[1]",
+					"strict" : false
+				},
+				{
+					"name" : "tmp7[0]",
+					"strict" : false
+				},
+				{
+					"name" : "tmp7[1]",
+					"strict" : false
+				},
+				{
+					"name" : "tmp8[0]",
+					"strict" : false
+				},
+				{
+					"name" : "tmp8[1]",
+					"strict" : false
+				},
+				{
+					"name" : "tmp9[0]",
+					"strict" : false
+				},
+				{
+					"name" : "tmp9[1]",
+					"strict" : false
+				},
+				{
+					"name" : "nextPlayer[0]",
+					"strict" : false
+				},
+				{
+					"name" : "nextPlayer[1]",
+					"strict" : false
+				},
+				{
+					"name" : "selPos[0]",
+					"strict" : false
+				},
+				{
+					"name" : "selPos[1]",
+					"strict" : false
+				},
+				{
+					"name" : "selPos[2]",
+					"strict" : false
+				},
+				{
+					"name" : "selPos[3]",
+					"strict" : false
+				},
+				{
+					"name" : "pos1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "playerID[0]",
+					"strict" : false
+				},
+				{
+					"name" : "pos1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "playerID[1]",
+					"strict" : false
+				},
+				{
+					"name" : "pos2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "pos2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "pos3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "pos3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "pos4[0]",
+					"strict" : false
+				},
+				{
+					"name" : "pos4[1]",
+					"strict" : false
+				},
+				{
+					"name" : "pos5[0]",
+					"strict" : false
+				},
+				{
+					"name" : "pos5[1]",
+					"strict" : false
+				},
+				{
+					"name" : "pos6[0]",
+					"strict" : false
+				},
+				{
+					"name" : "pos6[1]",
+					"strict" : false
+				},
+				{
+					"name" : "pos7[0]",
+					"strict" : false
+				},
+				{
+					"name" : "pos7[1]",
+					"strict" : false
+				},
+				{
+					"name" : "pos8[0]",
+					"strict" : false
+				},
+				{
+					"name" : "pos8[1]",
+					"strict" : false
+				},
+				{
+					"name" : "pos9[0]",
+					"strict" : false
+				},
+				{
+					"name" : "pos9[1]",
+					"strict" : false
+				},
+				{
+					"name" : "position[0]",
+					"strict" : false
+				},
+				{
+					"name" : "position[1]",
+					"strict" : false
+				},
+				{
+					"name" : "position[2]",
+					"strict" : false
+				},
+				{
+					"name" : "position[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
