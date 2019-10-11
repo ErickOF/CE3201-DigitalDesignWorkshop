@@ -1,0 +1,7 @@
+module TicTacToe (input clk,
+					   output logic vga_clk, vga_sync_n, vga_blank_n, vga_vs, vga_hs,
+						output logic [7:0] VGA_R, VGA_G, VGA_B);
+
+
+
+endmodule // TicTacToe

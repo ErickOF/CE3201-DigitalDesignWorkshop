@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Tue Oct 08 12:07:51 2019
-Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Analysis & Synthesis Status : Successful - Thu Oct 10 12:06:42 2019
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : Lab4
-Top-level Entity Name : SpritePrinter
+Top-level Entity Name : TicTacToe
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 0
-Total pins : 66
+Total registers : 48
+Total pins : 30
 Total virtual pins : 0
-Total block memory bits : 12,288
+Total block memory bits : 0
 Total DSP Blocks : 0
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0

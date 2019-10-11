@@ -1,0 +1,166 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/simulation/modelsim
+vClockDivider
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1570730375
+!i10b 1
+!s100 g2ag@gRN;Re<knih;S=[f0
+INAI^MTj]W7GYi]K:c@F1o0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 ClockDivider_sv_unit
+S1
+R0
+w1570563554
+8C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/ClockDivider.sv
+FC:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/ClockDivider.sv
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1570730375.000000
+!s107 C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/ClockDivider.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores|C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/ClockDivider.sv|
+!i113 1
+Z6 o-sv -work work
+Z7 !s92 -sv -work work {+incdir+C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores}
+Z8 tCvgOpt 0
+n@clock@divider
+vComparator
+R1
+R2
+!i10b 1
+!s100 [IoTi8ZlgIL?YQW`6X7=@0
+I@<jOhKd7UF>g:iVze5E?M0
+R3
+!s105 Comparator_sv_unit
+S1
+R0
+w1570725312
+8C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/Comparator.sv
+FC:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/Comparator.sv
+L0 11
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/Comparator.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores|C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/Comparator.sv|
+!i113 1
+R6
+R7
+R8
+n@comparator
+vCounter
+R1
+R2
+!i10b 1
+!s100 >z@kKH58UK7z0ZRgmWbkh1
+II@T:fgWDbcGP6[8=co=<[2
+R3
+!s105 Counter_sv_unit
+S1
+R0
+w1570726217
+8C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/Counter.sv
+FC:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/Counter.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/Counter.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores|C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/Counter.sv|
+!i113 1
+R6
+R7
+R8
+n@counter
+vTicTacToe
+R1
+Z9 !s110 1570730376
+!i10b 1
+!s100 g72cAOFV<]RUDCjQ2mFH82
+IA382_YPU797;0^Uz7i<iz1
+R3
+!s105 TicTacToe_sv_unit
+S1
+R0
+w1570729180
+8C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/TicTacToe.sv
+FC:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/TicTacToe.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/TicTacToe.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores|C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/TicTacToe.sv|
+!i113 1
+R6
+R7
+R8
+n@tic@tac@toe
+vTicTacToeTest
+R1
+R9
+!i10b 1
+!s100 ;G0b<e7CN7U[0WBehh<KD2
+IaDCaF8n`RH:D;[ifI]8BD1
+R3
+!s105 TicTacToeTest_sv_unit
+S1
+R0
+w1570730363
+8C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/TicTacToeTest.sv
+FC:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/TicTacToeTest.sv
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1570730376.000000
+!s107 C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/TicTacToeTest.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores|C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/TicTacToeTest.sv|
+!i113 1
+R6
+R7
+R8
+n@tic@tac@toe@test
+vVGAController
+R1
+R2
+!i10b 1
+!s100 2bdI0NT=dF1CH2;9khCE]3
+Ik2][YPV1CT`Mb[OIeK7F21
+R3
+!s105 VGAController_sv_unit
+S1
+R0
+w1570728070
+8C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/VGAController.sv
+FC:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/VGAController.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/VGAController.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores|C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/VGAController.sv|
+!i113 1
+R6
+R7
+R8
+n@v@g@a@controller

@@ -3,12 +3,13 @@ logic clk, reset;
 reg [9:0] num;
 
 //DUT initialization
-Counter DUT(clk,reset,num);
+Counter DUT(clk, reset, num);
 
 initial begin
 	clk = 0;
 	reset = 0;
-	num = 10'b0;
+	#10 reset = 1;
+	#10 reset = 0;
 end
 
 always
