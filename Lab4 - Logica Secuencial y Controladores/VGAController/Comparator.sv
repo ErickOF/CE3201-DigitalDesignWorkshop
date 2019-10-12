@@ -8,7 +8,7 @@ Inputs:
 Outputs:
     equal: indicate if signals are equal
 */
-module Comparator(input  [9:0] signal1, signal2,
+module Comparator(input [9:0] signal1, signal2,
 						output logic lower, greater, equal);
 
 assign lower   = signal1 < signal2 ? 1'b1 : 1'b0;
