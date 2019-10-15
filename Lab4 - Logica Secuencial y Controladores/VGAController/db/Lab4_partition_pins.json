@@ -4,163 +4,123 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "sprite1",
+					"name" : "vga_clk",
 					"strict" : false
 				},
 				{
-					"name" : "sprite2",
+					"name" : "vga_sync_n",
 					"strict" : false
 				},
 				{
-					"name" : "y[6]",
+					"name" : "vga_blank_n",
 					"strict" : false
 				},
 				{
-					"name" : "y[8]",
+					"name" : "vga_vs",
 					"strict" : false
 				},
 				{
-					"name" : "y[4]",
+					"name" : "vga_hs",
 					"strict" : false
 				},
 				{
-					"name" : "y[0]",
+					"name" : "VGA_R[0]",
 					"strict" : false
 				},
 				{
-					"name" : "y[3]",
+					"name" : "VGA_R[1]",
 					"strict" : false
 				},
 				{
-					"name" : "y[1]",
+					"name" : "VGA_R[2]",
 					"strict" : false
 				},
 				{
-					"name" : "y[2]",
+					"name" : "VGA_R[3]",
 					"strict" : false
 				},
 				{
-					"name" : "y[9]",
+					"name" : "VGA_R[4]",
 					"strict" : false
 				},
 				{
-					"name" : "y[5]",
+					"name" : "VGA_R[5]",
 					"strict" : false
 				},
 				{
-					"name" : "y[7]",
+					"name" : "VGA_R[6]",
 					"strict" : false
 				},
 				{
-					"name" : "x[7]",
+					"name" : "VGA_R[7]",
 					"strict" : false
 				},
 				{
-					"name" : "x[6]",
+					"name" : "VGA_G[0]",
 					"strict" : false
 				},
 				{
-					"name" : "x[5]",
+					"name" : "VGA_G[1]",
 					"strict" : false
 				},
 				{
-					"name" : "x[0]",
+					"name" : "VGA_G[2]",
 					"strict" : false
 				},
 				{
-					"name" : "x[1]",
+					"name" : "VGA_G[3]",
 					"strict" : false
 				},
 				{
-					"name" : "x[2]",
+					"name" : "VGA_G[4]",
 					"strict" : false
 				},
 				{
-					"name" : "x[3]",
+					"name" : "VGA_G[5]",
 					"strict" : false
 				},
 				{
-					"name" : "x[4]",
+					"name" : "VGA_G[6]",
 					"strict" : false
 				},
 				{
-					"name" : "x[8]",
+					"name" : "VGA_G[7]",
 					"strict" : false
 				},
 				{
-					"name" : "x[9]",
+					"name" : "VGA_B[0]",
 					"strict" : false
 				},
 				{
-					"name" : "t13[1]",
+					"name" : "VGA_B[1]",
 					"strict" : false
 				},
 				{
-					"name" : "t23[1]",
+					"name" : "VGA_B[2]",
 					"strict" : false
 				},
 				{
-					"name" : "t33[1]",
+					"name" : "VGA_B[3]",
 					"strict" : false
 				},
 				{
-					"name" : "t31[0]",
+					"name" : "VGA_B[4]",
 					"strict" : false
 				},
 				{
-					"name" : "t31[1]",
+					"name" : "VGA_B[5]",
 					"strict" : false
 				},
 				{
-					"name" : "t32[0]",
+					"name" : "VGA_B[6]",
 					"strict" : false
 				},
 				{
-					"name" : "t32[1]",
+					"name" : "VGA_B[7]",
 					"strict" : false
 				},
 				{
-					"name" : "t33[0]",
-					"strict" : false
-				},
-				{
-					"name" : "t11[0]",
-					"strict" : false
-				},
-				{
-					"name" : "t11[1]",
-					"strict" : false
-				},
-				{
-					"name" : "t12[0]",
-					"strict" : false
-				},
-				{
-					"name" : "t12[1]",
-					"strict" : false
-				},
-				{
-					"name" : "t13[0]",
-					"strict" : false
-				},
-				{
-					"name" : "t21[0]",
-					"strict" : false
-				},
-				{
-					"name" : "t21[1]",
-					"strict" : false
-				},
-				{
-					"name" : "t22[0]",
-					"strict" : false
-				},
-				{
-					"name" : "t22[1]",
-					"strict" : false
-				},
-				{
-					"name" : "t23[0]",
+					"name" : "clk",
 					"strict" : false
 				}
 			]

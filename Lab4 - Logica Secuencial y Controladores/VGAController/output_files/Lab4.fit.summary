@@ -1,16 +1,16 @@
-Fitter Status : Successful - Thu Oct 10 12:07:13 2019
-Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Fitter Status : Successful - Tue Oct 15 11:30:40 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : Lab4
 Top-level Entity Name : TicTacToe
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 38 / 32,070 ( < 1 % )
-Total registers : 50
+Logic utilization (in ALMs) : 83 / 32,070 ( < 1 % )
+Total registers : 51
 Total pins : 30 / 457 ( 7 % )
 Total virtual pins : 0
-Total block memory bits : 0 / 4,065,280 ( 0 % )
-Total RAM Blocks : 0 / 397 ( 0 % )
+Total block memory bits : 24,576 / 4,065,280 ( < 1 % )
+Total RAM Blocks : 3 / 397 ( < 1 % )
 Total DSP Blocks : 0 / 87 ( 0 % )
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0
