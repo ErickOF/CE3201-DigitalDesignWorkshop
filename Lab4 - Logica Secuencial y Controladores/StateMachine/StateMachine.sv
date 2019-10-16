@@ -52,12 +52,12 @@ always_comb begin
 	end
 	3'b110:
 	begin
-		next_state = 3'b001; 
+		next_state = 3'b001; Time=0; ChangeTurn=0; ValidateWin=0; PlayRandom=0; ValidatePlay=0; PrintSprint=0; PrintWin=0;
 	end
 	3'b111:
 	begin
-		if(start) next_state = 3'b001; 
-		else next_state = 3'b110; 
+		if(start) begin next_state = 3'b001; Time=0; ChangeTurn=0; ValidateWin=0; PlayRandom=0; ValidatePlay=0; PrintSprint=0; PrintWin=0; end
+		else begin next_state = 3'b110; Time=0; ChangeTurn=0; ValidateWin=0; PlayRandom=0; ValidatePlay=0; PrintSprint=0; PrintWin=0; end
 	end
 	
 	endcase
