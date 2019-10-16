@@ -8,14 +8,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "vga_sync_n",
-					"strict" : false
-				},
-				{
-					"name" : "vga_blank_n",
-					"strict" : false
-				},
-				{
 					"name" : "vga_vs",
 					"strict" : false
 				},

@@ -3,211 +3,211 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1100mV 85C Model Setup 'clk'
-Slack : -7.270
-TNS   : -203.315
+Slack : -7.928
+TNS   : -220.789
 
 Type  : Slow 1100mV 85C Model Setup 'ClockDivider:clock_divider|counter[0]'
-Slack : -3.434
-TNS   : -135.427
+Slack : -4.541
+TNS   : -171.186
 
 Type  : Slow 1100mV 85C Model Setup 'VGAController:VGA|Counter:h_counter|Q[0]'
-Slack : -2.337
-TNS   : -26.692
+Slack : -2.032
+TNS   : -22.678
 
 Type  : Slow 1100mV 85C Model Hold 'ClockDivider:clock_divider|counter[0]'
-Slack : -0.057
-TNS   : -0.060
+Slack : -0.181
+TNS   : -0.202
 
 Type  : Slow 1100mV 85C Model Hold 'clk'
-Slack : 0.371
+Slack : 0.378
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'VGAController:VGA|Counter:h_counter|Q[0]'
-Slack : 0.926
+Slack : 0.888
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Recovery 'ClockDivider:clock_divider|counter[0]'
-Slack : -4.112
-TNS   : -41.094
+Slack : -4.570
+TNS   : -44.307
 
 Type  : Slow 1100mV 85C Model Recovery 'VGAController:VGA|Counter:h_counter|Q[0]'
-Slack : -1.691
-TNS   : -21.939
+Slack : -1.887
+TNS   : -22.581
 
 Type  : Slow 1100mV 85C Model Removal 'ClockDivider:clock_divider|counter[0]'
-Slack : 0.810
+Slack : 0.795
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Removal 'VGAController:VGA|Counter:h_counter|Q[0]'
-Slack : 0.976
+Slack : 1.152
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'ClockDivider:clock_divider|counter[0]'
 Slack : -2.174
-TNS   : -135.182
+TNS   : -138.135
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
 Slack : -0.394
-TNS   : -14.577
+TNS   : -14.560
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'VGAController:VGA|Counter:h_counter|Q[0]'
 Slack : -0.394
-TNS   : -7.062
+TNS   : -7.409
 
 Type  : Slow 1100mV 0C Model Setup 'clk'
-Slack : -7.014
-TNS   : -196.113
+Slack : -7.619
+TNS   : -212.212
 
 Type  : Slow 1100mV 0C Model Setup 'ClockDivider:clock_divider|counter[0]'
-Slack : -3.387
-TNS   : -132.770
+Slack : -4.455
+TNS   : -167.958
 
 Type  : Slow 1100mV 0C Model Setup 'VGAController:VGA|Counter:h_counter|Q[0]'
-Slack : -2.390
-TNS   : -27.073
+Slack : -2.082
+TNS   : -22.833
 
 Type  : Slow 1100mV 0C Model Hold 'ClockDivider:clock_divider|counter[0]'
-Slack : -0.002
-TNS   : -0.002
+Slack : -0.126
+TNS   : -0.126
 
 Type  : Slow 1100mV 0C Model Hold 'clk'
-Slack : 0.084
+Slack : 0.045
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'VGAController:VGA|Counter:h_counter|Q[0]'
-Slack : 0.912
+Slack : 0.893
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Recovery 'ClockDivider:clock_divider|counter[0]'
-Slack : -3.941
-TNS   : -39.384
+Slack : -4.446
+TNS   : -42.983
 
 Type  : Slow 1100mV 0C Model Recovery 'VGAController:VGA|Counter:h_counter|Q[0]'
-Slack : -1.627
-TNS   : -21.106
+Slack : -1.828
+TNS   : -21.802
 
 Type  : Slow 1100mV 0C Model Removal 'ClockDivider:clock_divider|counter[0]'
-Slack : 0.718
+Slack : 0.677
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Removal 'VGAController:VGA|Counter:h_counter|Q[0]'
-Slack : 0.945
+Slack : 1.148
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'ClockDivider:clock_divider|counter[0]'
 Slack : -2.174
-TNS   : -134.934
+TNS   : -136.575
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
 Slack : -0.394
-TNS   : -16.106
+TNS   : -16.071
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'VGAController:VGA|Counter:h_counter|Q[0]'
 Slack : -0.394
-TNS   : -6.786
+TNS   : -7.329
 
 Type  : Fast 1100mV 85C Model Setup 'clk'
-Slack : -4.501
-TNS   : -125.911
+Slack : -4.851
+TNS   : -134.824
 
 Type  : Fast 1100mV 85C Model Setup 'ClockDivider:clock_divider|counter[0]'
-Slack : -1.936
-TNS   : -67.305
+Slack : -2.339
+TNS   : -85.618
 
 Type  : Fast 1100mV 85C Model Setup 'VGAController:VGA|Counter:h_counter|Q[0]'
-Slack : -1.077
-TNS   : -12.066
+Slack : -0.983
+TNS   : -10.257
 
 Type  : Fast 1100mV 85C Model Hold 'ClockDivider:clock_divider|counter[0]'
-Slack : -0.124
-TNS   : -0.124
+Slack : -0.239
+TNS   : -0.416
 
 Type  : Fast 1100mV 85C Model Hold 'clk'
 Slack : 0.201
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'VGAController:VGA|Counter:h_counter|Q[0]'
-Slack : 0.486
+Slack : 0.451
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Recovery 'ClockDivider:clock_divider|counter[0]'
-Slack : -2.390
-TNS   : -23.881
+Slack : -2.600
+TNS   : -25.317
 
 Type  : Fast 1100mV 85C Model Recovery 'VGAController:VGA|Counter:h_counter|Q[0]'
-Slack : -0.636
-TNS   : -8.256
+Slack : -0.810
+TNS   : -9.707
 
 Type  : Fast 1100mV 85C Model Removal 'ClockDivider:clock_divider|counter[0]'
-Slack : 0.438
+Slack : 0.406
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Removal 'VGAController:VGA|Counter:h_counter|Q[0]'
-Slack : 0.452
+Slack : 0.558
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'ClockDivider:clock_divider|counter[0]'
 Slack : -2.174
-TNS   : -129.572
+TNS   : -132.610
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
 Slack : -0.083
-TNS   : -2.309
+TNS   : -2.310
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'VGAController:VGA|Counter:h_counter|Q[0]'
-Slack : 0.001
+Slack : 0.028
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Setup 'clk'
-Slack : -3.873
-TNS   : -108.412
+Slack : -4.178
+TNS   : -116.205
 
 Type  : Fast 1100mV 0C Model Setup 'ClockDivider:clock_divider|counter[0]'
-Slack : -1.639
-TNS   : -57.765
+Slack : -2.041
+TNS   : -74.539
 
 Type  : Fast 1100mV 0C Model Setup 'VGAController:VGA|Counter:h_counter|Q[0]'
-Slack : -0.966
-TNS   : -10.828
+Slack : -0.867
+TNS   : -8.984
 
 Type  : Fast 1100mV 0C Model Hold 'ClockDivider:clock_divider|counter[0]'
-Slack : -0.113
-TNS   : -0.121
+Slack : -0.223
+TNS   : -0.436
 
 Type  : Fast 1100mV 0C Model Hold 'clk'
-Slack : 0.189
+Slack : 0.177
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'VGAController:VGA|Counter:h_counter|Q[0]'
-Slack : 0.445
+Slack : 0.416
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Recovery 'ClockDivider:clock_divider|counter[0]'
-Slack : -2.046
-TNS   : -20.450
+Slack : -2.262
+TNS   : -21.975
 
 Type  : Fast 1100mV 0C Model Recovery 'VGAController:VGA|Counter:h_counter|Q[0]'
-Slack : -0.542
-TNS   : -7.026
+Slack : -0.693
+TNS   : -8.276
 
 Type  : Fast 1100mV 0C Model Removal 'ClockDivider:clock_divider|counter[0]'
-Slack : 0.345
+Slack : 0.298
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Removal 'VGAController:VGA|Counter:h_counter|Q[0]'
-Slack : 0.406
+Slack : 0.507
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'ClockDivider:clock_divider|counter[0]'
 Slack : -2.174
-TNS   : -129.497
+TNS   : -131.465
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
 Slack : -0.087
-TNS   : -2.395
+TNS   : -2.393
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'VGAController:VGA|Counter:h_counter|Q[0]'
-Slack : 0.042
+Slack : 0.061
 TNS   : 0.000
 
 ------------------------------------------------------------

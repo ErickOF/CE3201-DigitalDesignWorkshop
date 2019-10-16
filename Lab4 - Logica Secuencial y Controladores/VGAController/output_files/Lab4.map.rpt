@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab4
-Tue Oct 15 11:28:31 2019
+Tue Oct 15 19:48:45 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -58,7 +58,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Oct 15 11:28:31 2019       ;
+; Analysis & Synthesis Status     ; Successful - Tue Oct 15 19:48:45 2019       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; Lab4                                        ;
 ; Top-level Entity Name           ; TicTacToe                                   ;
@@ -171,52 +171,52 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.1%      ;
+;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                        ;
-+----------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                                                                          ; Library ;
-+----------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+---------+
-; sprite1.mif                      ; yes             ; User Memory Initialization File        ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/sprite1.mif            ;         ;
-; LinesPrinter.sv                  ; yes             ; User SystemVerilog HDL File            ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/LinesPrinter.sv        ;         ;
-; SpritePrinter.sv                 ; yes             ; User SystemVerilog HDL File            ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/SpritePrinter.sv       ;         ;
-; Comparator.sv                    ; yes             ; User SystemVerilog HDL File            ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/Comparator.sv          ;         ;
-; ROMSprite1.v                     ; yes             ; User Wizard-Generated File             ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/ROMSprite1.v           ;         ;
-; ColorDecoder.sv                  ; yes             ; User SystemVerilog HDL File            ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/ColorDecoder.sv        ;         ;
-; AddressGenerator.sv              ; yes             ; User SystemVerilog HDL File            ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/AddressGenerator.sv    ;         ;
-; VisibleLogic.sv                  ; yes             ; User SystemVerilog HDL File            ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/VisibleLogic.sv        ;         ;
-; VGAController.sv                 ; yes             ; User SystemVerilog HDL File            ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/VGAController.sv       ;         ;
-; ClockDivider.sv                  ; yes             ; User SystemVerilog HDL File            ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/ClockDivider.sv        ;         ;
-; Counter.sv                       ; yes             ; User SystemVerilog HDL File            ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/Counter.sv             ;         ;
-; TicTacToe.sv                     ; yes             ; User SystemVerilog HDL File            ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/TicTacToe.sv           ;         ;
-; RGBDecoder.sv                    ; yes             ; User SystemVerilog HDL File            ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/RGBDecoder.sv          ;         ;
-; ROMSprite2.v                     ; yes             ; User Wizard-Generated File             ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/ROMSprite2.v           ;         ;
-; SpritePrinter2.sv                ; yes             ; User SystemVerilog HDL File            ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/SpritePrinter2.sv      ;         ;
-; ColorDecoder2.sv                 ; yes             ; User SystemVerilog HDL File            ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/ColorDecoder2.sv       ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf                                                                 ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                          ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc                                                                    ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc                                                                 ;         ;
-; aglobal181.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                                                                 ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                                  ;         ;
-; altrom.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc                                                                     ;         ;
-; altram.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc                                                                     ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc                                                                   ;         ;
-; db/altsyncram_9ag1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/db/altsyncram_9ag1.tdf ;         ;
-; db/altsyncram_aag1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/db/altsyncram_aag1.tdf ;         ;
-; sprite2.mif                      ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/sprite2.mif            ;         ;
-+----------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                     ;
++----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                                                                       ; Library ;
++----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------+---------+
+; sprite1.mif                      ; yes             ; User Memory Initialization File        ; D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/sprite1.mif            ;         ;
+; LinesPrinter.sv                  ; yes             ; User SystemVerilog HDL File            ; D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/LinesPrinter.sv        ;         ;
+; SpritePrinter.sv                 ; yes             ; User SystemVerilog HDL File            ; D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/SpritePrinter.sv       ;         ;
+; Comparator.sv                    ; yes             ; User SystemVerilog HDL File            ; D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/Comparator.sv          ;         ;
+; ROMSprite1.v                     ; yes             ; User Wizard-Generated File             ; D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/ROMSprite1.v           ;         ;
+; ColorDecoder.sv                  ; yes             ; User SystemVerilog HDL File            ; D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/ColorDecoder.sv        ;         ;
+; AddressGenerator.sv              ; yes             ; User SystemVerilog HDL File            ; D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/AddressGenerator.sv    ;         ;
+; VisibleLogic.sv                  ; yes             ; User SystemVerilog HDL File            ; D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/VisibleLogic.sv        ;         ;
+; VGAController.sv                 ; yes             ; User SystemVerilog HDL File            ; D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/VGAController.sv       ;         ;
+; ClockDivider.sv                  ; yes             ; User SystemVerilog HDL File            ; D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/ClockDivider.sv        ;         ;
+; Counter.sv                       ; yes             ; User SystemVerilog HDL File            ; D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/Counter.sv             ;         ;
+; TicTacToe.sv                     ; yes             ; User SystemVerilog HDL File            ; D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/TicTacToe.sv           ;         ;
+; RGBDecoder.sv                    ; yes             ; User SystemVerilog HDL File            ; D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/RGBDecoder.sv          ;         ;
+; SpritePrinter2.sv                ; yes             ; User SystemVerilog HDL File            ; D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/SpritePrinter2.sv      ;         ;
+; ColorDecoder2.sv                 ; yes             ; User SystemVerilog HDL File            ; D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/ColorDecoder2.sv       ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                           ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf                                                              ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                           ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                       ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                           ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc                                                                 ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                           ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc                                                              ;         ;
+; aglobal181.inc                   ; yes             ; Megafunction                           ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                                                              ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                           ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                               ;         ;
+; altrom.inc                       ; yes             ; Megafunction                           ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc                                                                  ;         ;
+; altram.inc                       ; yes             ; Megafunction                           ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc                                                                  ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                           ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc                                                                ;         ;
+; db/altsyncram_9ag1.tdf           ; yes             ; Auto-Generated Megafunction            ; D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/db/altsyncram_9ag1.tdf ;         ;
+; romsprite2.v                     ; yes             ; Auto-Found Wizard-Generated File       ; D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/romsprite2.v           ;         ;
+; db/altsyncram_aag1.tdf           ; yes             ; Auto-Generated Megafunction            ; D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/db/altsyncram_aag1.tdf ;         ;
+; sprite2.mif                      ; yes             ; Auto-Found Memory Initialization File  ; D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/sprite2.mif            ;         ;
++----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -224,14 +224,14 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimate of Logic utilization (ALMs needed) ; 90    ;
+; Estimate of Logic utilization (ALMs needed) ; 103   ;
 ;                                             ;       ;
-; Combinational ALUT usage for logic          ; 148   ;
-;     -- 7 input functions                    ; 0     ;
+; Combinational ALUT usage for logic          ; 170   ;
+;     -- 7 input functions                    ; 4     ;
 ;     -- 6 input functions                    ; 31    ;
-;     -- 5 input functions                    ; 12    ;
-;     -- 4 input functions                    ; 7     ;
-;     -- <=3 input functions                  ; 98    ;
+;     -- 5 input functions                    ; 10    ;
+;     -- 4 input functions                    ; 31    ;
+;     -- <=3 input functions                  ; 94    ;
 ;                                             ;       ;
 ; Dedicated logic registers                   ; 48    ;
 ;                                             ;       ;
@@ -243,8 +243,8 @@ refer to the applicable agreement for further details.
 ;                                             ;       ;
 ; Maximum fan-out node                        ; rtl~0 ;
 ; Maximum fan-out                             ; 45    ;
-; Total fan-out                               ; 772   ;
-; Average fan-out                             ; 2.95  ;
+; Total fan-out                               ; 889   ;
+; Average fan-out                             ; 3.13  ;
 +---------------------------------------------+-------+
 
 
@@ -253,26 +253,26 @@ refer to the applicable agreement for further details.
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------+------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                         ; Entity Name      ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------+------------------+--------------+
-; |TicTacToe                                   ; 148 (1)             ; 48 (0)                    ; 24576             ; 0          ; 30   ; 0            ; |TicTacToe                                                                                                  ; TicTacToe        ; work         ;
+; |TicTacToe                                   ; 170 (1)             ; 48 (0)                    ; 24576             ; 0          ; 30   ; 0            ; |TicTacToe                                                                                                  ; TicTacToe        ; work         ;
 ;    |ClockDivider:clock_divider|              ; 33 (33)             ; 28 (28)                   ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|ClockDivider:clock_divider                                                                       ; ClockDivider     ; work         ;
-;    |LinesPrinter:lines|                      ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|LinesPrinter:lines                                                                               ; LinesPrinter     ; work         ;
-;    |RGBDecoder:rgb_decoder|                  ; 45 (45)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|RGBDecoder:rgb_decoder                                                                           ; RGBDecoder       ; work         ;
-;    |SpritePrinter2:sp2|                      ; 8 (0)               ; 0 (0)                     ; 12288             ; 0          ; 0    ; 0            ; |TicTacToe|SpritePrinter2:sp2                                                                               ; SpritePrinter2   ; work         ;
-;       |ColorDecoder2:DECO|                   ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|SpritePrinter2:sp2|ColorDecoder2:DECO                                                            ; ColorDecoder2    ; work         ;
+;    |LinesPrinter:lines|                      ; 13 (13)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|LinesPrinter:lines                                                                               ; LinesPrinter     ; work         ;
+;    |RGBDecoder:rgb_decoder|                  ; 37 (37)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|RGBDecoder:rgb_decoder                                                                           ; RGBDecoder       ; work         ;
+;    |SpritePrinter2:sp2|                      ; 10 (0)              ; 0 (0)                     ; 12288             ; 0          ; 0    ; 0            ; |TicTacToe|SpritePrinter2:sp2                                                                               ; SpritePrinter2   ; work         ;
+;       |ColorDecoder2:DECO|                   ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|SpritePrinter2:sp2|ColorDecoder2:DECO                                                            ; ColorDecoder2    ; work         ;
 ;       |ROMSprite2:ROM|                       ; 0 (0)               ; 0 (0)                     ; 12288             ; 0          ; 0    ; 0            ; |TicTacToe|SpritePrinter2:sp2|ROMSprite2:ROM                                                                ; ROMSprite2       ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 12288             ; 0          ; 0    ; 0            ; |TicTacToe|SpritePrinter2:sp2|ROMSprite2:ROM|altsyncram:altsyncram_component                                ; altsyncram       ; work         ;
 ;             |altsyncram_aag1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 12288             ; 0          ; 0    ; 0            ; |TicTacToe|SpritePrinter2:sp2|ROMSprite2:ROM|altsyncram:altsyncram_component|altsyncram_aag1:auto_generated ; altsyncram_aag1  ; work         ;
-;       |VisibleLogic:VIS|                     ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|SpritePrinter2:sp2|VisibleLogic:VIS                                                              ; VisibleLogic     ; work         ;
-;    |SpritePrinter:sp1|                       ; 23 (0)              ; 0 (0)                     ; 12288             ; 0          ; 0    ; 0            ; |TicTacToe|SpritePrinter:sp1                                                                                ; SpritePrinter    ; work         ;
+;       |VisibleLogic:VIS|                     ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|SpritePrinter2:sp2|VisibleLogic:VIS                                                              ; VisibleLogic     ; work         ;
+;    |SpritePrinter:sp1|                       ; 24 (0)              ; 0 (0)                     ; 12288             ; 0          ; 0    ; 0            ; |TicTacToe|SpritePrinter:sp1                                                                                ; SpritePrinter    ; work         ;
 ;       |AddressGenerator:ADDRESS|             ; 20 (20)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|SpritePrinter:sp1|AddressGenerator:ADDRESS                                                       ; AddressGenerator ; work         ;
 ;       |ColorDecoder:DECO|                    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|SpritePrinter:sp1|ColorDecoder:DECO                                                              ; ColorDecoder     ; work         ;
 ;       |ROMSprite1:ROM|                       ; 0 (0)               ; 0 (0)                     ; 12288             ; 0          ; 0    ; 0            ; |TicTacToe|SpritePrinter:sp1|ROMSprite1:ROM                                                                 ; ROMSprite1       ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 12288             ; 0          ; 0    ; 0            ; |TicTacToe|SpritePrinter:sp1|ROMSprite1:ROM|altsyncram:altsyncram_component                                 ; altsyncram       ; work         ;
 ;             |altsyncram_9ag1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 12288             ; 0          ; 0    ; 0            ; |TicTacToe|SpritePrinter:sp1|ROMSprite1:ROM|altsyncram:altsyncram_component|altsyncram_9ag1:auto_generated  ; altsyncram_9ag1  ; work         ;
-;       |VisibleLogic:VIS|                     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|SpritePrinter:sp1|VisibleLogic:VIS                                                               ; VisibleLogic     ; work         ;
-;    |VGAController:VGA|                       ; 29 (2)              ; 20 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|VGAController:VGA                                                                                ; VGAController    ; work         ;
+;       |VisibleLogic:VIS|                     ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|SpritePrinter:sp1|VisibleLogic:VIS                                                               ; VisibleLogic     ; work         ;
+;    |VGAController:VGA|                       ; 52 (24)             ; 20 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|VGAController:VGA                                                                                ; VGAController    ; work         ;
 ;       |Comparator:hmin_comparator|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|VGAController:VGA|Comparator:hmin_comparator                                                     ; Comparator       ; work         ;
-;       |Comparator:maxscreenh_comparator|     ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|VGAController:VGA|Comparator:maxscreenh_comparator                                               ; Comparator       ; work         ;
+;       |Comparator:maxscreenh_comparator|     ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|VGAController:VGA|Comparator:maxscreenh_comparator                                               ; Comparator       ; work         ;
 ;       |Comparator:maxscreenv_comparator|     ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|VGAController:VGA|Comparator:maxscreenv_comparator                                               ; Comparator       ; work         ;
 ;       |Comparator:vmin_comparator|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|VGAController:VGA|Comparator:vmin_comparator                                                     ; Comparator       ; work         ;
 ;       |Counter:h_counter|                    ; 10 (10)             ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|VGAController:VGA|Counter:h_counter                                                              ; Counter          ; work         ;
@@ -291,14 +291,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+-------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                                          ;
-+--------+--------------+---------+--------------+--------------+----------------------------------------------+-----------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                              ; IP Include File ;
-+--------+--------------+---------+--------------+--------------+----------------------------------------------+-----------------+
-; Altera ; ROM: 1-PORT  ; 18.1    ; N/A          ; N/A          ; |TicTacToe|SpritePrinter:sp1|ROMSprite1:ROM  ; ROMSprite1.v    ;
-; Altera ; ROM: 2-PORT  ; 17.1    ; N/A          ; N/A          ; |TicTacToe|SpritePrinter2:sp2|ROMSprite2:ROM ; ROMSprite2.v    ;
-+--------+--------------+---------+--------------+--------------+----------------------------------------------+-----------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                         ;
++--------+--------------+---------+--------------+--------------+---------------------------------------------+-----------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                             ; IP Include File ;
++--------+--------------+---------+--------------+--------------+---------------------------------------------+-----------------+
+; Altera ; ROM: 1-PORT  ; 18.1    ; N/A          ; N/A          ; |TicTacToe|SpritePrinter:sp1|ROMSprite1:ROM ; ROMSprite1.v    ;
++--------+--------------+---------+--------------+--------------+---------------------------------------------+-----------------+
 
 
 +------------------------------------------------------+
@@ -321,10 +320,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output              ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |TicTacToe|RGBDecoder:rgb_decoder|Mux5  ;
-; 8:1                ; 2 bits    ; 10 LEs        ; 6 LEs                ; 4 LEs                  ; No         ; |TicTacToe|RGBDecoder:rgb_decoder|Mux23 ;
-; 12:1               ; 6 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |TicTacToe|RGBDecoder:rgb_decoder|Mux15 ;
-; 12:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |TicTacToe|RGBDecoder:rgb_decoder|Mux3  ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |TicTacToe|RGBDecoder:rgb_decoder|Mux1  ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; No         ; |TicTacToe|RGBDecoder:rgb_decoder|Mux21 ;
+; 12:1               ; 6 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |TicTacToe|RGBDecoder:rgb_decoder|Mux12 ;
+; 12:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |TicTacToe|RGBDecoder:rgb_decoder|Mux0  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
 
 
@@ -602,22 +601,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; arriav_ff             ; 48                          ;
 ;     CLR               ; 20                          ;
 ;     SCLR              ; 28                          ;
-; arriav_lcell_comb     ; 153                         ;
-;     arith             ; 66                          ;
+; arriav_lcell_comb     ; 172                         ;
+;     arith             ; 86                          ;
 ;         1 data inputs ; 64                          ;
 ;         2 data inputs ; 2                           ;
-;     normal            ; 87                          ;
-;         1 data inputs ; 7                           ;
-;         2 data inputs ; 4                           ;
-;         3 data inputs ; 26                          ;
-;         4 data inputs ; 7                           ;
-;         5 data inputs ; 12                          ;
+;         4 data inputs ; 20                          ;
+;     extend            ; 4                           ;
+;         7 data inputs ; 4                           ;
+;     normal            ; 82                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 3                           ;
+;         2 data inputs ; 5                           ;
+;         3 data inputs ; 21                          ;
+;         4 data inputs ; 11                          ;
+;         5 data inputs ; 10                          ;
 ;         6 data inputs ; 31                          ;
 ; boundary_port         ; 30                          ;
 ; stratixv_ram_block    ; 6                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 5.70                        ;
-; Average LUT depth     ; 3.25                        ;
+; Max LUT depth         ; 6.30                        ;
+; Average LUT depth     ; 3.87                        ;
 +-----------------------+-----------------------------+
 
 
@@ -626,7 +629,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:05     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -636,64 +639,64 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Oct 15 11:27:55 2019
+    Info: Processing started: Tue Oct 15 19:48:31 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab4 -c Lab4
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file vgacontrollertest.sv
-    Info (12023): Found entity 1: VGAControllerTest File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/VGAControllerTest.sv Line: 1
+    Info (12023): Found entity 1: VGAControllerTest File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/VGAControllerTest.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file countertest.sv
-    Info (12023): Found entity 1: CounterTest File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/CounterTest.sv Line: 1
+    Info (12023): Found entity 1: CounterTest File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/CounterTest.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file linesprinter.sv
-    Info (12023): Found entity 1: LinesPrinter File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/LinesPrinter.sv Line: 13
+    Info (12023): Found entity 1: LinesPrinter File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/LinesPrinter.sv Line: 13
 Info (12021): Found 1 design units, including 1 entities, in source file spriteprinter.sv
-    Info (12023): Found entity 1: SpritePrinter File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/SpritePrinter.sv Line: 15
+    Info (12023): Found entity 1: SpritePrinter File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/SpritePrinter.sv Line: 15
 Info (12021): Found 1 design units, including 1 entities, in source file comparator.sv
-    Info (12023): Found entity 1: Comparator File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/Comparator.sv Line: 11
+    Info (12023): Found entity 1: Comparator File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/Comparator.sv Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file romsprite1.v
-    Info (12023): Found entity 1: ROMSprite1 File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/ROMSprite1.v Line: 39
+    Info (12023): Found entity 1: ROMSprite1 File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/ROMSprite1.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file colordecoder.sv
-    Info (12023): Found entity 1: ColorDecoder File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/ColorDecoder.sv Line: 1
+    Info (12023): Found entity 1: ColorDecoder File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/ColorDecoder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file addressgenerator.sv
-    Info (12023): Found entity 1: AddressGenerator File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/AddressGenerator.sv Line: 1
+    Info (12023): Found entity 1: AddressGenerator File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/AddressGenerator.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file visiblelogic.sv
-    Info (12023): Found entity 1: VisibleLogic File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/VisibleLogic.sv Line: 1
+    Info (12023): Found entity 1: VisibleLogic File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/VisibleLogic.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file vgacontroller.sv
-    Info (12023): Found entity 1: VGAController File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/VGAController.sv Line: 1
+    Info (12023): Found entity 1: VGAController File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/VGAController.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file clockdivider.sv
-    Info (12023): Found entity 1: ClockDivider File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/ClockDivider.sv Line: 1
+    Info (12023): Found entity 1: ClockDivider File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/ClockDivider.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file clockdividertest.sv
-    Info (12023): Found entity 1: ClockDividerTest File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/ClockDividerTest.sv Line: 1
+    Info (12023): Found entity 1: ClockDividerTest File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/ClockDividerTest.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file counter.sv
-    Info (12023): Found entity 1: Counter File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/Counter.sv Line: 1
+    Info (12023): Found entity 1: Counter File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/Counter.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tictactoe.sv
-    Info (12023): Found entity 1: TicTacToe File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/TicTacToe.sv Line: 1
+    Info (12023): Found entity 1: TicTacToe File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/TicTacToe.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tictactoetest.sv
-    Info (12023): Found entity 1: TicTacToeTest File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/TicTacToeTest.sv Line: 1
+    Info (12023): Found entity 1: TicTacToeTest File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/TicTacToeTest.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file rgbdecoder.sv
-    Info (12023): Found entity 1: RGBDecoder File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/RGBDecoder.sv Line: 1
+    Info (12023): Found entity 1: RGBDecoder File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/RGBDecoder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file rgbdecodertest.sv
-    Info (12023): Found entity 1: RGBDecoderTest File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/RGBDecoderTest.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file romsprite2.v
-    Info (12023): Found entity 1: ROMSprite2 File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/ROMSprite2.v Line: 39
+    Info (12023): Found entity 1: RGBDecoderTest File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/RGBDecoderTest.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file spriteprinter2.sv
-    Info (12023): Found entity 1: SpritePrinter2 File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/SpritePrinter2.sv Line: 15
+    Info (12023): Found entity 1: SpritePrinter2 File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/SpritePrinter2.sv Line: 15
 Info (12021): Found 1 design units, including 1 entities, in source file colordecoder2.sv
-    Info (12023): Found entity 1: ColorDecoder2 File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/ColorDecoder2.sv Line: 1
+    Info (12023): Found entity 1: ColorDecoder2 File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/ColorDecoder2.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file spritedecoder.sv
-    Info (12023): Found entity 1: SpriteDecoder File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/SpriteDecoder.sv Line: 1
+    Info (12023): Found entity 1: SpriteDecoder File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/SpriteDecoder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file spritedecodertest.sv
-    Info (12023): Found entity 1: SpriteDecoderTest File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/SpriteDecoderTest.sv Line: 1
+    Info (12023): Found entity 1: SpriteDecoderTest File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/SpriteDecoderTest.sv Line: 1
 Info (12127): Elaborating entity "TicTacToe" for the top level hierarchy
-Info (12128): Elaborating entity "ClockDivider" for hierarchy "ClockDivider:clock_divider" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/TicTacToe.sv Line: 10
-Info (12128): Elaborating entity "VGAController" for hierarchy "VGAController:VGA" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/TicTacToe.sv Line: 11
-Info (12128): Elaborating entity "Counter" for hierarchy "VGAController:VGA|Counter:h_counter" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/VGAController.sv Line: 33
-Info (12128): Elaborating entity "Comparator" for hierarchy "VGAController:VGA|Comparator:hmin_comparator" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/VGAController.sv Line: 43
-Info (12128): Elaborating entity "SpritePrinter" for hierarchy "SpritePrinter:sp1" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/TicTacToe.sv Line: 13
-Info (12128): Elaborating entity "ROMSprite1" for hierarchy "SpritePrinter:sp1|ROMSprite1:ROM" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/SpritePrinter.sv Line: 23
-Info (12128): Elaborating entity "altsyncram" for hierarchy "SpritePrinter:sp1|ROMSprite1:ROM|altsyncram:altsyncram_component" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/ROMSprite1.v Line: 81
-Info (12130): Elaborated megafunction instantiation "SpritePrinter:sp1|ROMSprite1:ROM|altsyncram:altsyncram_component" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/ROMSprite1.v Line: 81
-Info (12133): Instantiated megafunction "SpritePrinter:sp1|ROMSprite1:ROM|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/ROMSprite1.v Line: 81
+Info (12128): Elaborating entity "ClockDivider" for hierarchy "ClockDivider:clock_divider" File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/TicTacToe.sv Line: 10
+Info (12128): Elaborating entity "VGAController" for hierarchy "VGAController:VGA" File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/TicTacToe.sv Line: 11
+Warning (10230): Verilog HDL assignment warning at VGAController.sv(48): truncated value with size 32 to match size of target (10) File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/VGAController.sv Line: 48
+Warning (10230): Verilog HDL assignment warning at VGAController.sv(49): truncated value with size 32 to match size of target (10) File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/VGAController.sv Line: 49
+Info (12128): Elaborating entity "Counter" for hierarchy "VGAController:VGA|Counter:h_counter" File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/VGAController.sv Line: 26
+Info (12128): Elaborating entity "Comparator" for hierarchy "VGAController:VGA|Comparator:hmin_comparator" File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/VGAController.sv Line: 36
+Info (12128): Elaborating entity "SpritePrinter" for hierarchy "SpritePrinter:sp1" File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/TicTacToe.sv Line: 13
+Info (12128): Elaborating entity "ROMSprite1" for hierarchy "SpritePrinter:sp1|ROMSprite1:ROM" File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/SpritePrinter.sv Line: 23
+Info (12128): Elaborating entity "altsyncram" for hierarchy "SpritePrinter:sp1|ROMSprite1:ROM|altsyncram:altsyncram_component" File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/ROMSprite1.v Line: 81
+Info (12130): Elaborated megafunction instantiation "SpritePrinter:sp1|ROMSprite1:ROM|altsyncram:altsyncram_component" File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/ROMSprite1.v Line: 81
+Info (12133): Instantiated megafunction "SpritePrinter:sp1|ROMSprite1:ROM|altsyncram:altsyncram_component" with the following parameter: File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/ROMSprite1.v Line: 81
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -709,16 +712,18 @@ Info (12133): Instantiated megafunction "SpritePrinter:sp1|ROMSprite1:ROM|altsyn
     Info (12134): Parameter "width_a" = "3"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_9ag1.tdf
-    Info (12023): Found entity 1: altsyncram_9ag1 File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/db/altsyncram_9ag1.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_9ag1" for hierarchy "SpritePrinter:sp1|ROMSprite1:ROM|altsyncram:altsyncram_component|altsyncram_9ag1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "ColorDecoder" for hierarchy "SpritePrinter:sp1|ColorDecoder:DECO" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/SpritePrinter.sv Line: 25
-Info (12128): Elaborating entity "AddressGenerator" for hierarchy "SpritePrinter:sp1|AddressGenerator:ADDRESS" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/SpritePrinter.sv Line: 27
-Info (12128): Elaborating entity "VisibleLogic" for hierarchy "SpritePrinter:sp1|VisibleLogic:VIS" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/SpritePrinter.sv Line: 28
-Info (12128): Elaborating entity "SpritePrinter2" for hierarchy "SpritePrinter2:sp2" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/TicTacToe.sv Line: 14
-Info (12128): Elaborating entity "ROMSprite2" for hierarchy "SpritePrinter2:sp2|ROMSprite2:ROM" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/SpritePrinter2.sv Line: 23
-Info (12128): Elaborating entity "altsyncram" for hierarchy "SpritePrinter2:sp2|ROMSprite2:ROM|altsyncram:altsyncram_component" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/ROMSprite2.v Line: 81
-Info (12130): Elaborated megafunction instantiation "SpritePrinter2:sp2|ROMSprite2:ROM|altsyncram:altsyncram_component" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/ROMSprite2.v Line: 81
-Info (12133): Instantiated megafunction "SpritePrinter2:sp2|ROMSprite2:ROM|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/ROMSprite2.v Line: 81
+    Info (12023): Found entity 1: altsyncram_9ag1 File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/db/altsyncram_9ag1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_9ag1" for hierarchy "SpritePrinter:sp1|ROMSprite1:ROM|altsyncram:altsyncram_component|altsyncram_9ag1:auto_generated" File: d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Info (12128): Elaborating entity "ColorDecoder" for hierarchy "SpritePrinter:sp1|ColorDecoder:DECO" File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/SpritePrinter.sv Line: 25
+Info (12128): Elaborating entity "AddressGenerator" for hierarchy "SpritePrinter:sp1|AddressGenerator:ADDRESS" File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/SpritePrinter.sv Line: 27
+Info (12128): Elaborating entity "VisibleLogic" for hierarchy "SpritePrinter:sp1|VisibleLogic:VIS" File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/SpritePrinter.sv Line: 28
+Info (12128): Elaborating entity "SpritePrinter2" for hierarchy "SpritePrinter2:sp2" File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/TicTacToe.sv Line: 14
+Warning (12125): Using design file romsprite2.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: ROMSprite2 File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/romsprite2.v Line: 39
+Info (12128): Elaborating entity "ROMSprite2" for hierarchy "SpritePrinter2:sp2|ROMSprite2:ROM" File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/SpritePrinter2.sv Line: 23
+Info (12128): Elaborating entity "altsyncram" for hierarchy "SpritePrinter2:sp2|ROMSprite2:ROM|altsyncram:altsyncram_component" File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/romsprite2.v Line: 81
+Info (12130): Elaborated megafunction instantiation "SpritePrinter2:sp2|ROMSprite2:ROM|altsyncram:altsyncram_component" File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/romsprite2.v Line: 81
+Info (12133): Instantiated megafunction "SpritePrinter2:sp2|ROMSprite2:ROM|altsyncram:altsyncram_component" with the following parameter: File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/romsprite2.v Line: 81
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -734,31 +739,34 @@ Info (12133): Instantiated megafunction "SpritePrinter2:sp2|ROMSprite2:ROM|altsy
     Info (12134): Parameter "width_a" = "3"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_aag1.tdf
-    Info (12023): Found entity 1: altsyncram_aag1 File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/db/altsyncram_aag1.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_aag1" for hierarchy "SpritePrinter2:sp2|ROMSprite2:ROM|altsyncram:altsyncram_component|altsyncram_aag1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "ColorDecoder2" for hierarchy "SpritePrinter2:sp2|ColorDecoder2:DECO" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/SpritePrinter2.sv Line: 25
-Info (12128): Elaborating entity "LinesPrinter" for hierarchy "LinesPrinter:lines" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/TicTacToe.sv Line: 15
-Info (12128): Elaborating entity "RGBDecoder" for hierarchy "RGBDecoder:rgb_decoder" File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/TicTacToe.sv Line: 17
-Info (10264): Verilog HDL Case Statement information at RGBDecoder.sv(9): all case item expressions in this case statement are onehot File: C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/RGBDecoder.sv Line: 9
+    Info (12023): Found entity 1: altsyncram_aag1 File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/db/altsyncram_aag1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_aag1" for hierarchy "SpritePrinter2:sp2|ROMSprite2:ROM|altsyncram:altsyncram_component|altsyncram_aag1:auto_generated" File: d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Info (12128): Elaborating entity "ColorDecoder2" for hierarchy "SpritePrinter2:sp2|ColorDecoder2:DECO" File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/SpritePrinter2.sv Line: 25
+Info (12128): Elaborating entity "LinesPrinter" for hierarchy "LinesPrinter:lines" File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/TicTacToe.sv Line: 15
+Info (12128): Elaborating entity "RGBDecoder" for hierarchy "RGBDecoder:rgb_decoder" File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/TicTacToe.sv Line: 17
+Info (10264): Verilog HDL Case Statement information at RGBDecoder.sv(9): all case item expressions in this case statement are onehot File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/RGBDecoder.sv Line: 9
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "vga_sync_n" is stuck at VCC File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/TicTacToe.sv Line: 2
+    Warning (13410): Pin "vga_blank_n" is stuck at VCC File: D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/TicTacToe.sv Line: 2
 Info (286030): Timing-Driven Synthesis is running
-Info (144001): Generated suppressed messages file C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/output_files/Lab4.map.smsg
+Info (144001): Generated suppressed messages file D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/output_files/Lab4.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 184 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 206 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 29 output pins
-    Info (21061): Implemented 148 logic cells
+    Info (21061): Implemented 170 logic cells
     Info (21064): Implemented 6 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4843 megabytes
-    Info: Processing ended: Tue Oct 15 11:28:31 2019
-    Info: Elapsed time: 00:00:36
-    Info: Total CPU time (on all processors): 00:00:29
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 4819 megabytes
+    Info: Processing ended: Tue Oct 15 19:48:45 2019
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:30
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/ErickOF/Documents/Git/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/output_files/Lab4.map.smsg.
+The suppressed messages can be found in D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/output_files/Lab4.map.smsg.
 
 

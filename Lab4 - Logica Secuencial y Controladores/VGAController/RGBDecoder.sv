@@ -10,7 +10,7 @@ begin
         3'b001: RGB_output = RGB3;
 		  3'b010: RGB_output = RGB2;
 		  3'b100: RGB_output = RGB1;
-	     default: RGB_output = 24'h000000;
+	     default: RGB_output = 24'hFFFFFF;
 	 endcase
 end
 

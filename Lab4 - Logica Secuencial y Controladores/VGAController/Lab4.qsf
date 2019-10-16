@@ -48,8 +48,8 @@ set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (SystemVerilog)"
-set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "SYSTEMVERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_SIMULATION_TOOL "<None>"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT NONE -section_id eda_simulation
 set_location_assignment PIN_B13 -to VGA_B[7]
 set_location_assignment PIN_G13 -to VGA_B[6]
 set_location_assignment PIN_H13 -to VGA_B[5]
@@ -101,7 +101,6 @@ set_global_assignment -name SYSTEMVERILOG_FILE TicTacToe.sv
 set_global_assignment -name SYSTEMVERILOG_FILE TicTacToeTest.sv
 set_global_assignment -name SYSTEMVERILOG_FILE RGBDecoder.sv
 set_global_assignment -name SYSTEMVERILOG_FILE RGBDecoderTest.sv
-set_global_assignment -name QIP_FILE ROMSprite2.qip
 set_global_assignment -name SYSTEMVERILOG_FILE SpritePrinter2.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ColorDecoder2.sv
 set_global_assignment -name SYSTEMVERILOG_FILE SpriteDecoder.sv
