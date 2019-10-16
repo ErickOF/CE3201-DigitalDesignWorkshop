@@ -26,28 +26,29 @@ always_comb begin
 	end
 	3'b001:
 	begin
-		if(TimeOut) next_state = 3'b010; 
-		else next_state = 3'b011; 
+		if(TimeOut) begin next_state = 3'b010; Time=0; ChangeTurn=0; ValidateWin=0; PlayRandom=1; ValidatePlay=0; PrintSprint=0; PrintWin=0; end 
+		else begin next_state = 3'b011; Time=0; ChangeTurn=0; ValidateWin=0; PlayRandom=0; ValidatePlay=0; PrintSprint=0; PrintWin=0; end 
 	end
 	3'b010:
 	begin
-		if(V) next_state = 3'b101; 
-		else next_state = 3'b001; 
+		next_state = 3'b101;//por el momento pasa directo
+		//if(V) begin next_state = 3'b101; 
+		//else next_state = 3'b001; 
 	end
 	3'b011:
 	begin
-		if(Ready) next_state = 3'b100; 
-		else next_state = 3'b001; 
+		if(Ready) begin next_state = 3'b100; Time=0; ChangeTurn=0; ValidateWin=0; PlayRandom=0; ValidatePlay=1; PrintSprint=0; PrintWin=0; end
+		else begin next_state = 3'b001; Time=0; ChangeTurn=0; ValidateWin=0; PlayRandom=0; ValidatePlay=0; PrintSprint=0; PrintWin=0; end
 	end
 	3'b100:
 	begin
-		if(V) next_state = 3'b101; 
-		else next_state = 3'b001;
+		if(V) begin next_state = 3'b101; Time=0; ChangeTurn=0; ValidateWin=0; PlayRandom=0; ValidatePlay=0; PrintSprint=1; PrintWin=0; end
+		else next_state = 3'b001; Time=0; ChangeTurn=0; ValidateWin=0; PlayRandom=0; ValidatePlay=0; PrintSprint=0; PrintWin=0; end
 	end
 	3'b101:
 	begin
-		if(~ Win && ~ Tie) next_state = 3'b110; 
-		else next_state = 3'b111;
+		if(~ Win && ~ Tie) begin next_state = 3'b110; Time=0; ChangeTurn=1; ValidateWin=0; PlayRandom=0; ValidatePlay=0; PrintSprint=0; PrintWin=0; end
+		else begin next_state = 3'b111; Time=0; ChangeTurn=0; ValidateWin=0; PlayRandom=0; ValidatePlay=0; PrintSprint=0; PrintWin=1; end
 	end
 	3'b110:
 	begin
