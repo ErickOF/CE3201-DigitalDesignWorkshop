@@ -1,6 +1,6 @@
 module StateMachine(
 	input clk, start, rst, TimeOut, Win, Tie, Player, Ready, V,
-	output Time, ChangeTurn, ValidateWin, PlayRandom, ValidatePlay, PrintSprint, PrintWin,
+	output Time, ChangeTurn, ValidateWin, PlayRandom, ValidatePlay, PrintSprint, PrintWin
 );
 
 logic [2:0] next_state;
@@ -31,7 +31,8 @@ always_comb begin
 	end
 	3'b010:
 	begin
-		next_state = 3'b101;//por el momento pasa directo
+		next_state = 3'b101; Time=0; ChangeTurn=0; ValidateWin=0; PlayRandom=0; ValidatePlay=0; PrintSprint=0; PrintWin=0;
+		//por el momento pasa directo
 		//if(V) begin next_state = 3'b101; 
 		//else next_state = 3'b001; 
 	end
@@ -42,8 +43,8 @@ always_comb begin
 	end
 	3'b100:
 	begin
-		if(V) begin next_state = 3'b101; Time=0; ChangeTurn=0; ValidateWin=0; PlayRandom=0; ValidatePlay=0; PrintSprint=1; PrintWin=0; end
-		else next_state = 3'b001; Time=0; ChangeTurn=0; ValidateWin=0; PlayRandom=0; ValidatePlay=0; PrintSprint=0; PrintWin=0; end
+		if(V) begin next_state = 3'b101; Time=0; ChangeTurn=0; ValidateWin=1; PlayRandom=0; ValidatePlay=0; PrintSprint=1; PrintWin=0; end
+		else begin next_state = 3'b001; Time=0; ChangeTurn=0; ValidateWin=0; PlayRandom=0; ValidatePlay=0; PrintSprint=0; PrintWin=0; end
 	end
 	3'b101:
 	begin
