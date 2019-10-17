@@ -8,6 +8,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "vga_blank_n",
+					"strict" : false
+				},
+				{
 					"name" : "vga_vs",
 					"strict" : false
 				},
@@ -109,6 +113,10 @@
 				},
 				{
 					"name" : "VGA_B[7]",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
 					"strict" : false
 				},
 				{

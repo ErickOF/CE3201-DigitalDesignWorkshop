@@ -5,8 +5,8 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vlog -sv -work work +incdir+D:/Work\ Files/Quartus\ Files/Taller-de-Dise-o-Digital/Lab4\ -\ Logica\ Secuencial\ y\ Controladores/VGAController {D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/VGAControllerTest.sv}
-vlog -sv -work work +incdir+D:/Work\ Files/Quartus\ Files/Taller-de-Dise-o-Digital/Lab4\ -\ Logica\ Secuencial\ y\ Controladores/VGAController {D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/Comparator.sv}
-vlog -sv -work work +incdir+D:/Work\ Files/Quartus\ Files/Taller-de-Dise-o-Digital/Lab4\ -\ Logica\ Secuencial\ y\ Controladores/VGAController {D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/VGAController.sv}
-vlog -sv -work work +incdir+D:/Work\ Files/Quartus\ Files/Taller-de-Dise-o-Digital/Lab4\ -\ Logica\ Secuencial\ y\ Controladores/VGAController {D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/Counter.sv}
+vlog -sv -work work +incdir+C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4\ -\ Logica\ Secuencial\ y\ Controladores/VGAController {C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/VGAController/VGAControllerTest.sv}
+vlog -sv -work work +incdir+C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4\ -\ Logica\ Secuencial\ y\ Controladores/VGAController {C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/VGAController/Comparator.sv}
+vlog -sv -work work +incdir+C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4\ -\ Logica\ Secuencial\ y\ Controladores/VGAController {C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/VGAController/VGAController.sv}
+vlog -sv -work work +incdir+C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4\ -\ Logica\ Secuencial\ y\ Controladores/VGAController {C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/VGAController/Counter.sv}
 

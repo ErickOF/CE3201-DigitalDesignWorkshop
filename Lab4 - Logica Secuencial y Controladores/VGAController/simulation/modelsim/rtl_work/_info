@@ -7,108 +7,108 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dD:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/simulation/modelsim
+Z0 dC:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/VGAController/simulation/modelsim
 vComparator
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1571322731
+Z2 !s110 1571332868
 !i10b 1
 !s100 [IoTi8ZlgIL?YQW`6X7=@0
-I[HCLb0LIDzU2bbcDYbaZz1
+IPn4?>Wni6GzRF1BNidMBE0
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 !s105 Comparator_sv_unit
 S1
 R0
-w1571318009
-8D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/Comparator.sv
-FD:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/Comparator.sv
+Z4 w1571319592
+8C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/VGAController/Comparator.sv
+FC:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/VGAController/Comparator.sv
 L0 11
-Z4 OV;L;10.5b;63
+Z5 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1571322731.000000
-!s107 D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/Comparator.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController|D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/Comparator.sv|
+Z6 !s108 1571332868.000000
+!s107 C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/VGAController/Comparator.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/VGAController|C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/VGAController/Comparator.sv|
 !i113 1
-Z6 o-sv -work work
-Z7 !s92 -sv -work work {+incdir+D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController}
-Z8 tCvgOpt 0
+Z7 o-sv -work work
+Z8 !s92 -sv -work work {+incdir+C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/VGAController}
+Z9 tCvgOpt 0
 n@comparator
 vCounter
 R1
 R2
 !i10b 1
 !s100 6W@7>VMGOfG3RU?jLU>Zd2
-IhK9PX4;ghIY0hXE9AB=UK0
+I=dm5^PI?I2SVMza8Sl2BD0
 R3
 !s105 Counter_sv_unit
 S1
 R0
-w1571318014
-8D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/Counter.sv
-FD:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/Counter.sv
-L0 1
 R4
+8C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/VGAController/Counter.sv
+FC:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/VGAController/Counter.sv
+L0 1
+R5
 r1
 !s85 0
 31
-R5
-!s107 D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/Counter.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController|D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/Counter.sv|
-!i113 1
 R6
+!s107 C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/VGAController/Counter.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/VGAController|C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/VGAController/Counter.sv|
+!i113 1
 R7
 R8
+R9
 n@counter
 vVGAController
 R1
 R2
 !i10b 1
-!s100 YCI7P1FXok<l5DGafziBz1
-I:`_5kCEcIUYS<_MWdo<W?0
+!s100 `6Gg]<k?>jJJ[`KcR5[gS2
+IYeEN_Hb3F9[e9jckS:KH83
 R3
 !s105 VGAController_sv_unit
 S1
 R0
-w1571322660
-8D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/VGAController.sv
-FD:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/VGAController.sv
+w1571332801
+8C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/VGAController/VGAController.sv
+FC:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/VGAController/VGAController.sv
 L0 1
-R4
+R5
 r1
 !s85 0
 31
-R5
-!s107 D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/VGAController.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController|D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/VGAController.sv|
-!i113 1
 R6
+!s107 C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/VGAController/VGAController.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/VGAController|C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/VGAController/VGAController.sv|
+!i113 1
 R7
 R8
+R9
 n@v@g@a@controller
 vVGAControllerTest
 R1
-R2
+!s110 1571333010
 !i10b 1
-!s100 EK`9BlLZ1VZ^dY4<=C9Vh0
-IHVU`6iN?6bWaj`E=b7Lhl2
+!s100 z`AAMJYCK0Ao5bnO2B`Oc0
+I?FH8Voa??=jMma6kCCYHY2
 R3
 !s105 VGAControllerTest_sv_unit
 S1
 R0
-w1571315864
-8D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/VGAControllerTest.sv
-FD:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/VGAControllerTest.sv
+w1571333007
+8C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/VGAController/VGAControllerTest.sv
+FC:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/VGAController/VGAControllerTest.sv
 L0 1
-R4
+R5
 r1
 !s85 0
 31
-R5
-!s107 D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/VGAControllerTest.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController|D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/VGAControllerTest.sv|
+!s108 1571333010.000000
+!s107 C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/VGAController/VGAControllerTest.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/VGAController|C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/VGAController/VGAControllerTest.sv|
 !i113 1
-R6
 R7
 R8
+R9
 n@v@g@a@controller@test
