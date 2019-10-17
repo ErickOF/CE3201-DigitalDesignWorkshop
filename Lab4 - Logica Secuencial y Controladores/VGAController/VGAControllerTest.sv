@@ -11,7 +11,7 @@ end
 
 always
 begin
-	#20000 clk = ~clk;
+	#10 clk = ~clk;
 	#1 $display("posx = %d, posy = %d", posx, posy);
 end
 
