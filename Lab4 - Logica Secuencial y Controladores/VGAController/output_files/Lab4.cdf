@@ -1,4 +1,4 @@
-/* Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition */
+/* Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition */
 JedecChain;
 	FileRevision(JESD32A);
 	DefaultMfr(6E);
@@ -6,7 +6,7 @@ JedecChain;
 	P ActionCode(Ign)
 		Device PartName(SOCVHPS) MfrSpec(OpMask(0));
 	P ActionCode(Cfg)
-		Device PartName(5CSEMA5F31) Path("C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/VGAController/output_files/") File("Lab4.sof") MfrSpec(OpMask(1));
+		Device PartName(5CSEMA5F31) Path("D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/output_files/") File("Lab4.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

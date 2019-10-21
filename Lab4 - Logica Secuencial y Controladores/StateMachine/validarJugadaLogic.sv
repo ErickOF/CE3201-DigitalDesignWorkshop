@@ -7,7 +7,7 @@ module validarJugadaLogic(input clock,// clock of the circuit
 								  );
 								  
 logic [1:0] pos1, pos2, pos3, pos4, pos5, pos6, pos7, pos8, pos9; //Boxes with ID
-logic current_state;
+logic [3:0] current_state;
 logic en1, en2, en3, en4, en5, en6, en7, en8, en9;
 
 regPos box1(en1, clock, reset, playerID, pos1);
@@ -22,8 +22,7 @@ regPos box9(en9, clock, reset, playerID, pos9);
 
 
 // current state registers 
-always_ff @(posedge clock or posedge reset) 
-
+always_ff @(posedge clock, posedge reset) 
 begin 
  if(reset)
 	current_state <= 3'b0000;
@@ -31,50 +30,46 @@ end
 
 //Lógica Combinacional
 
-always_comb
-
-begin
-
- case(current_state)
- 
+always_comb begin 
+case (current_state)
 //--------------------------------------------------------------------//
  
- 3'b0000:
+ 4'b0000:
 	if(pos1 == 2'b00)begin
 		en1 = 1; en2 = 0; en3 = 0; en4 = 0; en5 = 0; en6 = 0; en7 = 0; en8 = 0; en9 = 0;
 		V = 1;
 		end
- 3'b0001:
+ 4'b0001:
 	if(pos2 == 2'b00)begin
 		en1 = 0; en2 = 1; en3 = 0; en4 = 0; en5 = 0; en6 = 0; en7 = 0; en8 = 0; en9 = 0;
 		V = 1;
 		end
- 3'b0010:
+ 4'b0010:
 	if(pos3 == 2'b00)begin
 		en1 = 0; en2 = 0; en3 = 1; en4 = 0; en5 = 0; en6 = 0; en7 = 0; en8 = 0; en9 = 0;
 		V = 1;
 		end
- 3'b0011:
+ 4'b0011:
 	if(pos4 == 2'b00)begin
 		en1 = 0; en2 = 0; en3 = 0; en4 = 1; en5 = 0; en6 = 0; en7 = 0; en8 = 0; en9 = 0;
 		V = 1;
 		end
- 3'b0100:
+ 4'b0100:
 	if(pos5 == 2'b00)begin
 		en1 = 0; en2 = 0; en3 = 0; en4 = 0; en5 = 1; en6 = 0; en7 = 0; en8 = 0; en9 = 0;
 		V = 1;
 		end
- 3'b0101:
+ 4'b0101:
 	if(pos6 == 2'b00)begin
 		en1 = 0; en2 = 0; en3 = 0; en4 = 0; en5 = 0; en6 = 1; en7 = 0; en8 = 0; en9 = 0;
 		V = 1;
 		end
- 3'b0110:
+ 4'b0110:
 	if(pos7 == 2'b00)begin
 		en1 = 0; en2 = 0; en3 = 0; en4 = 0; en5 = 0; en6 = 0; en7 = 1; en8 = 0; en9 = 0;
 		V = 1;
 		end
- 3'b0111:
+ 4'b0111:
 	if(pos8 == 2'b00)begin
 		en1 = 0; en2 = 0; en3 = 0; en4 = 0; en5 = 0; en6 = 0; en7 = 0; en8 = 1; en9 = 0;
 		V = 1;
@@ -84,7 +79,7 @@ begin
 		en1 = 0; en2 = 0; en3 = 0; en4 = 0; en5 = 0; en6 = 0; en7 = 0; en8 = 0; en9 = 1;
 		V = 1;
 		end
- endcase
- end
+endcase
+end
 
 endmodule 

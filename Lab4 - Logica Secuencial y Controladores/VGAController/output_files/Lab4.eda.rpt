@@ -1,6 +1,6 @@
 EDA Netlist Writer report for Lab4
-Thu Oct 17 11:26:35 2019
-Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Sat Oct 19 19:30:47 2019
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
 ---------------------
@@ -17,7 +17,7 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2017  Intel Corporation. All rights reserved.
+Copyright (C) 2018  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Oct 17 11:26:35 2019 ;
+; EDA Netlist Writer Status ; Successful - Sat Oct 19 19:30:47 2019 ;
 ; Revision Name             ; Lab4                                  ;
 ; Top-level Entity Name     ; TicTacToe                             ;
 ; Family                    ; Cyclone V                             ;
@@ -66,13 +66,13 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                                                                  ;
-+---------------------------------------------------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                                                             ;
-+---------------------------------------------------------------------------------------------------------------------------------------------+
-; C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/VGAController/simulation/modelsim/Lab4.svo ;
-+---------------------------------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                                               ;
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                                                          ;
++------------------------------------------------------------------------------------------------------------------------------------------+
+; D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/simulation/modelsim/Lab4.svo ;
++------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -80,16 +80,16 @@ refer to the applicable agreement for further details.
 +-----------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
-    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Oct 17 11:26:33 2019
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Sat Oct 19 19:30:46 2019
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off Lab4 -c Lab4
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Warning (10905): Generated the EDA functional simulation netlist because it is the only supported netlist type for this device.
-Info (204019): Generated file Lab4.svo in folder "C:/Users/user/Downloads/Taller-de-Dise-o-Digital-master/Lab4 - Logica Secuencial y Controladores/VGAController/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Lab4.svo in folder "D:/Work Files/Quartus Files/Taller-de-Dise-o-Digital/Lab4 - Logica Secuencial y Controladores/VGAController/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4748 megabytes
-    Info: Processing ended: Thu Oct 17 11:26:35 2019
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 4745 megabytes
+    Info: Processing ended: Sat Oct 19 19:30:47 2019
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:02
 
 
