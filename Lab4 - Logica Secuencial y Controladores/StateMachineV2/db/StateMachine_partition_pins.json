@@ -1,0 +1,69 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Time",
+					"strict" : false
+				},
+				{
+					"name" : "ChangeTurn",
+					"strict" : false
+				},
+				{
+					"name" : "ValidateWin",
+					"strict" : false
+				},
+				{
+					"name" : "PlayRandom",
+					"strict" : false
+				},
+				{
+					"name" : "ValidatePlay",
+					"strict" : false
+				},
+				{
+					"name" : "PrintSprint",
+					"strict" : false
+				},
+				{
+					"name" : "PrintWin",
+					"strict" : false
+				},
+				{
+					"name" : "start",
+					"strict" : false
+				},
+				{
+					"name" : "Win",
+					"strict" : false
+				},
+				{
+					"name" : "Tie",
+					"strict" : false
+				},
+				{
+					"name" : "V",
+					"strict" : false
+				},
+				{
+					"name" : "TimeOut",
+					"strict" : false
+				},
+				{
+					"name" : "Ready",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,30 @@
+|StateMachine
+clk => state~1.DATAIN
+start => Selector0.IN5
+start => Time.DATAB
+start => Selector0.IN6
+start => next_state.Inicio.DATAB
+start => Selector2.IN1
+rst => state~3.DATAIN
+TimeOut => next_state.Random.DATAB
+TimeOut => PlayRandom.DATAB
+TimeOut => next_state.Jugada.DATAB
+Win => always1.IN0
+Tie => always1.IN1
+Player => ~NO_FANOUT~
+Ready => next_state.ValidarJugada.DATAB
+Ready => ValidatePlay.DATAB
+Ready => Selector0.IN2
+V => Selector1.IN3
+V => ValidateWin.DATAB
+V => PrintSprint.DATAB
+V => Selector0.IN3
+Time << Time.DB_MAX_OUTPUT_PORT_TYPE
+ChangeTurn << ChangeTurn.DB_MAX_OUTPUT_PORT_TYPE
+ValidateWin << ValidateWin.DB_MAX_OUTPUT_PORT_TYPE
+PlayRandom << PlayRandom.DB_MAX_OUTPUT_PORT_TYPE
+ValidatePlay << ValidatePlay.DB_MAX_OUTPUT_PORT_TYPE
+PrintSprint << PrintSprint.DB_MAX_OUTPUT_PORT_TYPE
+PrintWin << PrintWin.DB_MAX_OUTPUT_PORT_TYPE
+
+

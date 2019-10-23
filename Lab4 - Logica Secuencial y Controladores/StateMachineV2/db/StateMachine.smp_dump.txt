@@ -1,0 +1,11 @@
+
+State Machine - |StateMachine|state
+Name state.Fin state.Cambioturno state.ValidarGane state.ValidarJugada state.Jugada state.Random state.Espera state.Inicio 
+state.Inicio 0 0 0 0 0 0 0 0 
+state.Espera 0 0 0 0 0 0 1 1 
+state.Random 0 0 0 0 0 1 0 1 
+state.Jugada 0 0 0 0 1 0 0 1 
+state.ValidarJugada 0 0 0 1 0 0 0 1 
+state.ValidarGane 0 0 1 0 0 0 0 1 
+state.Cambioturno 0 1 0 0 0 0 0 1 
+state.Fin 1 0 0 0 0 0 0 1 
