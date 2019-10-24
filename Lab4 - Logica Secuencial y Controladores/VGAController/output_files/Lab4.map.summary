@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Thu Oct 24 00:21:49 2019
+Analysis & Synthesis Status : Successful - Thu Oct 24 06:36:28 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : Lab4
 Top-level Entity Name : TicTacToe
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
 Total registers : 48
-Total pins : 31
+Total pins : 33
 Total virtual pins : 0
 Total block memory bits : 13,056
 Total DSP Blocks : 0

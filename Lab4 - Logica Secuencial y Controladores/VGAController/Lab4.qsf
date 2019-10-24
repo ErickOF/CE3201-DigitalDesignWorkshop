@@ -90,6 +90,13 @@ set_global_assignment -name EDA_LMF_FILE blast.lmf -entity ROMSprite2.qip -secti
 set_global_assignment -name EDA_SHOW_LMF_MAPPING_MESSAGES OFF -entity ROMSprite2.qip -section_id eda_design_synthesis
 set_global_assignment -name EDA_RUN_TOOL_AUTOMATICALLY OFF -entity ROMSprite2.qip -section_id eda_design_synthesis
 set_global_assignment -name EDA_INPUT_DATA_FORMAT VQM -entity ROMSprite2.qip -section_id eda_design_synthesis
+set_location_assignment PIN_AB12 -to rst
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name SYSTEMVERILOG_FILE PointerPrinter.sv
+set_global_assignment -name SYSTEMVERILOG_FILE escogerPosTest.sv
+set_global_assignment -name SYSTEMVERILOG_FILE escogerPos.sv
 set_global_assignment -name MIF_FILE sprite2.mif
 set_global_assignment -name SYSTEMVERILOG_FILE VGAControllerTest.sv
 set_global_assignment -name SYSTEMVERILOG_FILE CounterTest.sv
@@ -114,8 +121,6 @@ set_global_assignment -name SYSTEMVERILOG_FILE ColorDecoder2.sv
 set_global_assignment -name SYSTEMVERILOG_FILE SpriteDecoder.sv
 set_global_assignment -name SYSTEMVERILOG_FILE SpriteDecoderTest.sv
 set_global_assignment -name QIP_FILE ROMSprite2.qip
-set_location_assignment PIN_AB12 -to rst
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_AA14 -to click
+set_location_assignment PIN_AA15 -to select
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

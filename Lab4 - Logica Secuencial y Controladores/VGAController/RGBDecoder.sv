@@ -1,5 +1,5 @@
-module RGBDecoder(input logic [2:0] visible,
-                  input [23:0] RGB1, RGB2, RGB3,
+module RGBDecoder(input logic [3:0] visible,
+                  input [23:0] RGB1, RGB2, RGB3, RGB4,
 						output [23:0] RGB);
 
 logic [23:0] RGB_output;
@@ -7,9 +7,10 @@ logic [23:0] RGB_output;
 always_comb
 begin
     case (visible)
-        3'b001: RGB_output = RGB3;
-		  3'b010: RGB_output = RGB2;
-		  3'b100: RGB_output = RGB1;
+        4'b0001: RGB_output = RGB3;
+		  4'b0010: RGB_output = RGB2;
+		  4'b0100: RGB_output = RGB1;
+		  4'b1000: RGB_output = RGB4;
 	     default: RGB_output = 24'hFFFFFF;
 	 endcase
 end

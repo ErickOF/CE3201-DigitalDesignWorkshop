@@ -34,11 +34,9 @@ Counter h_counter(clk, rsth2, hcount);
 Counter v_counter(h_sync_temp, rstv2, vcount);
 
 Comparator hmin_comparator(.signal1(hcount), .signal2(H_SYNC), .lower(), .greater(h_sync_temp), .equal());
-//Comparator hmax_comparator(posx, H_SYNC_END, h_sync_temp2, greater, equal);
 Comparator maxscreenh_comparator(.signal1(hcount), .signal2(H_TOTAL), .lower(), .greater(), .equal(rsth)); 
 
 Comparator vmin_comparator(.signal1(vcount), .signal2(V_SYNC), .lower(v_sync_temp), .greater(), .equal());
-//Comparator vmax_comparator(posy, V_SYNC_END, v_sync_temp2, greater, equal);
 Comparator maxscreenv_comparator(.signal1(vcount), .signal2(V_TOTAL), .lower(), .greater(), .equal(rstv));
 
 assign h_sync = h_sync_temp;
