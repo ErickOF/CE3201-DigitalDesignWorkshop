@@ -33,24 +33,23 @@ begin
 	if(reset) current_state <= 3'b0;
 end
 
+assign ValidateWin = ((pos1 == pos2 && pos2 == pos3) || (pos4 == pos5 && pos5 == pos6) || 
+			(pos7 == pos8 && pos8 == pos9) || (pos1 == pos4 && pos4 == pos7) ||
+			(pos2 == pos5 && pos5 == pos8) || (pos3 == pos6 && pos6 == pos9) ||
+			(pos1 == pos5 && pos5 == pos9) || (pos1 == pos4 && pos4 == pos7) ||
+			(pos3 == pos5 && pos5 == pos7)) ? 1'b1 : 1'b0;
 
 always_comb
-	if((pos1 == pos2 && pos2 == pos3) || (pos4 == pos5 && pos5 == pos6) || 
-		(pos7 == pos8 && pos8 == pos9) || (pos1 == pos4 && pos4 == pos7) ||
-		(pos2 == pos5 && pos5 == pos8) || (pos3 == pos6 && pos6 == pos9) || 
-		(pos1 == pos5 && pos5 == pos9) || (pos1 == pos4 && pos4 == pos7) || 
-		(pos3 == pos5 && pos5 == pos7)) begin
-		
+begin
+	if(ValidateWin) begin
 		en1 = 'b0; en2 = 'b0; en3 = 'b0; en4 = 'b0; en5 = 'b0; en6 = 'b0; en7 = 'b0; en8 = 'b0; en9 = 'b0;
-		ValidateWin = 1'b1;
 		enPlayer = 'b0;
-		end
-	else
-		begin
+	end
+	else begin
 		en1 = 'b0; en2 = 'b0; en3 = 'b0; en4 = 'b0; en5 = 'b0; en6 = 'b0; en7 = 'b0; en8 = 'b0; en9 = 'b0;
-		ValidateWin = 'b0;
 		enPlayer = 1'b1;
 		playerID = playerRegID;
-		end
+	end
+end
 
-endmodule
+endmodule 

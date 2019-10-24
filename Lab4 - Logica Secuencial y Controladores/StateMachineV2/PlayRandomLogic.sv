@@ -41,46 +41,82 @@ begin
 		en1 = 0; en2 = 0; en3 = 1; en4 = 0; en5 = 0; en6 = 0; en7 = 0; en8 = 0; en9 = 0;
 		position = 4'b0010;
 		end
+	else begin
+		en1 = 0; en2 = 0; en3 = 0; en4 = 0; en5 = 0; en6 = 0; en7 = 0; en8 = 0; en9 = 0;
+		position = 4'b0000;
+	end
  4'b0001:
 	if(pos5 == 2'b00)begin
 		en1 = 0; en2 = 0; en3 = 0; en4 = 0; en5 = 1; en6 = 0; en7 = 0; en8 = 0; en9 = 0;
 		position = 4'b0100;
 		end
+	else begin
+		en1 = 0; en2 = 0; en3 = 0; en4 = 0; en5 = 0; en6 = 0; en7 = 0; en8 = 0; en9 = 0;
+		position = 4'b0000;
+	end
  4'b0010:
 	if(pos7 == 2'b00)begin
 		en1 = 0; en2 = 0; en3 = 0; en4 = 0; en5 = 0; en6 = 0; en7 = 1; en8 = 0; en9 = 0;
 		position = 4'b0110;
 		end
+	else begin
+		en1 = 0; en2 = 0; en3 = 0; en4 = 0; en5 = 0; en6 = 0; en7 = 0; en8 = 0; en9 = 0;
+		position = 4'b0000;
+	end
  4'b0011:
 	if(pos9 == 2'b00)begin
 		en1 = 0; en2 = 0; en3 = 0; en4 = 0; en5 = 0; en6 = 0; en7 = 0; en8 = 0; en9 = 1;
 		position = 4'b1000;
 		end
+	else begin
+		en1 = 0; en2 = 0; en3 = 0; en4 = 0; en5 = 0; en6 = 0; en7 = 0; en8 = 0; en9 = 0;
+		position = 4'b0000;
+	end
  4'b0100:
 	if(pos1 == 2'b00)begin
 		en1 = 1; en2 = 0; en3 = 0; en4 = 0; en5 = 0; en6 = 0; en7 = 0; en8 = 0; en9 = 0;
 		position = 4'b0000;
 		end
+	else begin
+		en1 = 0; en2 = 0; en3 = 0; en4 = 0; en5 = 0; en6 = 0; en7 = 0; en8 = 0; en9 = 0;
+		position = 4'b0000;
+	end
  4'b0101:
 	if(pos2 == 2'b00)begin
 		en1 = 0; en2 = 1; en3 = 0; en4 = 0; en5 = 0; en6 = 0; en7 = 0; en8 = 0; en9 = 0;
 		position = 4'b0001;
 		end
+	else begin
+		en1 = 0; en2 = 0; en3 = 0; en4 = 0; en5 = 0; en6 = 0; en7 = 0; en8 = 0; en9 = 0;
+		position = 4'b0000;
+	end
  4'b0110:
 	if(pos6 == 2'b00)begin
 		en1 = 0; en2 = 0; en3 = 0; en4 = 0; en5 = 0; en6 = 1; en7 = 1; en8 = 0; en9 = 0;
 		position = 4'b0101;
 		end
+	else begin
+		en1 = 0; en2 = 0; en3 = 0; en4 = 0; en5 = 0; en6 = 0; en7 = 0; en8 = 0; en9 = 0;
+		position = 4'b0000;
+	end
  4'b0111:
 	if(pos4 == 2'b00)begin
 		en1 = 0; en2 = 0; en3 = 0; en4 = 1; en5 = 0; en6 = 0; en7 = 0; en8 = 0; en9 = 0;
 		position = 4'b0011;
 		end
+	else begin
+		en1 = 0; en2 = 0; en3 = 0; en4 = 0; en5 = 0; en6 = 0; en7 = 0; en8 = 0; en9 = 0;
+		position = 4'b0000;
+	end
  4'b1000:
 	if(pos8 == 2'b00)begin
 		en1 = 0; en2 = 0; en3 = 0; en4 = 0; en5 = 0; en6 = 0; en7 = 0; en8 = 1; en9 = 0;
 		position = 4'b0111;
 		end
+	else begin
+		en1 = 0; en2 = 0; en3 = 0; en4 = 0; en5 = 0; en6 = 0; en7 = 0; en8 = 0; en9 = 0;
+		position = 4'b0000;
+	end
  endcase
  end
 

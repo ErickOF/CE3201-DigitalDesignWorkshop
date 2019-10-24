@@ -39,46 +39,82 @@ case (current_state)
 		en1 = 1; en2 = 0; en3 = 0; en4 = 0; en5 = 0; en6 = 0; en7 = 0; en8 = 0; en9 = 0;
 		V = 1;
 		end
+	else begin
+		en1 = 0; en2 = 0; en3 = 0; en4 = 0; en5 = 0; en6 = 0; en7 = 0; en8 = 0; en9 = 0;
+		V = 0;
+	end
  4'b0001:
 	if(pos2 == 2'b00)begin
 		en1 = 0; en2 = 1; en3 = 0; en4 = 0; en5 = 0; en6 = 0; en7 = 0; en8 = 0; en9 = 0;
 		V = 1;
 		end
+	else begin
+		en1 = 0; en2 = 0; en3 = 0; en4 = 0; en5 = 0; en6 = 0; en7 = 0; en8 = 0; en9 = 0;
+		V = 0;
+	end
  4'b0010:
 	if(pos3 == 2'b00)begin
 		en1 = 0; en2 = 0; en3 = 1; en4 = 0; en5 = 0; en6 = 0; en7 = 0; en8 = 0; en9 = 0;
 		V = 1;
 		end
+	else begin
+		en1 = 0; en2 = 0; en3 = 0; en4 = 0; en5 = 0; en6 = 0; en7 = 0; en8 = 0; en9 = 0;
+		V = 0;
+	end
  4'b0011:
 	if(pos4 == 2'b00)begin
 		en1 = 0; en2 = 0; en3 = 0; en4 = 1; en5 = 0; en6 = 0; en7 = 0; en8 = 0; en9 = 0;
 		V = 1;
 		end
+	else begin
+		en1 = 0; en2 = 0; en3 = 0; en4 = 0; en5 = 0; en6 = 0; en7 = 0; en8 = 0; en9 = 0;
+		V = 0;
+	end
  4'b0100:
 	if(pos5 == 2'b00)begin
 		en1 = 0; en2 = 0; en3 = 0; en4 = 0; en5 = 1; en6 = 0; en7 = 0; en8 = 0; en9 = 0;
 		V = 1;
 		end
+	else begin
+		en1 = 0; en2 = 0; en3 = 0; en4 = 0; en5 = 0; en6 = 0; en7 = 0; en8 = 0; en9 = 0;
+		V = 0;
+	end
  4'b0101:
 	if(pos6 == 2'b00)begin
 		en1 = 0; en2 = 0; en3 = 0; en4 = 0; en5 = 0; en6 = 1; en7 = 0; en8 = 0; en9 = 0;
 		V = 1;
 		end
+	else begin
+		en1 = 0; en2 = 0; en3 = 0; en4 = 0; en5 = 0; en6 = 0; en7 = 0; en8 = 0; en9 = 0;
+		V = 0;
+	end
  4'b0110:
 	if(pos7 == 2'b00)begin
 		en1 = 0; en2 = 0; en3 = 0; en4 = 0; en5 = 0; en6 = 0; en7 = 1; en8 = 0; en9 = 0;
 		V = 1;
 		end
+	else begin
+		en1 = 0; en2 = 0; en3 = 0; en4 = 0; en5 = 0; en6 = 0; en7 = 0; en8 = 0; en9 = 0;
+		V = 0;
+	end
  4'b0111:
 	if(pos8 == 2'b00)begin
 		en1 = 0; en2 = 0; en3 = 0; en4 = 0; en5 = 0; en6 = 0; en7 = 0; en8 = 1; en9 = 0;
 		V = 1;
 		end
+	else begin
+		en1 = 0; en2 = 0; en3 = 0; en4 = 0; en5 = 0; en6 = 0; en7 = 0; en8 = 0; en9 = 0;
+		V = 0;
+	end
  4'b1000:
 	if(pos9 == 2'b00)begin
 		en1 = 0; en2 = 0; en3 = 0; en4 = 0; en5 = 0; en6 = 0; en7 = 0; en8 = 0; en9 = 1;
 		V = 1;
 		end
+	else begin
+		en1 = 0; en2 = 0; en3 = 0; en4 = 0; en5 = 0; en6 = 0; en7 = 0; en8 = 0; en9 = 0;
+		V = 0;
+	end
 endcase
 end
 

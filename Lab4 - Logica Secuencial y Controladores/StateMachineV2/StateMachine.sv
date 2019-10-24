@@ -5,6 +5,7 @@ module StateMachine(
 
 logic [2:0] next_state;
 logic [2:0] state;
+logic [3:0] position; 
 //States
 parameter Inicio=3'b000;
 parameter Espera=3'b001;
@@ -16,7 +17,9 @@ parameter Cambioturno=3'b110;
 parameter Fin=3'b111;
 
 
-
+PlayRandomLogic playRand(clk, rst, position);
+validarGaneLogic validateWinner(clk, rst, ValidateWin, Player);
+validarJugadaLogic validatePl(clk, rst, ValidatePlay, Player, position, V);
 
 always_ff @(posedge clk, posedge rst) begin
 	if(rst) begin
@@ -77,4 +80,4 @@ always_comb begin
 
 end
 
-endmodule
+endmodule 
