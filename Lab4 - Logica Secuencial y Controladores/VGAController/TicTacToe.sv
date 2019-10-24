@@ -10,8 +10,8 @@ logic sp1_visible, sp2_visible, lines_visible;
 ClockDivider clock_divider(clk, vga_clk_t);
 VGAController VGA(vga_clk_t, rst, vga_hs, vga_vs, vga_blank_n, vga_sync_n, posx, posy);
 
-SpritePrinter sp1(vga_clk_t, posx, posy, 10'd64, 10'd64, sp1_visible, RGB_p1);
-SpritePrinter2 sp2(vga_clk_t, posx, posy, 10'd64, 10'd64, sp2_visible, RGB_p2);
+SpritePrinter sp1(vga_clk_t, posx, posy, 10'd76, 10'd44, sp1_visible, RGB_p1);
+SpritePrinter2 sp2(vga_clk_t, posx, posy, 10'd76, 10'd44, sp2_visible, RGB_p2);
 LinesPrinter lines(posx, posy, RGB_lines, lines_visible);
 
 RGBDecoder rgb_decoder({sp1_visible, sp2_visible, lines_visible}, RGB_p1, RGB_p2, RGB_lines, RGB);

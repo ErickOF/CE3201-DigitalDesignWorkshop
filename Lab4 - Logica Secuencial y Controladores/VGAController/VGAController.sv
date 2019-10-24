@@ -48,4 +48,4 @@ assign blank_n = (hcount > H_SCR && hcount < H_TOTAL - H_FRONT_PORCH_D) & (vcoun
 assign posx = hcount > H_SCR ? (hcount - H_SCR) : 10'b0;
 assign posy = vcount > V_SCR ? (vcount - V_SCR) : 10'b0;
 
-endmodule // VGAController 
+endmodule // VGAController
