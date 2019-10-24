@@ -16,7 +16,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
-// DATE "10/19/2019 19:30:47"
+// DATE "10/24/2019 00:24:08"
 
 // 
 // Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -39,16 +39,16 @@ module TicTacToe (
 	VGA_R,
 	VGA_G,
 	VGA_B);
-input 	clk;
-input 	rst;
-output 	vga_clk;
-output 	vga_sync_n;
-output 	vga_blank_n;
-output 	vga_vs;
-output 	vga_hs;
-output 	[7:0] VGA_R;
-output 	[7:0] VGA_G;
-output 	[7:0] VGA_B;
+input 	reg clk ;
+input 	reg rst ;
+output 	logic vga_clk ;
+output 	logic vga_sync_n ;
+output 	logic vga_blank_n ;
+output 	logic vga_vs ;
+output 	logic vga_hs ;
+output 	logic [7:0] VGA_R ;
+output 	logic [7:0] VGA_G ;
+output 	logic [7:0] VGA_B ;
 
 // Design Ports Information
 // vga_clk	=>  Location: PIN_A11,	 I/O Standard: 2.5 V,	 Current Strength: Default
@@ -3703,8 +3703,8 @@ defparam \VGA|Add0~21 .shared_arith = "off";
 // Location: LABCELL_X27_Y76_N6
 cyclonev_lcell_comb \sp1|ADDRESS|Add0~25 (
 // Equation(s):
-// \sp1|ADDRESS|Add0~25_sumout  = SUM(( (!\VGA|Add0~21_sumout ) # ((!\VGA|h_counter|Q [8] & (!\VGA|LessThan0~0_combout  & !\VGA|h_counter|Q [9]))) ) + ( GND ) + ( \sp1|ADDRESS|Add0~22  ))
-// \sp1|ADDRESS|Add0~26  = CARRY(( (!\VGA|Add0~21_sumout ) # ((!\VGA|h_counter|Q [8] & (!\VGA|LessThan0~0_combout  & !\VGA|h_counter|Q [9]))) ) + ( GND ) + ( \sp1|ADDRESS|Add0~22  ))
+// \sp1|ADDRESS|Add0~25_sumout  = SUM(( (!\VGA|Add0~21_sumout ) # ((!\VGA|h_counter|Q [8] & (!\VGA|LessThan0~0_combout  & !\VGA|h_counter|Q [9]))) ) + ( VCC ) + ( \sp1|ADDRESS|Add0~22  ))
+// \sp1|ADDRESS|Add0~26  = CARRY(( (!\VGA|Add0~21_sumout ) # ((!\VGA|h_counter|Q [8] & (!\VGA|LessThan0~0_combout  & !\VGA|h_counter|Q [9]))) ) + ( VCC ) + ( \sp1|ADDRESS|Add0~22  ))
 
 	.dataa(!\VGA|h_counter|Q [8]),
 	.datab(!\VGA|LessThan0~0_combout ),
@@ -3721,7 +3721,7 @@ cyclonev_lcell_comb \sp1|ADDRESS|Add0~25 (
 	.shareout());
 // synopsys translate_off
 defparam \sp1|ADDRESS|Add0~25 .extended_lut = "off";
-defparam \sp1|ADDRESS|Add0~25 .lut_mask = 64'h0000FFFF0000FF80;
+defparam \sp1|ADDRESS|Add0~25 .lut_mask = 64'h000000000000FF80;
 defparam \sp1|ADDRESS|Add0~25 .shared_arith = "off";
 // synopsys translate_on
 
@@ -3753,8 +3753,8 @@ defparam \VGA|Add0~17 .shared_arith = "off";
 // Location: LABCELL_X27_Y76_N9
 cyclonev_lcell_comb \sp1|ADDRESS|Add0~29 (
 // Equation(s):
-// \sp1|ADDRESS|Add0~29_sumout  = SUM(( (!\VGA|Add0~17_sumout ) # ((!\VGA|h_counter|Q [8] & (!\VGA|LessThan0~0_combout  & !\VGA|h_counter|Q [9]))) ) + ( GND ) + ( \sp1|ADDRESS|Add0~26  ))
-// \sp1|ADDRESS|Add0~30  = CARRY(( (!\VGA|Add0~17_sumout ) # ((!\VGA|h_counter|Q [8] & (!\VGA|LessThan0~0_combout  & !\VGA|h_counter|Q [9]))) ) + ( GND ) + ( \sp1|ADDRESS|Add0~26  ))
+// \sp1|ADDRESS|Add0~29_sumout  = SUM(( (!\VGA|Add0~17_sumout ) # ((!\VGA|h_counter|Q [8] & (!\VGA|LessThan0~0_combout  & !\VGA|h_counter|Q [9]))) ) + ( VCC ) + ( \sp1|ADDRESS|Add0~26  ))
+// \sp1|ADDRESS|Add0~30  = CARRY(( (!\VGA|Add0~17_sumout ) # ((!\VGA|h_counter|Q [8] & (!\VGA|LessThan0~0_combout  & !\VGA|h_counter|Q [9]))) ) + ( VCC ) + ( \sp1|ADDRESS|Add0~26  ))
 
 	.dataa(!\VGA|h_counter|Q [8]),
 	.datab(!\VGA|LessThan0~0_combout ),
@@ -3771,7 +3771,7 @@ cyclonev_lcell_comb \sp1|ADDRESS|Add0~29 (
 	.shareout());
 // synopsys translate_off
 defparam \sp1|ADDRESS|Add0~29 .extended_lut = "off";
-defparam \sp1|ADDRESS|Add0~29 .lut_mask = 64'h0000FFFF0000FF80;
+defparam \sp1|ADDRESS|Add0~29 .lut_mask = 64'h000000000000FF80;
 defparam \sp1|ADDRESS|Add0~29 .shared_arith = "off";
 // synopsys translate_on
 
@@ -3977,8 +3977,8 @@ defparam \VGA|Add1~29 .shared_arith = "off";
 // Location: MLABCELL_X25_Y78_N6
 cyclonev_lcell_comb \sp1|ADDRESS|Add1~25 (
 // Equation(s):
-// \sp1|ADDRESS|Add1~25_sumout  = SUM(( (!\VGA|Add1~29_sumout ) # ((!\VGA|v_counter|Q [8] & (!\VGA|LessThan2~4_combout  & !\VGA|v_counter|Q [9]))) ) + ( GND ) + ( \sp1|ADDRESS|Add1~22  ))
-// \sp1|ADDRESS|Add1~26  = CARRY(( (!\VGA|Add1~29_sumout ) # ((!\VGA|v_counter|Q [8] & (!\VGA|LessThan2~4_combout  & !\VGA|v_counter|Q [9]))) ) + ( GND ) + ( \sp1|ADDRESS|Add1~22  ))
+// \sp1|ADDRESS|Add1~25_sumout  = SUM(( (!\VGA|Add1~29_sumout ) # ((!\VGA|v_counter|Q [8] & (!\VGA|LessThan2~4_combout  & !\VGA|v_counter|Q [9]))) ) + ( VCC ) + ( \sp1|ADDRESS|Add1~22  ))
+// \sp1|ADDRESS|Add1~26  = CARRY(( (!\VGA|Add1~29_sumout ) # ((!\VGA|v_counter|Q [8] & (!\VGA|LessThan2~4_combout  & !\VGA|v_counter|Q [9]))) ) + ( VCC ) + ( \sp1|ADDRESS|Add1~22  ))
 
 	.dataa(!\VGA|v_counter|Q [8]),
 	.datab(!\VGA|LessThan2~4_combout ),
@@ -3995,7 +3995,7 @@ cyclonev_lcell_comb \sp1|ADDRESS|Add1~25 (
 	.shareout());
 // synopsys translate_off
 defparam \sp1|ADDRESS|Add1~25 .extended_lut = "off";
-defparam \sp1|ADDRESS|Add1~25 .lut_mask = 64'h0000FFFF0000FF80;
+defparam \sp1|ADDRESS|Add1~25 .lut_mask = 64'h000000000000FF80;
 defparam \sp1|ADDRESS|Add1~25 .shared_arith = "off";
 // synopsys translate_on
 
@@ -4027,8 +4027,8 @@ defparam \VGA|Add1~25 .shared_arith = "off";
 // Location: MLABCELL_X25_Y78_N9
 cyclonev_lcell_comb \sp1|ADDRESS|Add1~29 (
 // Equation(s):
-// \sp1|ADDRESS|Add1~29_sumout  = SUM(( (!\VGA|Add1~25_sumout ) # ((!\VGA|v_counter|Q [8] & (!\VGA|LessThan2~4_combout  & !\VGA|v_counter|Q [9]))) ) + ( GND ) + ( \sp1|ADDRESS|Add1~26  ))
-// \sp1|ADDRESS|Add1~30  = CARRY(( (!\VGA|Add1~25_sumout ) # ((!\VGA|v_counter|Q [8] & (!\VGA|LessThan2~4_combout  & !\VGA|v_counter|Q [9]))) ) + ( GND ) + ( \sp1|ADDRESS|Add1~26  ))
+// \sp1|ADDRESS|Add1~29_sumout  = SUM(( (!\VGA|Add1~25_sumout ) # ((!\VGA|v_counter|Q [8] & (!\VGA|LessThan2~4_combout  & !\VGA|v_counter|Q [9]))) ) + ( VCC ) + ( \sp1|ADDRESS|Add1~26  ))
+// \sp1|ADDRESS|Add1~30  = CARRY(( (!\VGA|Add1~25_sumout ) # ((!\VGA|v_counter|Q [8] & (!\VGA|LessThan2~4_combout  & !\VGA|v_counter|Q [9]))) ) + ( VCC ) + ( \sp1|ADDRESS|Add1~26  ))
 
 	.dataa(!\VGA|v_counter|Q [8]),
 	.datab(!\VGA|LessThan2~4_combout ),
@@ -4045,7 +4045,7 @@ cyclonev_lcell_comb \sp1|ADDRESS|Add1~29 (
 	.shareout());
 // synopsys translate_off
 defparam \sp1|ADDRESS|Add1~29 .extended_lut = "off";
-defparam \sp1|ADDRESS|Add1~29 .lut_mask = 64'h0000FFFF0000FF80;
+defparam \sp1|ADDRESS|Add1~29 .lut_mask = 64'h000000000000FF80;
 defparam \sp1|ADDRESS|Add1~29 .shared_arith = "off";
 // synopsys translate_on
 
@@ -4127,8 +4127,8 @@ defparam \VGA|Add1~5 .shared_arith = "off";
 // Location: MLABCELL_X25_Y78_N15
 cyclonev_lcell_comb \sp1|ADDRESS|Add1~37 (
 // Equation(s):
-// \sp1|ADDRESS|Add1~37_sumout  = SUM(( (!\VGA|Add1~5_sumout ) # ((!\VGA|v_counter|Q [9] & (!\VGA|LessThan2~4_combout  & !\VGA|v_counter|Q [8]))) ) + ( GND ) + ( \sp1|ADDRESS|Add1~34  ))
-// \sp1|ADDRESS|Add1~38  = CARRY(( (!\VGA|Add1~5_sumout ) # ((!\VGA|v_counter|Q [9] & (!\VGA|LessThan2~4_combout  & !\VGA|v_counter|Q [8]))) ) + ( GND ) + ( \sp1|ADDRESS|Add1~34  ))
+// \sp1|ADDRESS|Add1~37_sumout  = SUM(( (!\VGA|Add1~5_sumout ) # ((!\VGA|v_counter|Q [9] & (!\VGA|LessThan2~4_combout  & !\VGA|v_counter|Q [8]))) ) + ( VCC ) + ( \sp1|ADDRESS|Add1~34  ))
+// \sp1|ADDRESS|Add1~38  = CARRY(( (!\VGA|Add1~5_sumout ) # ((!\VGA|v_counter|Q [9] & (!\VGA|LessThan2~4_combout  & !\VGA|v_counter|Q [8]))) ) + ( VCC ) + ( \sp1|ADDRESS|Add1~34  ))
 
 	.dataa(!\VGA|v_counter|Q [9]),
 	.datab(!\VGA|LessThan2~4_combout ),
@@ -4145,7 +4145,7 @@ cyclonev_lcell_comb \sp1|ADDRESS|Add1~37 (
 	.shareout());
 // synopsys translate_off
 defparam \sp1|ADDRESS|Add1~37 .extended_lut = "off";
-defparam \sp1|ADDRESS|Add1~37 .lut_mask = 64'h0000FFFF0000FF80;
+defparam \sp1|ADDRESS|Add1~37 .lut_mask = 64'h000000000000FF80;
 defparam \sp1|ADDRESS|Add1~37 .shared_arith = "off";
 // synopsys translate_on
 
@@ -4822,8 +4822,8 @@ defparam \sp1|ROM|altsyncram_component|auto_generated|ram_block1a2 .mem_init0 = 
 // Location: MLABCELL_X25_Y78_N18
 cyclonev_lcell_comb \sp1|ADDRESS|Add1~1 (
 // Equation(s):
-// \sp1|ADDRESS|Add1~1_sumout  = SUM(( VCC ) + ( (!\VGA|Add1~1_sumout ) # ((!\VGA|v_counter|Q [8] & (!\VGA|LessThan2~4_combout  & !\VGA|v_counter|Q [9]))) ) + ( \sp1|ADDRESS|Add1~38  ))
-// \sp1|ADDRESS|Add1~2  = CARRY(( VCC ) + ( (!\VGA|Add1~1_sumout ) # ((!\VGA|v_counter|Q [8] & (!\VGA|LessThan2~4_combout  & !\VGA|v_counter|Q [9]))) ) + ( \sp1|ADDRESS|Add1~38  ))
+// \sp1|ADDRESS|Add1~1_sumout  = SUM(( GND ) + ( (!\VGA|Add1~1_sumout ) # ((!\VGA|v_counter|Q [8] & (!\VGA|LessThan2~4_combout  & !\VGA|v_counter|Q [9]))) ) + ( \sp1|ADDRESS|Add1~38  ))
+// \sp1|ADDRESS|Add1~2  = CARRY(( GND ) + ( (!\VGA|Add1~1_sumout ) # ((!\VGA|v_counter|Q [8] & (!\VGA|LessThan2~4_combout  & !\VGA|v_counter|Q [9]))) ) + ( \sp1|ADDRESS|Add1~38  ))
 
 	.dataa(!\VGA|v_counter|Q [8]),
 	.datab(!\VGA|LessThan2~4_combout ),
@@ -4840,7 +4840,7 @@ cyclonev_lcell_comb \sp1|ADDRESS|Add1~1 (
 	.shareout());
 // synopsys translate_off
 defparam \sp1|ADDRESS|Add1~1 .extended_lut = "off";
-defparam \sp1|ADDRESS|Add1~1 .lut_mask = 64'h0000007F0000FFFF;
+defparam \sp1|ADDRESS|Add1~1 .lut_mask = 64'h0000007F00000000;
 defparam \sp1|ADDRESS|Add1~1 .shared_arith = "off";
 // synopsys translate_on
 

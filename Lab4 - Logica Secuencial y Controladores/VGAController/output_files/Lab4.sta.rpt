@@ -1,5 +1,5 @@
 Timing Analyzer report for Lab4
-Sat Oct 19 19:30:45 2019
+Thu Oct 24 00:24:03 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -98,15 +98,17 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.07        ;
-; Maximum used               ; 2           ;
+; Average used               ; 1.10        ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   6.7%      ;
+;     Processor 2            ;   3.6%      ;
+;     Processor 3            ;   3.4%      ;
+;     Processor 4            ;   3.4%      ;
 +----------------------------+-------------+
 
 
@@ -783,7 +785,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat Oct 19 19:30:38 2019
+    Info: Processing started: Thu Oct 24 00:23:54 2019
 Info: Command: quartus_sta Lab4 -c Lab4
 Info: qsta_default_script.tcl version: #1
 Warning (20013): Ignored 7 assignments for entity "ROMSprite2.qip" -- entity does not exist in design
@@ -795,7 +797,7 @@ Warning (20013): Ignored 7 assignments for entity "ROMSprite2.qip" -- entity doe
     Warning (20014): Assignment for entity set_global_assignment -name EDA_SHOW_LMF_MAPPING_MESSAGES OFF -entity ROMSprite2.qip -section_id eda_design_synthesis was ignored
     Warning (20014): Assignment for entity set_global_assignment -name EDA_RUN_TOOL_AUTOMATICALLY OFF -entity ROMSprite2.qip -section_id eda_design_synthesis was ignored
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'Lab4.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
@@ -941,9 +943,9 @@ Info (332146): Worst-case minimum pulse width slack is -2.174
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 5142 megabytes
-    Info: Processing ended: Sat Oct 19 19:30:45 2019
-    Info: Elapsed time: 00:00:07
+    Info: Peak virtual memory: 5168 megabytes
+    Info: Processing ended: Thu Oct 24 00:24:03 2019
+    Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:07
 
 
