@@ -1,0 +1,416 @@
+|StateMachine
+clk => clk.IN3
+start => Selector0.IN5
+start => Time.DATAB
+start => Selector0.IN6
+start => next_state.Inicio.DATAB
+start => Selector2.IN1
+rst => rst.IN3
+TimeOut => next_state.Random.DATAB
+TimeOut => PlayRandom.DATAB
+TimeOut => next_state.Jugada.DATAB
+Win => always1.IN0
+Tie => always1.IN1
+Player => Player.IN1
+Ready => next_state.ValidarJugada.DATAB
+Ready => ValidatePlay.DATAB
+Ready => Selector0.IN2
+V => Selector1.IN3
+V => ValidateWin.DATAB
+V => PrintSprint.DATAB
+V => Selector0.IN3
+Time << Time.DB_MAX_OUTPUT_PORT_TYPE
+ChangeTurn << ChangeTurn.DB_MAX_OUTPUT_PORT_TYPE
+ValidateWin << ValidateWin.DB_MAX_OUTPUT_PORT_TYPE
+PlayRandom << PlayRandom.DB_MAX_OUTPUT_PORT_TYPE
+ValidatePlay << ValidatePlay.DB_MAX_OUTPUT_PORT_TYPE
+PrintSprint << PrintSprint.DB_MAX_OUTPUT_PORT_TYPE
+PrintWin << PrintWin.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StateMachine|PlayRandomLogic:playRand
+clock => clock.IN9
+reset => reset.IN9
+position[0] <= <GND>
+position[1] <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+position[2] <= <GND>
+position[3] <= <GND>
+
+
+|StateMachine|PlayRandomLogic:playRand|regPos:box1
+en => position.OUTPUTSELECT
+en => position.OUTPUTSELECT
+clock => position[0]~reg0.CLK
+clock => position[1]~reg0.CLK
+reset => position.OUTPUTSELECT
+reset => position.OUTPUTSELECT
+playerID[0] => position.DATAB
+playerID[1] => position.DATAB
+position[0] <= position[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+position[1] <= position[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StateMachine|PlayRandomLogic:playRand|regPos:box2
+en => position.OUTPUTSELECT
+en => position.OUTPUTSELECT
+clock => position[0]~reg0.CLK
+clock => position[1]~reg0.CLK
+reset => position.OUTPUTSELECT
+reset => position.OUTPUTSELECT
+playerID[0] => position.DATAB
+playerID[1] => position.DATAB
+position[0] <= position[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+position[1] <= position[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StateMachine|PlayRandomLogic:playRand|regPos:box3
+en => position.OUTPUTSELECT
+en => position.OUTPUTSELECT
+clock => position[0]~reg0.CLK
+clock => position[1]~reg0.CLK
+reset => position.OUTPUTSELECT
+reset => position.OUTPUTSELECT
+playerID[0] => position.DATAB
+playerID[1] => position.DATAB
+position[0] <= position[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+position[1] <= position[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StateMachine|PlayRandomLogic:playRand|regPos:box4
+en => position.OUTPUTSELECT
+en => position.OUTPUTSELECT
+clock => position[0]~reg0.CLK
+clock => position[1]~reg0.CLK
+reset => position.OUTPUTSELECT
+reset => position.OUTPUTSELECT
+playerID[0] => position.DATAB
+playerID[1] => position.DATAB
+position[0] <= position[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+position[1] <= position[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StateMachine|PlayRandomLogic:playRand|regPos:box5
+en => position.OUTPUTSELECT
+en => position.OUTPUTSELECT
+clock => position[0]~reg0.CLK
+clock => position[1]~reg0.CLK
+reset => position.OUTPUTSELECT
+reset => position.OUTPUTSELECT
+playerID[0] => position.DATAB
+playerID[1] => position.DATAB
+position[0] <= position[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+position[1] <= position[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StateMachine|PlayRandomLogic:playRand|regPos:box6
+en => position.OUTPUTSELECT
+en => position.OUTPUTSELECT
+clock => position[0]~reg0.CLK
+clock => position[1]~reg0.CLK
+reset => position.OUTPUTSELECT
+reset => position.OUTPUTSELECT
+playerID[0] => position.DATAB
+playerID[1] => position.DATAB
+position[0] <= position[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+position[1] <= position[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StateMachine|PlayRandomLogic:playRand|regPos:box7
+en => position.OUTPUTSELECT
+en => position.OUTPUTSELECT
+clock => position[0]~reg0.CLK
+clock => position[1]~reg0.CLK
+reset => position.OUTPUTSELECT
+reset => position.OUTPUTSELECT
+playerID[0] => position.DATAB
+playerID[1] => position.DATAB
+position[0] <= position[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+position[1] <= position[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StateMachine|PlayRandomLogic:playRand|regPos:box8
+en => position.OUTPUTSELECT
+en => position.OUTPUTSELECT
+clock => position[0]~reg0.CLK
+clock => position[1]~reg0.CLK
+reset => position.OUTPUTSELECT
+reset => position.OUTPUTSELECT
+playerID[0] => position.DATAB
+playerID[1] => position.DATAB
+position[0] <= position[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+position[1] <= position[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StateMachine|PlayRandomLogic:playRand|regPos:box9
+en => position.OUTPUTSELECT
+en => position.OUTPUTSELECT
+clock => position[0]~reg0.CLK
+clock => position[1]~reg0.CLK
+reset => position.OUTPUTSELECT
+reset => position.OUTPUTSELECT
+playerID[0] => position.DATAB
+playerID[1] => position.DATAB
+position[0] <= position[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+position[1] <= position[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StateMachine|validarGaneLogic:validateWinner
+clock => clock.IN9
+reset => reset.IN9
+ValidateWin <= ValidateWin.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StateMachine|validarGaneLogic:validateWinner|regPos:box1
+en => position.OUTPUTSELECT
+en => position.OUTPUTSELECT
+clock => position[0]~reg0.CLK
+clock => position[1]~reg0.CLK
+reset => position.OUTPUTSELECT
+reset => position.OUTPUTSELECT
+playerID[0] => position.DATAB
+playerID[1] => position.DATAB
+position[0] <= position[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+position[1] <= position[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StateMachine|validarGaneLogic:validateWinner|regPos:box2
+en => position.OUTPUTSELECT
+en => position.OUTPUTSELECT
+clock => position[0]~reg0.CLK
+clock => position[1]~reg0.CLK
+reset => position.OUTPUTSELECT
+reset => position.OUTPUTSELECT
+playerID[0] => position.DATAB
+playerID[1] => position.DATAB
+position[0] <= position[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+position[1] <= position[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StateMachine|validarGaneLogic:validateWinner|regPos:box3
+en => position.OUTPUTSELECT
+en => position.OUTPUTSELECT
+clock => position[0]~reg0.CLK
+clock => position[1]~reg0.CLK
+reset => position.OUTPUTSELECT
+reset => position.OUTPUTSELECT
+playerID[0] => position.DATAB
+playerID[1] => position.DATAB
+position[0] <= position[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+position[1] <= position[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StateMachine|validarGaneLogic:validateWinner|regPos:box4
+en => position.OUTPUTSELECT
+en => position.OUTPUTSELECT
+clock => position[0]~reg0.CLK
+clock => position[1]~reg0.CLK
+reset => position.OUTPUTSELECT
+reset => position.OUTPUTSELECT
+playerID[0] => position.DATAB
+playerID[1] => position.DATAB
+position[0] <= position[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+position[1] <= position[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StateMachine|validarGaneLogic:validateWinner|regPos:box5
+en => position.OUTPUTSELECT
+en => position.OUTPUTSELECT
+clock => position[0]~reg0.CLK
+clock => position[1]~reg0.CLK
+reset => position.OUTPUTSELECT
+reset => position.OUTPUTSELECT
+playerID[0] => position.DATAB
+playerID[1] => position.DATAB
+position[0] <= position[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+position[1] <= position[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StateMachine|validarGaneLogic:validateWinner|regPos:box6
+en => position.OUTPUTSELECT
+en => position.OUTPUTSELECT
+clock => position[0]~reg0.CLK
+clock => position[1]~reg0.CLK
+reset => position.OUTPUTSELECT
+reset => position.OUTPUTSELECT
+playerID[0] => position.DATAB
+playerID[1] => position.DATAB
+position[0] <= position[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+position[1] <= position[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StateMachine|validarGaneLogic:validateWinner|regPos:box7
+en => position.OUTPUTSELECT
+en => position.OUTPUTSELECT
+clock => position[0]~reg0.CLK
+clock => position[1]~reg0.CLK
+reset => position.OUTPUTSELECT
+reset => position.OUTPUTSELECT
+playerID[0] => position.DATAB
+playerID[1] => position.DATAB
+position[0] <= position[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+position[1] <= position[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StateMachine|validarGaneLogic:validateWinner|regPos:box8
+en => position.OUTPUTSELECT
+en => position.OUTPUTSELECT
+clock => position[0]~reg0.CLK
+clock => position[1]~reg0.CLK
+reset => position.OUTPUTSELECT
+reset => position.OUTPUTSELECT
+playerID[0] => position.DATAB
+playerID[1] => position.DATAB
+position[0] <= position[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+position[1] <= position[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StateMachine|validarGaneLogic:validateWinner|regPos:box9
+en => position.OUTPUTSELECT
+en => position.OUTPUTSELECT
+clock => position[0]~reg0.CLK
+clock => position[1]~reg0.CLK
+reset => position.OUTPUTSELECT
+reset => position.OUTPUTSELECT
+playerID[0] => position.DATAB
+playerID[1] => position.DATAB
+position[0] <= position[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+position[1] <= position[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StateMachine|validarJugadaLogic:validatePl
+clock => clock.IN9
+reset => reset.IN9
+ValidarJugada => always1.IN1
+ValidarJugada => always1.IN1
+ValidarJugada => always1.IN1
+ValidarJugada => always1.IN1
+ValidarJugada => always1.IN1
+ValidarJugada => always1.IN1
+ValidarJugada => always1.IN1
+ValidarJugada => always1.IN1
+ValidarJugada => always1.IN1
+playerID => playerID.IN9
+position[0] => current_state[0].DATAIN
+position[1] => current_state[1].DATAIN
+position[2] => current_state[2].DATAIN
+position[3] => current_state[3].DATAIN
+V <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StateMachine|validarJugadaLogic:validatePl|regPos:box1
+en => position.OUTPUTSELECT
+en => position.OUTPUTSELECT
+clock => position[0]~reg0.CLK
+clock => position[1]~reg0.CLK
+reset => position.OUTPUTSELECT
+reset => position.OUTPUTSELECT
+playerID[0] => position.DATAB
+playerID[1] => position.DATAB
+position[0] <= position[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+position[1] <= position[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StateMachine|validarJugadaLogic:validatePl|regPos:box2
+en => position.OUTPUTSELECT
+en => position.OUTPUTSELECT
+clock => position[0]~reg0.CLK
+clock => position[1]~reg0.CLK
+reset => position.OUTPUTSELECT
+reset => position.OUTPUTSELECT
+playerID[0] => position.DATAB
+playerID[1] => position.DATAB
+position[0] <= position[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+position[1] <= position[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StateMachine|validarJugadaLogic:validatePl|regPos:box3
+en => position.OUTPUTSELECT
+en => position.OUTPUTSELECT
+clock => position[0]~reg0.CLK
+clock => position[1]~reg0.CLK
+reset => position.OUTPUTSELECT
+reset => position.OUTPUTSELECT
+playerID[0] => position.DATAB
+playerID[1] => position.DATAB
+position[0] <= position[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+position[1] <= position[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StateMachine|validarJugadaLogic:validatePl|regPos:box4
+en => position.OUTPUTSELECT
+en => position.OUTPUTSELECT
+clock => position[0]~reg0.CLK
+clock => position[1]~reg0.CLK
+reset => position.OUTPUTSELECT
+reset => position.OUTPUTSELECT
+playerID[0] => position.DATAB
+playerID[1] => position.DATAB
+position[0] <= position[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+position[1] <= position[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StateMachine|validarJugadaLogic:validatePl|regPos:box5
+en => position.OUTPUTSELECT
+en => position.OUTPUTSELECT
+clock => position[0]~reg0.CLK
+clock => position[1]~reg0.CLK
+reset => position.OUTPUTSELECT
+reset => position.OUTPUTSELECT
+playerID[0] => position.DATAB
+playerID[1] => position.DATAB
+position[0] <= position[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+position[1] <= position[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StateMachine|validarJugadaLogic:validatePl|regPos:box6
+en => position.OUTPUTSELECT
+en => position.OUTPUTSELECT
+clock => position[0]~reg0.CLK
+clock => position[1]~reg0.CLK
+reset => position.OUTPUTSELECT
+reset => position.OUTPUTSELECT
+playerID[0] => position.DATAB
+playerID[1] => position.DATAB
+position[0] <= position[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+position[1] <= position[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StateMachine|validarJugadaLogic:validatePl|regPos:box7
+en => position.OUTPUTSELECT
+en => position.OUTPUTSELECT
+clock => position[0]~reg0.CLK
+clock => position[1]~reg0.CLK
+reset => position.OUTPUTSELECT
+reset => position.OUTPUTSELECT
+playerID[0] => position.DATAB
+playerID[1] => position.DATAB
+position[0] <= position[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+position[1] <= position[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StateMachine|validarJugadaLogic:validatePl|regPos:box8
+en => position.OUTPUTSELECT
+en => position.OUTPUTSELECT
+clock => position[0]~reg0.CLK
+clock => position[1]~reg0.CLK
+reset => position.OUTPUTSELECT
+reset => position.OUTPUTSELECT
+playerID[0] => position.DATAB
+playerID[1] => position.DATAB
+position[0] <= position[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+position[1] <= position[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StateMachine|validarJugadaLogic:validatePl|regPos:box9
+en => position.OUTPUTSELECT
+en => position.OUTPUTSELECT
+clock => position[0]~reg0.CLK
+clock => position[1]~reg0.CLK
+reset => position.OUTPUTSELECT
+reset => position.OUTPUTSELECT
+playerID[0] => position.DATAB
+playerID[1] => position.DATAB
+position[0] <= position[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+position[1] <= position[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
